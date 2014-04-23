@@ -21,6 +21,12 @@
 		13B460BA19077B60008E953C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609C19077B60008E953C /* UIKit.framework */; };
 		13B460C219077B60008E953C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B460C019077B60008E953C /* InfoPlist.strings */; };
 		13B460C419077B60008E953C /* TableControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460C319077B60008E953C /* TableControllerTests.m */; };
+		13B460D019077C4E008E953C /* RAVTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460CF19077C4E008E953C /* RAVTableController.m */; };
+		13B460D619077C79008E953C /* RAVCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460D519077C79008E953C /* RAVCellPresenter.m */; };
+		13B460D919077C91008E953C /* RAVSectionHeaderViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460D819077C91008E953C /* RAVSectionHeaderViewPresenter.m */; };
+		13B460DC19077CA2008E953C /* RAVSectionFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460DB19077CA2008E953C /* RAVSectionFooterViewPresenter.m */; };
+		13B460E119077F1D008E953C /* RAVTableControllerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460E019077F1D008E953C /* RAVTableControllerListModel.m */; };
+		13B460E419078133008E953C /* RAVTableControllerSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460E319078133008E953C /* RAVTableControllerSectionModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,22 @@
 		13B460BF19077B60008E953C /* TableControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableControllerTests-Info.plist"; sourceTree = "<group>"; };
 		13B460C119077B60008E953C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13B460C319077B60008E953C /* TableControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableControllerTests.m; sourceTree = "<group>"; };
+		13B460CE19077C4E008E953C /* RAVTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableController.h; sourceTree = "<group>"; };
+		13B460CF19077C4E008E953C /* RAVTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableController.m; sourceTree = "<group>"; };
+		13B460D419077C79008E953C /* RAVCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCellPresenter.h; sourceTree = "<group>"; };
+		13B460D519077C79008E953C /* RAVCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVCellPresenter.m; sourceTree = "<group>"; };
+		13B460D719077C91008E953C /* RAVSectionHeaderViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionHeaderViewPresenter.h; sourceTree = "<group>"; };
+		13B460D819077C91008E953C /* RAVSectionHeaderViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVSectionHeaderViewPresenter.m; sourceTree = "<group>"; };
+		13B460DA19077CA2008E953C /* RAVSectionFooterViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionFooterViewPresenter.h; sourceTree = "<group>"; };
+		13B460DB19077CA2008E953C /* RAVSectionFooterViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVSectionFooterViewPresenter.m; sourceTree = "<group>"; };
+		13B460DE19077D32008E953C /* RAVPresenterP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVPresenterP.h; sourceTree = "<group>"; };
+		13B460DF19077F1D008E953C /* RAVTableControllerListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModel.h; sourceTree = "<group>"; };
+		13B460E019077F1D008E953C /* RAVTableControllerListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableControllerListModel.m; sourceTree = "<group>"; };
+		13B460E219078133008E953C /* RAVTableControllerSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModel.h; sourceTree = "<group>"; };
+		13B460E319078133008E953C /* RAVTableControllerSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableControllerSectionModel.m; sourceTree = "<group>"; };
+		13B460E519078EB5008E953C /* RAVScrollViewDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVScrollViewDelegateP.h; sourceTree = "<group>"; };
+		13B460EA190795DD008E953C /* RAVEditDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVEditDelegateP.h; sourceTree = "<group>"; };
+		13B460EB1907A3BC008E953C /* RAVSectionIndexesDelegateP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionIndexesDelegateP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +134,7 @@
 		13B4609E19077B60008E953C /* TableController */ = {
 			isa = PBXGroup;
 			children = (
+				13B460CD19077C22008E953C /* RAVTableController */,
 				13B460A719077B60008E953C /* RAVAppDelegate.h */,
 				13B460A819077B60008E953C /* RAVAppDelegate.m */,
 				13B460AA19077B60008E953C /* Main.storyboard */,
@@ -150,6 +173,29 @@
 				13B460C019077B60008E953C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B460CD19077C22008E953C /* RAVTableController */ = {
+			isa = PBXGroup;
+			children = (
+				13B460CE19077C4E008E953C /* RAVTableController.h */,
+				13B460CF19077C4E008E953C /* RAVTableController.m */,
+				13B460E519078EB5008E953C /* RAVScrollViewDelegateP.h */,
+				13B460EA190795DD008E953C /* RAVEditDelegateP.h */,
+				13B460EB1907A3BC008E953C /* RAVSectionIndexesDelegateP.h */,
+				13B460DE19077D32008E953C /* RAVPresenterP.h */,
+				13B460D419077C79008E953C /* RAVCellPresenter.h */,
+				13B460D519077C79008E953C /* RAVCellPresenter.m */,
+				13B460D719077C91008E953C /* RAVSectionHeaderViewPresenter.h */,
+				13B460D819077C91008E953C /* RAVSectionHeaderViewPresenter.m */,
+				13B460DA19077CA2008E953C /* RAVSectionFooterViewPresenter.h */,
+				13B460DB19077CA2008E953C /* RAVSectionFooterViewPresenter.m */,
+				13B460DF19077F1D008E953C /* RAVTableControllerListModel.h */,
+				13B460E019077F1D008E953C /* RAVTableControllerListModel.m */,
+				13B460E219078133008E953C /* RAVTableControllerSectionModel.h */,
+				13B460E319078133008E953C /* RAVTableControllerSectionModel.m */,
+			);
+			path = RAVTableController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B460D919077C91008E953C /* RAVSectionHeaderViewPresenter.m in Sources */,
+				13B460D019077C4E008E953C /* RAVTableController.m in Sources */,
+				13B460E119077F1D008E953C /* RAVTableControllerListModel.m in Sources */,
+				13B460D619077C79008E953C /* RAVCellPresenter.m in Sources */,
 				13B460AF19077B60008E953C /* RAVViewController.m in Sources */,
 				13B460A919077B60008E953C /* RAVAppDelegate.m in Sources */,
+				13B460E419078133008E953C /* RAVTableControllerSectionModel.m in Sources */,
+				13B460DC19077CA2008E953C /* RAVSectionFooterViewPresenter.m in Sources */,
 				13B460A519077B60008E953C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +509,7 @@
 				13B460C919077B60008E953C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13B460CA19077B60008E953C /* Build configuration list for PBXNativeTarget "TableControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +518,7 @@
 				13B460CC19077B60008E953C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
