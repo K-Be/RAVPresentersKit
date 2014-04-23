@@ -176,6 +176,133 @@
 	}
 }
 
+
+#pragma mark UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidScroll:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidScroll:self];
+	}
+}
+
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidZoom:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidZoom:self];
+	}
+}
+
+
+// called on start of dragging (may require some time and or distance to move)
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewWillBeginDragging:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewWillBeginDragging:self];
+	}
+}
+
+
+// called on finger up if the user dragged. velocity is in points/millisecond. targetContentOffset may be changed to adjust where the scroll view comes to rest
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewWillEndDragging:withVelocity:targetContentOffset:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewWillEndDragging:self withVelocity:velocity targetContentOffset:targetContentOffset];
+	}
+}
+
+
+// called on finger up if the user dragged. decelerate is true if it will continue moving afterwards
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidEndDragging:willDecelerate:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidEndDragging:self willDecelerate:decelerate];
+	}
+}
+
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewWillBeginDecelerating:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewWillBeginDecelerating:self];
+	}
+}
+
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidEndDecelerating:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidEndDecelerating:self];
+	}
+}
+
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidEndScrollingAnimation:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidEndScrollingAnimation:self];
+	}
+}
+
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+	UIView* view = nil;
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerViewForZoomingInScrollView:)])
+	{
+		view = [self.scrollViewDelegate ravTableControllerViewForZoomingInScrollView:self];
+	}
+	
+	return view;
+}
+
+
+- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewWillBeginZooming:withView:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewWillBeginZooming:self withView:view];
+	}
+}
+
+
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidEndZooming:withView:atScale:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidEndZooming:self withView:view atScale:scale];
+	}
+}
+
+
+- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView
+{
+	BOOL should = [scrollView scrollsToTop];
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewShouldScrollToTop:)])
+	{
+		should = [self.scrollViewDelegate ravTableControllerScrollViewShouldScrollToTop:self];
+	}
+	
+	return should;
+}
+
+
+- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
+{
+	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidScrollToTop:)])
+	{
+		[self.scrollViewDelegate ravTableControllerScrollViewDidScrollToTop:self];
+	}
+}
+
 @end
 
 
