@@ -61,6 +61,15 @@ typedef id RAVSectionFooterViewModel;
 }
 
 
+- (void)reloadData
+{
+	if (self.tableView != nil && self.tableView.dataSource == self)
+	{
+		[self.tableView reloadData];
+	}
+}
+
+
 - (void)registerCellPresenter:(RAVCellPresenter*)cellPresenter
 {
 	[self.cellsPresenters addObject:cellPresenter];
@@ -548,6 +557,19 @@ typedef id RAVSectionFooterViewModel;
 	if ([self.scrollViewDelegate respondsToSelector:@selector(ravTableControllerScrollViewDidScrollToTop:)])
 	{
 		[self.scrollViewDelegate ravTableControllerScrollViewDidScrollToTop:self];
+	}
+}
+
+
+- (void)dealloc
+{
+	if (self.tableView.delegate == self)
+	{
+		self.tableView.delegate = nil;
+	}
+	if (self.tableView.dataSource == self)
+	{
+		self.tableView.dataSource = nil;
 	}
 }
 
