@@ -11,6 +11,7 @@
 @class RAVTableController;
 @protocol RAVScrollViewDelegateP <NSObject>
 
+@optional
 - (void)ravTableControllerScrollViewDidScroll:(RAVTableController*)sender;
 - (void)ravTableControllerScrollViewDidZoom:(RAVTableController*)sender;
 

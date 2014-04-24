@@ -16,6 +16,11 @@
 #import "RAVSectionIndexesDelegateP.h"
 
 
+typedef RAVCellPresenter RavCellPresenterType;
+typedef RAVSectionFooterViewPresenter RAVSectionFooterViewPresenterType;
+typedef RAVSectionHeaderViewPresenter RAVSectionHeaderViewPresenterType;
+
+
 @interface RAVTableController : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView* tableView;
@@ -27,8 +32,8 @@
 
 - (void)reloadData;
 
-- (void)registerCellPresenter:(RAVCellPresenter*)cellPresenter;
+- (void)registerCellPresenter:(RavCellPresenterType*)cellPresenter;
 - (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenter*)sectionHeaderPresenter;
-- (void)registerSectionFooterPreseter:(RAVSectionFooterViewPresenter*)sectionFooterPresenter;
+- (void)registerSectionFooterPreseter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter;
 
 @end

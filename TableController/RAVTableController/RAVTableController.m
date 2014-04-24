@@ -7,6 +7,13 @@
 //
 
 #import "RAVTableController.h"
+#import "RAVTableController_Subclassing.h"
+#import <UIKit/UIGestureRecognizerSubclass.h>
+
+
+typedef id RAVCellModel;
+typedef id RAVSectionHeaderViewModel;
+typedef id RAVSectionFooterViewModel;
 
 
 @interface RAVTableController ()
@@ -18,9 +25,23 @@
 @end
 
 
+@interface RAVTableController (rav_protected)
+
+- (RavCellPresenterType*)rav_cellPresenterForDataModel:(RAVCellModel)dataModel;
+- (RAVSectionFooterViewPresenterType*)rav_sectionFooterPresenterForSectionDataModel:(RAVSectionFooterViewModel)dataModel;
+- (RAVSectionHeaderViewPresenterType*)rav_sectionHeaderPresenterForSectionDataModel:(RAVSectionHeaderViewModel)dataModel;
+
+@end
+
+
 @interface RAVTableController (rav_private)
 
-- (RAVCellPresenter*)rav_cellPresenterForDataModel:(id)dataModel;
+- (id<RAVPresenterP>)rav_findPresenterForModel:(id)model inList:(NSArray*)presentersList;
+- (RAVSectionHeaderViewModel)rav_getHeaderSectionViewModelForSection:(NSInteger)section;
+- (RAVSectionFooterViewModel)rav_getFooterSectionViewModelForSection:(NSInteger)section;
+- (RAVCellModel)rav_getCellModelForIndexPath:(NSIndexPath*)indexPath;
+
+- (UIView*)rav_emptySectionView;
 
 @end
 
@@ -47,14 +68,14 @@
 }
 
 
-- (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenter*)sectionHeaderPresenter
+- (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenterType*)sectionHeaderPresenter
 {
 	[self.sectionHeadersPresenters addObject:sectionHeaderPresenter];
 	sectionHeaderPresenter.tableView = self.tableView;
 }
 
 
-- (void)registerSectionFooterPreseter:(RAVSectionFooterViewPresenter*)sectionFooterPresenter
+- (void)registerSectionFooterPreseter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter
 {
 	[self.sectionFooterPresenters addObject:sectionFooterPresenter];
 	sectionFooterPresenter.tableView = self.tableView;
@@ -75,7 +96,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	id dataModel = [self.model getModelForIndexPath:indexPath];
+	RAVCellModel dataModel = [self rav_getCellModelForIndexPath:indexPath];
 	RAVCellPresenter* cellPresenter = [self rav_cellPresenterForDataModel:dataModel];
 	UITableViewCell* cell = [cellPresenter cellForModel:dataModel];
 	if (!cell)
@@ -173,6 +194,233 @@
 	if ([self.editDelegate respondsToSelector:@selector(ravTableController:moveRowAtIndexPath:toIndexPath:)])
 	{
 		[self.editDelegate ravTableController:self moveRowAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+	}
+}
+
+
+#pragma mark UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	RAVCellModel cellModel = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:cellModel];
+	if ([presenter respondsToSelector:@selector(ravTableController:willDisplayModel:withIndexPath:)])
+	{
+		[presenter ravTableController:self willDisplayModel:cellModel withIndexPath:indexPath];
+	}
+}
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	CGFloat height = self.tableView.rowHeight;
+	
+	RAVCellModel cellModel = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:cellModel];
+	if ([presenter respondsToSelector:@selector(ravTableController:rowHeightForModel:)])
+	{
+		height = [presenter ravTableController:self rowHeightForModel:cellModel];
+	}
+	
+	return height;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+	CGFloat height = self.tableView.sectionHeaderHeight;
+	RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
+	RAVSectionHeaderViewPresenter* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
+	{
+		height = [presenter ravTableController:self sectionViewHeightForModel:model];
+	}
+	
+	return height;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+	CGFloat height = self.tableView.sectionFooterHeight;
+	RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
+	RAVSectionFooterViewPresenter* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
+	{
+		height = [presenter ravTableController:self sectionViewHeightForModel:model];
+	}
+	
+	return height;
+}
+
+
+// Section header & footer information. Views are preferred over title should you decide to provide both
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+	RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
+	UIView* view = nil;
+	RAVSectionHeaderViewPresenterType* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
+	{
+		view = [presenter ravTableController:self sectionViewForModel:model];
+	}
+	if (!view)
+	{
+		view = [self rav_emptySectionView];
+	}
+	
+	return view;
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+	RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
+	UIView* view = nil;
+	RAVSectionFooterViewPresenter* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
+	{
+		view = [presenter ravTableController:self sectionViewForModel:model];
+	}
+	
+	return view;
+}
+
+
+// Accessories (disclosures).
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:accessoryButtonPressedForModel:)])
+	{
+		[presenter ravTableController:self accessoryButtonPressedForModel:model];
+	}
+}
+
+
+// Called after the user changes the selection.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RAVCellPresenter* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:didSelectModel:needsDeselect:animated:)])
+	{
+		BOOL shouldDeselect = NO;
+		BOOL animated = NO;
+		[presenter ravTableController:self didSelectModel:model needsDeselect:&shouldDeselect animated:&animated];
+		if (shouldDeselect)
+		{
+			[self.tableView deselectRowAtIndexPath:indexPath animated:animated];
+		}
+	}
+}
+
+// Editing
+
+// Allows customization of the editingStyle for a particular cell located at 'indexPath'. If not implemented, all editable cells will have UITableViewCellEditingStyleDelete set for them when the table has editing property set to YES.
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	UITableViewCellEditingStyle editStyle = UITableViewCellEditingStyleDelete;
+	if ([self.editDelegate respondsToSelector:@selector(ravTableController:editingStyleForRowAtIndexPath:)])
+	{
+		editStyle = [self.editDelegate ravTableController:self editingStyleForRowAtIndexPath:indexPath];
+	}
+	
+	return editStyle;
+}
+
+
+// Controls whether the background is indented while editing.  If not implemented, the default is YES.  This is unrelated to the indentation level below.  This method only applies to grouped style table views.
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	BOOL intend = YES;
+	if ([self.editDelegate respondsToSelector:@selector(ravTableController:shouldIndentWhileEditingRowAtIndexPath:)])
+	{
+		intend = [self.editDelegate ravTableController:self shouldIndentWhileEditingRowAtIndexPath:indexPath];
+	}
+	
+	return intend;
+}
+
+
+// The willBegin/didEnd methods are called whenever the 'editing' property is automatically changed by the table (allowing insert/delete/move). This is done by a swipe activating a single row
+- (void)tableView:(UITableView*)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if ([self.editDelegate respondsToSelector:@selector(ravTableController:willBeginEditingRowAtIndexPath:)])
+	{
+		[self.editDelegate ravTableController:self willBeginEditingRowAtIndexPath:indexPath];
+	}
+}
+
+
+- (void)tableView:(UITableView*)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if ([self.editDelegate respondsToSelector:@selector(ravTableController:didEndEditingRowAtIndexPath:)])
+	{
+		[self.editDelegate ravTableController:self didEndEditingRowAtIndexPath:indexPath];
+	}
+}
+
+
+
+// Moving/reordering
+
+// Allows customization of the target row for a particular row as it is being moved/reordered
+- (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
+{
+	NSIndexPath* result = proposedDestinationIndexPath;
+	if ([self.editDelegate respondsToSelector:@selector(ravTableController:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:)])
+	{
+		result = [self.editDelegate ravTableController:self targetIndexPathForMoveFromRowAtIndexPath:sourceIndexPath toProposedIndexPath:proposedDestinationIndexPath];
+	}
+	
+	return result;
+}
+
+
+// Copy/Paste.  All three methods must be implemented by the delegate.
+
+- (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	BOOL should = NO;
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:shouldShowMenuForModel:)])
+	{
+		should = [presenter ravTableController:self shouldShowMenuForModel:model];
+	}
+	
+	return should;
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+	BOOL can = NO;
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:canPerformAction:forModel:withActionSender:)])
+	{
+		can = [presenter ravTableController:self canPerformAction:action forModel:model withActionSender:sender];
+	}
+	
+	return can;
+}
+
+
+- (void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
+{
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:performAction:forModel:withActionSender:)])
+	{
+		[presenter ravTableController:self performAction:action forModel:model withActionSender:sender];
+	}
+	else
+	{
+		NSAssert(NO, @"presenter %@, should implement method %@", [presenter description], NSStringFromSelector(@selector(ravTableController:performAction:forModel:withActionSender:)));
 	}
 }
 
@@ -307,24 +555,85 @@
 
 
 #pragma mark -
+@implementation RAVTableController (rav_protected)
+
+- (RavCellPresenterType*)rav_cellPresenterForDataModel:(RAVCellModel)dataModel
+{
+	RavCellPresenterType* presenter = (RavCellPresenterType*)[self rav_findPresenterForModel:dataModel inList:self.cellsPresenters];
+	return presenter;
+}
+
+
+- (RAVSectionFooterViewPresenterType*)rav_sectionFooterPresenterForSectionDataModel:(RAVSectionFooterViewModel)dataModel
+{
+	RAVSectionFooterViewPresenterType* presenter = (RAVSectionFooterViewPresenterType*)[self rav_findPresenterForModel:dataModel inList:self.sectionFooterPresenters];
+	return presenter;
+}
+
+
+- (RAVSectionHeaderViewPresenterType*)rav_sectionHeaderPresenterForSectionDataModel:(RAVSectionHeaderViewModel)dataModel
+{
+	RAVSectionHeaderViewPresenterType* presenter = (RAVSectionHeaderViewPresenterType*)[self rav_findPresenterForModel:dataModel inList:self.sectionHeadersPresenters];
+	return presenter;
+}
+
+@end
+
+
+#pragma mark -
 @implementation RAVTableController (rav_private)
 
-- (RAVCellPresenter*)rav_cellPresenterForDataModel:(id)dataModel
+- (id<RAVPresenterP>)rav_findPresenterForModel:(id)model inList:(NSArray*)presentersList
 {
-	NSInteger presenterIndex = [self.cellsPresenters indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-		id<RAVPresenterP> presenter = obj;
-		BOOL requiredObject = [presenter canPresent:dataModel];
-		return requiredObject;
-	}];
+	id<RAVPresenterP> presenter = nil;
 	
-	RAVCellPresenter* presenter = nil;
-	if (presenterIndex != NSNotFound)
+	if (model)
 	{
-		presenter = [self.cellsPresenters objectAtIndex:presenterIndex];
+		NSInteger presenterIndex = [self.cellsPresenters indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+			id<RAVPresenterP> presenter = obj;
+			BOOL requiredObject = [presenter canPresent:model];
+			return requiredObject;
+		}];
+		
+		if (presenterIndex != NSNotFound)
+		{
+			presenter = [self.cellsPresenters objectAtIndex:presenterIndex];
+		}
+		NSAssert(presenter != nil, @"can't find presenter for model: %@", model);
 	}
-	NSAssert(presenter != nil, @"can't find presenter for model: %@", dataModel);
 	
 	return presenter;
+}
+
+
+- (RAVSectionHeaderViewModel)rav_getHeaderSectionViewModelForSection:(NSInteger)section
+{
+	RAVTableControllerSectionModel* sectionModel = [self.model sectionModelForSectionIndex:section];
+	return sectionModel.headerViewModel;
+}
+
+
+- (RAVSectionFooterViewModel)rav_getFooterSectionViewModelForSection:(NSInteger)section
+{
+	RAVTableControllerSectionModel* sectionModel = [self.model sectionModelForSectionIndex:section];
+	return sectionModel.footerViewModel;
+}
+
+
+- (RAVCellModel)rav_getCellModelForIndexPath:(NSIndexPath*)indexPath
+{
+	RAVCellModel model = [self.model getModelForIndexPath:indexPath];
+	return model;
+}
+
+
+- (UIView*)rav_emptySectionView
+{
+	UIView* view = [[UIView alloc] initWithFrame:CGRectZero];
+	view.userInteractionEnabled = NO;
+	view.backgroundColor = [UIColor clearColor];
+	
+	return view;
 }
 
 @end

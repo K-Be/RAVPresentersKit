@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "RAVPresenterP.h"
+#import "RAVSectionViewDelegateP.h"
 
 
-@interface RAVSectionFooterViewPresenter : NSObject <RAVPresenterP>
+@interface RAVSectionFooterViewPresenter : NSObject <RAVPresenterP, RAVSectionViewDelegateP>
 
 
 

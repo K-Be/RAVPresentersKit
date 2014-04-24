@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "RAVPresenterP.h"
+#import "RAVCellActionsDelegateP.h"
 
 
-@interface RAVCellPresenter : NSObject <RAVPresenterP>
+@interface RAVCellPresenter : NSObject <RAVPresenterP, RAVCellActionsDelegateP>
 
 
 @end

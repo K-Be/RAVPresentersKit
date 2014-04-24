@@ -75,6 +75,9 @@
 		13B460E519078EB5008E953C /* RAVScrollViewDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVScrollViewDelegateP.h; sourceTree = "<group>"; };
 		13B460EA190795DD008E953C /* RAVEditDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVEditDelegateP.h; sourceTree = "<group>"; };
 		13B460EB1907A3BC008E953C /* RAVSectionIndexesDelegateP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionIndexesDelegateP.h; sourceTree = "<group>"; };
+		13B460EE1907B0F1008E953C /* RAVTableController_Subclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableController_Subclassing.h; sourceTree = "<group>"; };
+		13B460F11907BC29008E953C /* RAVCellActionsDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVCellActionsDelegateP.h; sourceTree = "<group>"; };
+		13B460F21907C6B5008E953C /* RAVSectionViewDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVSectionViewDelegateP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +183,13 @@
 			children = (
 				13B460CE19077C4E008E953C /* RAVTableController.h */,
 				13B460CF19077C4E008E953C /* RAVTableController.m */,
+				13B460EE1907B0F1008E953C /* RAVTableController_Subclassing.h */,
 				13B460E519078EB5008E953C /* RAVScrollViewDelegateP.h */,
 				13B460EA190795DD008E953C /* RAVEditDelegateP.h */,
 				13B460EB1907A3BC008E953C /* RAVSectionIndexesDelegateP.h */,
 				13B460DE19077D32008E953C /* RAVPresenterP.h */,
+				13B460F11907BC29008E953C /* RAVCellActionsDelegateP.h */,
+				13B460F21907C6B5008E953C /* RAVSectionViewDelegateP.h */,
 				13B460D419077C79008E953C /* RAVCellPresenter.h */,
 				13B460D519077C79008E953C /* RAVCellPresenter.m */,
 				13B460D719077C91008E953C /* RAVSectionHeaderViewPresenter.h */,

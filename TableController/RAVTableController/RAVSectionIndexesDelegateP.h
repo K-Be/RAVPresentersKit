@@ -11,6 +11,7 @@
 @class RAVTableController;
 @protocol RAVSectionIndexesDelegateP <NSObject>
 
+@optional
 - (NSArray*)ravTableControllerSectionIndexTitles:(RAVTableController*)sender;
 - (NSInteger)ravTableController:(RAVTableController *)sender sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index;
 
