@@ -29,6 +29,11 @@
 }
 
 
+- (CGFloat)ravTableController:(RAVTableController*)sender rowHeightForModel:(id)model
+{
+	return [self.tableView rowHeight];
+}
+
 @end
 
 
@@ -38,6 +43,12 @@
 - (void)registerCells
 {
 	
+}
+
+
+- (UITableViewCell*)cellForModel:(id)model
+{
+	return nil;
 }
 
 @end
