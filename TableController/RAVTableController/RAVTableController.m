@@ -42,6 +42,8 @@ typedef id RAVSectionFooterViewModel;
 - (RAVCellModel)rav_getCellModelForIndexPath:(NSIndexPath*)indexPath;
 
 - (UIView*)rav_emptySectionView;
+- (void)rav_clearSourceAndDelegateOnTable;
+- (void)rav_updateTableRefOnChildren;
 
 @end
 
@@ -58,6 +60,18 @@ typedef id RAVSectionFooterViewModel;
 	}
 	
 	return self;
+}
+
+
+- (void)setTableView:(UITableView *)tableView
+{
+	[self rav_clearSourceAndDelegateOnTable];
+	
+	_tableView = tableView;
+	_tableView.delegate = self;
+	_tableView.dataSource = self;
+	
+	[self rav_updateTableRefOnChildren];
 }
 
 
@@ -563,14 +577,7 @@ typedef id RAVSectionFooterViewModel;
 
 - (void)dealloc
 {
-	if (self.tableView.delegate == self)
-	{
-		self.tableView.delegate = nil;
-	}
-	if (self.tableView.dataSource == self)
-	{
-		self.tableView.dataSource = nil;
-	}
+	[self rav_clearSourceAndDelegateOnTable];
 }
 
 @end
@@ -656,6 +663,27 @@ typedef id RAVSectionFooterViewModel;
 	view.backgroundColor = [UIColor clearColor];
 	
 	return view;
+}
+
+
+- (void)rav_clearSourceAndDelegateOnTable
+{
+	if (self.tableView.delegate == self)
+	{
+		self.tableView.delegate = nil;
+	}
+	if (self.tableView.dataSource == self)
+	{
+		self.tableView.dataSource = nil;
+	}
+}
+
+
+- (void)rav_updateTableRefOnChildren
+{
+	[self.cellsPresenters performSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.sectionFooterPresenters performSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.sectionHeadersPresenters performSelector:@selector(setTableView:) withObject:self.tableView];
 }
 
 @end
