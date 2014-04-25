@@ -57,6 +57,8 @@ typedef id RAVSectionFooterViewModel;
 		self.cellsPresenters = [[NSMutableArray alloc] init];
 		self.sectionHeadersPresenters = [[NSMutableArray alloc] init];
 		self.sectionFooterPresenters = [[NSMutableArray alloc] init];
+		
+		_model = [[RAVTableControllerListModel alloc] init];
 	}
 	
 	return self;
@@ -72,6 +74,13 @@ typedef id RAVSectionFooterViewModel;
 	_tableView.dataSource = self;
 	
 	[self rav_updateTableRefOnChildren];
+}
+
+
+- (void)setModel:(RAVTableControllerListModel *)model
+{
+	_model = model;
+	[self reloadData];
 }
 
 
