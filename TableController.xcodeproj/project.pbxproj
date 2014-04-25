@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1383DE0B190A5B8100FEBAC0 /* RAVPetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */; };
+		1383DE0D190A5BBD00FEBAC0 /* RAVPetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */; };
+		1383DE10190A5C7500FEBAC0 /* RAVPetPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE0F190A5C7500FEBAC0 /* RAVPetPresenter.m */; };
+		1383DE13190A5D9F00FEBAC0 /* RAVExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE12190A5D9F00FEBAC0 /* RAVExampleDataSource.m */; };
+		138F70FF1909155600F3338D /* EKFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70F11909155600F3338D /* EKFieldMapping.m */; };
+		138F71001909155600F3338D /* EKManagedObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70F31909155600F3338D /* EKManagedObjectMapping.m */; };
+		138F71011909155600F3338D /* EKMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70F51909155600F3338D /* EKMapper.m */; };
+		138F71021909155600F3338D /* EKObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70F81909155600F3338D /* EKObjectMapping.m */; };
+		138F71031909155600F3338D /* EKPropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70FA1909155600F3338D /* EKPropertyHelper.m */; };
+		138F71041909155600F3338D /* EKSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70FC1909155600F3338D /* EKSerializer.m */; };
+		138F71051909155600F3338D /* EKTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F70FE1909155600F3338D /* EKTransformer.m */; };
+		138F7108190915C300F3338D /* Persons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 138F7107190915C300F3338D /* Persons.plist */; };
+		138F710A1909167600F3338D /* Pets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 138F71091909167600F3338D /* Pets.plist */; };
+		138F710D1909172000F3338D /* RAVPetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F710C1909172000F3338D /* RAVPetModel.m */; };
+		138F71101909174400F3338D /* RAVPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F710F1909174400F3338D /* RAVPersonModel.m */; };
+		138F7114190917BD00F3338D /* RAVDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F7113190917BD00F3338D /* RAVDataLoader.m */; };
+		138F7117190917DD00F3338D /* RAVMappingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F7116190917DD00F3338D /* RAVMappingFactory.m */; };
+		138F711E19091E2500F3338D /* RAVPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F711C19091E2500F3338D /* RAVPersonCell.m */; };
+		138F711F19091E2500F3338D /* RAVPersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138F711D19091E2500F3338D /* RAVPersonCell.xib */; };
+		138F712219091E5E00F3338D /* RAVCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F712119091E5E00F3338D /* RAVCellBase.m */; };
+		138F712519091EBB00F3338D /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F712419091EBB00F3338D /* NSObject+Runtime.m */; };
+		138F71281909235C00F3338D /* RAVPersonPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 138F71271909235C00F3338D /* RAVPersonPresenter.m */; };
 		13B4609919077B60008E953C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609819077B60008E953C /* Foundation.framework */; };
 		13B4609B19077B60008E953C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609A19077B60008E953C /* CoreGraphics.framework */; };
 		13B4609D19077B60008E953C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609C19077B60008E953C /* UIKit.framework */; };
@@ -40,6 +62,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1383DE09190A5B8100FEBAC0 /* RAVPetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPetCell.h; sourceTree = "<group>"; };
+		1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPetCell.m; sourceTree = "<group>"; };
+		1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAVPetCell.xib; sourceTree = "<group>"; };
+		1383DE0E190A5C7500FEBAC0 /* RAVPetPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPetPresenter.h; sourceTree = "<group>"; };
+		1383DE0F190A5C7500FEBAC0 /* RAVPetPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPetPresenter.m; sourceTree = "<group>"; };
+		1383DE11190A5D9F00FEBAC0 /* RAVExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVExampleDataSource.h; sourceTree = "<group>"; };
+		1383DE12190A5D9F00FEBAC0 /* RAVExampleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVExampleDataSource.m; sourceTree = "<group>"; };
+		138F70EF1909155600F3338D /* EasyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyMapping.h; sourceTree = "<group>"; };
+		138F70F01909155600F3338D /* EKFieldMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKFieldMapping.h; sourceTree = "<group>"; };
+		138F70F11909155600F3338D /* EKFieldMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKFieldMapping.m; sourceTree = "<group>"; };
+		138F70F21909155600F3338D /* EKManagedObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKManagedObjectMapping.h; sourceTree = "<group>"; };
+		138F70F31909155600F3338D /* EKManagedObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKManagedObjectMapping.m; sourceTree = "<group>"; };
+		138F70F41909155600F3338D /* EKMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMapper.h; sourceTree = "<group>"; };
+		138F70F51909155600F3338D /* EKMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKMapper.m; sourceTree = "<group>"; };
+		138F70F61909155600F3338D /* EKMappingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMappingBlocks.h; sourceTree = "<group>"; };
+		138F70F71909155600F3338D /* EKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKObjectMapping.h; sourceTree = "<group>"; };
+		138F70F81909155600F3338D /* EKObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKObjectMapping.m; sourceTree = "<group>"; };
+		138F70F91909155600F3338D /* EKPropertyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKPropertyHelper.h; sourceTree = "<group>"; };
+		138F70FA1909155600F3338D /* EKPropertyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKPropertyHelper.m; sourceTree = "<group>"; };
+		138F70FB1909155600F3338D /* EKSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKSerializer.h; sourceTree = "<group>"; };
+		138F70FC1909155600F3338D /* EKSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKSerializer.m; sourceTree = "<group>"; };
+		138F70FD1909155600F3338D /* EKTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKTransformer.h; sourceTree = "<group>"; };
+		138F70FE1909155600F3338D /* EKTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKTransformer.m; sourceTree = "<group>"; };
+		138F7107190915C300F3338D /* Persons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Persons.plist; sourceTree = "<group>"; };
+		138F71091909167600F3338D /* Pets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Pets.plist; sourceTree = "<group>"; };
+		138F710B1909172000F3338D /* RAVPetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPetModel.h; sourceTree = "<group>"; };
+		138F710C1909172000F3338D /* RAVPetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPetModel.m; sourceTree = "<group>"; };
+		138F710E1909174400F3338D /* RAVPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPersonModel.h; sourceTree = "<group>"; };
+		138F710F1909174400F3338D /* RAVPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPersonModel.m; sourceTree = "<group>"; };
+		138F7112190917BD00F3338D /* RAVDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVDataLoader.h; sourceTree = "<group>"; };
+		138F7113190917BD00F3338D /* RAVDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVDataLoader.m; sourceTree = "<group>"; };
+		138F7115190917DD00F3338D /* RAVMappingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVMappingFactory.h; sourceTree = "<group>"; };
+		138F7116190917DD00F3338D /* RAVMappingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVMappingFactory.m; sourceTree = "<group>"; };
+		138F711B19091E2500F3338D /* RAVPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPersonCell.h; sourceTree = "<group>"; };
+		138F711C19091E2500F3338D /* RAVPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPersonCell.m; sourceTree = "<group>"; };
+		138F711D19091E2500F3338D /* RAVPersonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAVPersonCell.xib; sourceTree = "<group>"; };
+		138F712019091E5E00F3338D /* RAVCellBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCellBase.h; sourceTree = "<group>"; };
+		138F712119091E5E00F3338D /* RAVCellBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVCellBase.m; sourceTree = "<group>"; };
+		138F712319091EBB00F3338D /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		138F712419091EBB00F3338D /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		138F71261909235C00F3338D /* RAVPersonPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPersonPresenter.h; sourceTree = "<group>"; };
+		138F71271909235C00F3338D /* RAVPersonPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPersonPresenter.m; sourceTree = "<group>"; };
 		13B4609519077B60008E953C /* TableController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B4609819077B60008E953C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		13B4609A19077B60008E953C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,6 +168,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		138F70EC190914A100F3338D /* example */ = {
+			isa = PBXGroup;
+			children = (
+				138F711819091DDC00F3338D /* ui */,
+				138F7111190917A300F3338D /* datasource */,
+				138F71061909156D00F3338D /* resources */,
+				138F70ED1909155600F3338D /* libs */,
+				138F710B1909172000F3338D /* RAVPetModel.h */,
+				138F710C1909172000F3338D /* RAVPetModel.m */,
+				138F710E1909174400F3338D /* RAVPersonModel.h */,
+				138F710F1909174400F3338D /* RAVPersonModel.m */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		138F70ED1909155600F3338D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				138F712319091EBB00F3338D /* NSObject+Runtime.h */,
+				138F712419091EBB00F3338D /* NSObject+Runtime.m */,
+				138F70EE1909155600F3338D /* EasyMapping */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		138F70EE1909155600F3338D /* EasyMapping */ = {
+			isa = PBXGroup;
+			children = (
+				138F70EF1909155600F3338D /* EasyMapping.h */,
+				138F70F01909155600F3338D /* EKFieldMapping.h */,
+				138F70F11909155600F3338D /* EKFieldMapping.m */,
+				138F70F21909155600F3338D /* EKManagedObjectMapping.h */,
+				138F70F31909155600F3338D /* EKManagedObjectMapping.m */,
+				138F70F41909155600F3338D /* EKMapper.h */,
+				138F70F51909155600F3338D /* EKMapper.m */,
+				138F70F61909155600F3338D /* EKMappingBlocks.h */,
+				138F70F71909155600F3338D /* EKObjectMapping.h */,
+				138F70F81909155600F3338D /* EKObjectMapping.m */,
+				138F70F91909155600F3338D /* EKPropertyHelper.h */,
+				138F70FA1909155600F3338D /* EKPropertyHelper.m */,
+				138F70FB1909155600F3338D /* EKSerializer.h */,
+				138F70FC1909155600F3338D /* EKSerializer.m */,
+				138F70FD1909155600F3338D /* EKTransformer.h */,
+				138F70FE1909155600F3338D /* EKTransformer.m */,
+			);
+			path = EasyMapping;
+			sourceTree = "<group>";
+		};
+		138F71061909156D00F3338D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				138F7107190915C300F3338D /* Persons.plist */,
+				138F71091909167600F3338D /* Pets.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		138F7111190917A300F3338D /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				138F7112190917BD00F3338D /* RAVDataLoader.h */,
+				138F7113190917BD00F3338D /* RAVDataLoader.m */,
+				138F7115190917DD00F3338D /* RAVMappingFactory.h */,
+				138F7116190917DD00F3338D /* RAVMappingFactory.m */,
+				1383DE11190A5D9F00FEBAC0 /* RAVExampleDataSource.h */,
+				1383DE12190A5D9F00FEBAC0 /* RAVExampleDataSource.m */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		138F711819091DDC00F3338D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				138F711919091DF200F3338D /* person */,
+				138F711A19091DF200F3338D /* pet */,
+				138F712019091E5E00F3338D /* RAVCellBase.h */,
+				138F712119091E5E00F3338D /* RAVCellBase.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		138F711919091DF200F3338D /* person */ = {
+			isa = PBXGroup;
+			children = (
+				138F711B19091E2500F3338D /* RAVPersonCell.h */,
+				138F711C19091E2500F3338D /* RAVPersonCell.m */,
+				138F711D19091E2500F3338D /* RAVPersonCell.xib */,
+				138F71261909235C00F3338D /* RAVPersonPresenter.h */,
+				138F71271909235C00F3338D /* RAVPersonPresenter.m */,
+			);
+			path = person;
+			sourceTree = "<group>";
+		};
+		138F711A19091DF200F3338D /* pet */ = {
+			isa = PBXGroup;
+			children = (
+				1383DE09190A5B8100FEBAC0 /* RAVPetCell.h */,
+				1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */,
+				1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */,
+				1383DE0E190A5C7500FEBAC0 /* RAVPetPresenter.h */,
+				1383DE0F190A5C7500FEBAC0 /* RAVPetPresenter.m */,
+			);
+			path = pet;
+			sourceTree = "<group>";
+		};
 		13B4608C19077B60008E953C = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +306,7 @@
 		13B4609E19077B60008E953C /* TableController */ = {
 			isa = PBXGroup;
 			children = (
+				138F70EC190914A100F3338D /* example */,
 				13B460CD19077C22008E953C /* RAVTableController */,
 				13B460A719077B60008E953C /* RAVAppDelegate.h */,
 				13B460A819077B60008E953C /* RAVAppDelegate.m */,
@@ -282,7 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B460B119077B60008E953C /* Images.xcassets in Resources */,
+				138F7108190915C300F3338D /* Persons.plist in Resources */,
 				13B460A319077B60008E953C /* InfoPlist.strings in Resources */,
+				138F710A1909167600F3338D /* Pets.plist in Resources */,
+				138F711F19091E2500F3338D /* RAVPersonCell.xib in Resources */,
+				1383DE0D190A5BBD00FEBAC0 /* RAVPetCell.xib in Resources */,
 				13B460AC19077B60008E953C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,15 +476,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138F71041909155600F3338D /* EKSerializer.m in Sources */,
 				13B460D919077C91008E953C /* RAVSectionHeaderViewPresenter.m in Sources */,
+				138F711E19091E2500F3338D /* RAVPersonCell.m in Sources */,
+				138F710D1909172000F3338D /* RAVPetModel.m in Sources */,
+				1383DE10190A5C7500FEBAC0 /* RAVPetPresenter.m in Sources */,
+				138F712219091E5E00F3338D /* RAVCellBase.m in Sources */,
+				138F70FF1909155600F3338D /* EKFieldMapping.m in Sources */,
+				138F71031909155600F3338D /* EKPropertyHelper.m in Sources */,
+				138F71001909155600F3338D /* EKManagedObjectMapping.m in Sources */,
+				1383DE0B190A5B8100FEBAC0 /* RAVPetCell.m in Sources */,
 				13B460D019077C4E008E953C /* RAVTableController.m in Sources */,
 				13B460E119077F1D008E953C /* RAVTableControllerListModel.m in Sources */,
 				13B460D619077C79008E953C /* RAVCellPresenter.m in Sources */,
 				13B460AF19077B60008E953C /* RAVViewController.m in Sources */,
 				13B460A919077B60008E953C /* RAVAppDelegate.m in Sources */,
 				13B460E419078133008E953C /* RAVTableControllerSectionModel.m in Sources */,
+				138F712519091EBB00F3338D /* NSObject+Runtime.m in Sources */,
+				138F71281909235C00F3338D /* RAVPersonPresenter.m in Sources */,
 				13B460DC19077CA2008E953C /* RAVSectionFooterViewPresenter.m in Sources */,
+				138F71011909155600F3338D /* EKMapper.m in Sources */,
+				138F7114190917BD00F3338D /* RAVDataLoader.m in Sources */,
+				138F71051909155600F3338D /* EKTransformer.m in Sources */,
+				138F71101909174400F3338D /* RAVPersonModel.m in Sources */,
+				1383DE13190A5D9F00FEBAC0 /* RAVExampleDataSource.m in Sources */,
+				138F71021909155600F3338D /* EKObjectMapping.m in Sources */,
 				13B460A519077B60008E953C /* main.m in Sources */,
+				138F7117190917DD00F3338D /* RAVMappingFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
