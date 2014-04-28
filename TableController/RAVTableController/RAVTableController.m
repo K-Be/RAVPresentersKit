@@ -315,6 +315,10 @@ typedef id RAVSectionFooterViewModel;
 	{
 		view = [presenter ravTableController:self sectionViewForModel:model];
 	}
+	if (!view)
+	{
+		view = [self rav_emptySectionView];
+	}
 	
 	return view;
 }
