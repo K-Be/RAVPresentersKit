@@ -690,9 +690,9 @@ typedef id RAVSectionFooterViewModel;
 
 - (void)rav_updateTableRefOnChildren
 {
-	[self.cellsPresenters performSelector:@selector(setTableView:) withObject:self.tableView];
-	[self.sectionFooterPresenters performSelector:@selector(setTableView:) withObject:self.tableView];
-	[self.sectionHeadersPresenters performSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.cellsPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.sectionFooterPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.sectionHeadersPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
 }
 
 @end
