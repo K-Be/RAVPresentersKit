@@ -56,6 +56,37 @@
 	return _list;
 }
 
+
+#pragma mark RAVEditDelegateP
+- (BOOL)ravTableController:(RAVTableController*)sender canEditRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	return YES;
+}
+
+
+- (BOOL)ravTableController:(RAVTableController*)sender canMoveRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	return YES;
+}
+
+
+- (void)ravTableController:(RAVTableController*)sender moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+	[self.list moveModelAtIndexPath:sourceIndexPath toIndexPath:destinationIndexPath];
+}
+
+
+- (UITableViewCellEditingStyle)ravTableController:(RAVTableController*)sender editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return UITableViewCellEditingStyleNone;
+}
+
+
+- (void)ravTableController:(RAVTableController*)sender commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	
+}
+
 @end
 
 
