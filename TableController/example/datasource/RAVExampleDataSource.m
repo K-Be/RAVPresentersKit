@@ -49,6 +49,10 @@
 
 - (RAVTableControllerListModel*)getListModel
 {
+	if (!_list)
+	{
+		[self reloadModel];
+	}
 	return _list;
 }
 

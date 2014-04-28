@@ -13,7 +13,7 @@
 @protocol  RAVPersonPresenterDelegate;
 @interface RAVPersonPresenter : RAVCellPresenter
 
-@property (nonatomic, weak) id<RAVPersonPresenterDelegate> delegate
+@property (nonatomic, weak) id<RAVPersonPresenterDelegate> delegate;
 
 @end
 

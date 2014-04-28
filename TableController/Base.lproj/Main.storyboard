@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="duw-AE-1cp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="Vac-Hu-rkE">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="RAVViewController" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="duw-AE-1cp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ErM-NA-vPv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LEi-kF-1xB" kind="relationship" relationship="rootViewController" id="JKu-d9-O9A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxj-mN-BvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v9y-Lu-FdV">
+            <objects>
+                <viewController id="LEi-kF-1xB" customClass="RAVViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="ILf-hw-khp"/>
+                        <viewControllerLayoutGuide type="bottom" id="JCh-Gh-CPJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="LSZ-lO-eve">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CS4-lE-0GS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Reload" id="hvc-77-R3Z">
+                            <connections>
+                                <action selector="reloadAction:" destination="LEi-kF-1xB" id="zf1-e6-OXr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Start Edit" id="Omv-wd-3Qv">
+                            <connections>
+                                <action selector="startEditAction:" destination="LEi-kF-1xB" id="Gey-fB-kdP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="End Edit" id="EMZ-m7-8iy">
+                            <connections>
+                                <action selector="endEditAction:" destination="LEi-kF-1xB" id="8Cp-eI-5iQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="fHA-Hk-iTz"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="endEditButton" destination="EMZ-m7-8iy" id="wNx-Pj-on2"/>
+                        <outlet property="reloadButton" destination="hvc-77-R3Z" id="2cE-hS-wN7"/>
+                        <outlet property="startEditButton" destination="Omv-wd-3Qv" id="Qbe-Hi-ySC"/>
+                        <outlet property="tableView" destination="CS4-lE-0GS" id="kbr-1A-ki3"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6h-xx-eeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="523" y="0.0"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
