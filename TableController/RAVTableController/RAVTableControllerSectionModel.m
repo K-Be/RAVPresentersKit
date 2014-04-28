@@ -32,4 +32,28 @@
 }
 
 
+- (id)getModelAtIndex:(NSInteger)index
+{
+	id model = [self.models objectAtIndex:index];
+	return model;
+}
+
+
+- (void)removeModelAtIndex:(NSInteger)index
+{
+	[self.models removeObjectAtIndex:index];
+}
+
+
+- (void)insertModel:(id)model atIndex:(NSInteger)index
+{
+	[self.models insertObject:model atIndex:index];
+}
+
+
+- (void)exchangeModelAtIndex:(NSInteger)firstModelIndex withModelatIndex:(NSInteger)secondModelIndex
+{
+	[self.models exchangeObjectAtIndex:firstModelIndex withObjectAtIndex:secondModelIndex];
+}
+
 @end

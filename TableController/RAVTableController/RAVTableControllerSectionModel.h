@@ -14,4 +14,9 @@
 @property (nonatomic, strong) id footerViewModel;
 @property (nonatomic, strong, readonly) NSMutableArray* models;//some objects for draw
 
+- (id)getModelAtIndex:(NSInteger)index;
+- (void)removeModelAtIndex:(NSInteger)index;
+- (void)insertModel:(id)model atIndex:(NSInteger)index;
+- (void)exchangeModelAtIndex:(NSInteger)firstModelIndex withModelatIndex:(NSInteger)secondModelIndex;
+
 @end
