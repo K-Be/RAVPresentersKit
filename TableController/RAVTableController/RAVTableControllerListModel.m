@@ -55,4 +55,46 @@
 	return sectionModel;
 }
 
+
+- (NSIndexPath*)indexPathForCellModelPassingTest:(BOOL (^)(id obj, NSIndexPath* modelIndexPath, BOOL *userPredicateStop))predicate
+{
+	__block NSInteger modelIndexInSection = NSNotFound;
+	NSInteger sectionIndex = [self.sectionModels indexOfObjectPassingTest:^BOOL(id obj, NSUInteger sectionIdx, BOOL *sectionsStop) {
+		RAVTableControllerSectionModel* sectionModel = obj;
+		__block BOOL needsStop = NO;
+		
+		NSInteger neededModelIndex = [sectionModel.models indexOfObjectPassingTest:^BOOL(id obj, NSUInteger modelIdx, BOOL *stop) {
+			BOOL needsStopByUser = NO;
+			BOOL goodModel = predicate(obj, [NSIndexPath indexPathForRow:modelIdx inSection:sectionIdx], &needsStopByUser);
+			if (needsStopByUser)
+			{
+				needsStop = YES;
+				*stop = needsStop;
+			}
+			return goodModel;
+		}];
+		
+		if (needsStop)
+		{
+			*sectionsStop = YES;
+		}
+		
+		BOOL neededSection = NO;
+		if (neededModelIndex != NSNotFound)
+		{
+			neededSection = YES;
+			modelIndexInSection = neededModelIndex;
+		}
+		return neededSection;
+	}];
+	
+	NSIndexPath* indexPath = nil;
+	if (sectionIndex != NSNotFound && modelIndexInSection != NSNotFound)
+	{
+		indexPath = [NSIndexPath indexPathForRow:modelIndexInSection inSection:sectionIndex];
+	}
+	
+	return indexPath;
+}
+
 @end

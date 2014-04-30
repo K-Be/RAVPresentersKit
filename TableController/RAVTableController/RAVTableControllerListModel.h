@@ -20,4 +20,6 @@
 
 - (RAVTableControllerSectionModel*)sectionModelForSectionIndex:(NSInteger)index;
 
+- (NSIndexPath*)indexPathForCellModelPassingTest:(BOOL (^)(id obj, NSIndexPath* modelIndexPath, BOOL *stop))predicate;
+
 @end
