@@ -49,6 +49,13 @@
 }
 
 
+- (void)insertCellModel:(id)model toIndexPath:(NSIndexPath*)indexPath
+{
+	RAVTableControllerSectionModel* sourceSectionModel = [self sectionModelForSectionIndex:indexPath.section];
+	[sourceSectionModel insertModel:model atIndex:indexPath.row];
+}
+
+
 - (RAVTableControllerSectionModel*)sectionModelForSectionIndex:(NSInteger)index
 {
 	RAVTableControllerSectionModel* sectionModel = [self.sectionModels objectAtIndex:index];
