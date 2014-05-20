@@ -8,13 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "RAVTableControllerSectionModel.h"
+#import "RAVTableControllerListModelP.h"
 
 
-@interface RAVTableControllerListModel : NSObject
+@interface RAVTableControllerListModel : NSObject <RAVTableControllerListModelP>
 
 @property (nonatomic, strong, readonly) NSMutableArray* sectionModels; //list of RAVTableControllerSectionModel;
 
+- (NSInteger)countSections;
+- (id<RAVTableControllerSectionModelP>)getSectionModelForSection:(NSInteger)section;
+
 - (id)getModelForIndexPath:(NSIndexPath*)indexPath;
+
 - (void)moveModelAtIndexPath:(NSIndexPath*)indexPath toIndexPath:(NSIndexPath*)destinationIndexPath;
 - (id)removeModelAtIndexPath:(NSIndexPath*)indexPath;//return removed model
 - (void)insertCellModel:(id)model toIndexPath:(NSIndexPath*)indexPath;

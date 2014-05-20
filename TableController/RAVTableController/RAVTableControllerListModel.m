@@ -21,19 +21,31 @@
 }
 
 
+- (NSInteger)countSections
+{
+	return [self.sectionModels count];
+}
+
+
+- (id<RAVTableControllerSectionModelP>)getSectionModelForSection:(NSInteger)section
+{
+	return [self.sectionModels objectAtIndex:section];
+}
+
+
 - (id)getModelForIndexPath:(NSIndexPath*)indexPath
 {
 	RAVTableControllerSectionModel* sectionModel = [self sectionModelForSectionIndex:indexPath.section];
-	id model = [sectionModel getModelAtIndex:indexPath.row];
+	id model = [sectionModel modelForRow:indexPath.row];
 	return model;
 }
 
 
 - (void)moveModelAtIndexPath:(NSIndexPath*)indexPath toIndexPath:(NSIndexPath*)destinationIndexPath
 {
-	RAVTableControllerSectionModel* sourceSectionModel = [self sectionModelForSectionIndex:indexPath.section];
-	id model = [sourceSectionModel getModelAtIndex:indexPath.row];
-	[sourceSectionModel removeModelAtIndex:indexPath.row];
+	RAVTableControllerSectionModel* sectionModel = [self sectionModelForSectionIndex:indexPath.section];
+	id model = [sectionModel modelForRow:indexPath.row];
+	[sectionModel removeModelAtIndex:indexPath.row];
 		
 	RAVTableControllerSectionModel* destinationSectionModel = [self sectionModelForSectionIndex:destinationIndexPath.section];
 	[destinationSectionModel insertModel:model atIndex:destinationIndexPath.row];
@@ -43,7 +55,7 @@
 - (id)removeModelAtIndexPath:(NSIndexPath*)indexPath
 {
 	RAVTableControllerSectionModel* sectionModel = [self sectionModelForSectionIndex:indexPath.section];
-	id model = [sectionModel getModelAtIndex:indexPath.row];
+	id model = [sectionModel modelForRow:indexPath.row];
 	[sectionModel removeModelAtIndex:indexPath.row];
 	return model;
 }

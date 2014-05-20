@@ -62,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13415A64192B0EDE000DF7EC /* RAVTableControllerListModelP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelP.h; sourceTree = "<group>"; };
+		13415A65192B0F2E000DF7EC /* RAVTableControllerSectionModelP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelP.h; sourceTree = "<group>"; };
 		1383DE09190A5B8100FEBAC0 /* RAVPetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPetCell.h; sourceTree = "<group>"; };
 		1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPetCell.m; sourceTree = "<group>"; };
 		1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAVPetCell.xib; sourceTree = "<group>"; };
@@ -353,6 +355,8 @@
 			children = (
 				13B460CE19077C4E008E953C /* RAVTableController.h */,
 				13B460CF19077C4E008E953C /* RAVTableController.m */,
+				13415A64192B0EDE000DF7EC /* RAVTableControllerListModelP.h */,
+				13415A65192B0F2E000DF7EC /* RAVTableControllerSectionModelP.h */,
 				13B460EE1907B0F1008E953C /* RAVTableController_Subclassing.h */,
 				13B460E519078EB5008E953C /* RAVScrollViewDelegateP.h */,
 				13B460EA190795DD008E953C /* RAVEditDelegateP.h */,

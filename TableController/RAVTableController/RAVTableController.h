@@ -10,10 +10,10 @@
 #import "RAVCellPresenter.h"
 #import "RAVSectionHeaderViewPresenter.h"
 #import "RAVSectionFooterViewPresenter.h"
-#import "RAVTableControllerListModel.h"
 #import "RAVScrollViewDelegateP.h"
 #import "RAVEditDelegateP.h"
 #import "RAVSectionIndexesDelegateP.h"
+#import "RAVTableControllerListModelP.h"
 
 
 typedef RAVCellPresenter RavCellPresenterType;
@@ -24,7 +24,7 @@ typedef RAVSectionHeaderViewPresenter RAVSectionHeaderViewPresenterType;
 @interface RAVTableController : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView* tableView;
-@property (nonatomic, strong) RAVTableControllerListModel* model;
+@property (nonatomic, strong) id<RAVTableControllerListModelP> model;
 
 @property (nonatomic, weak) id<RAVScrollViewDelegateP> scrollViewDelegate;
 @property (nonatomic, weak) id<RAVEditDelegateP> editDelegate;

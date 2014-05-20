@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RAVTableControllerSectionModelP.h"
 
-@interface RAVTableControllerSectionModel : NSObject <NSCopying>
+
+@interface RAVTableControllerSectionModel : NSObject <NSCopying, RAVTableControllerSectionModelP>
 
 @property (nonatomic, strong) id headerViewModel;
 @property (nonatomic, strong) id footerViewModel;
 @property (nonatomic, strong, readonly) NSMutableArray* models;//some objects for draw
 
-- (id)getModelAtIndex:(NSInteger)index;
+- (NSInteger)numberObjects;
+- (id)modelForRow:(NSInteger)rowIndex;
+
 - (void)removeModelAtIndex:(NSInteger)index;
 - (void)insertModel:(id)model atIndex:(NSInteger)index;
 - (void)exchangeModelAtIndex:(NSInteger)firstModelIndex withModelatIndex:(NSInteger)secondModelIndex;

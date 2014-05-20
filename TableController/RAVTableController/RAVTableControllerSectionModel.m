@@ -32,9 +32,15 @@
 }
 
 
-- (id)getModelAtIndex:(NSInteger)index
+- (NSInteger)numberObjects
 {
-	id model = [self.models objectAtIndex:index];
+	return [self.models count];
+}
+
+
+- (id)modelForRow:(NSInteger)rowIndex;
+{
+	id model = [self.models objectAtIndex:rowIndex];
 	return model;
 }
 

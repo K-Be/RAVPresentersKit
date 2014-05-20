@@ -9,6 +9,7 @@
 #import "RAVTableController.h"
 #import "RAVTableController_Subclassing.h"
 #import <UIKit/UIGestureRecognizerSubclass.h>
+#import "RAVTableControllerListModel.h"
 
 
 typedef id RAVCellModel;
@@ -77,7 +78,7 @@ typedef id RAVSectionFooterViewModel;
 }
 
 
-- (void)setModel:(RAVTableControllerListModel *)model
+- (void)setModel:(id<RAVTableControllerListModelP>)model
 {
 	_model = model;
 	[self reloadData];
@@ -117,8 +118,8 @@ typedef id RAVSectionFooterViewModel;
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	RAVTableControllerSectionModel* sectionModel = [self.model sectionModelForSectionIndex:section];
-	NSInteger count = [sectionModel.models count];
+	id<RAVTableControllerSectionModelP> sectionModel = [self.model getSectionModelForSection:section];
+	NSInteger count = [sectionModel numberObjects];
 	return count;
 }
 
@@ -144,9 +145,9 @@ typedef id RAVSectionFooterViewModel;
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 	NSInteger count = 1;
-	if ([self.model.sectionModels count] > 0)
+	if ([self.model countSections] > 0)
 	{
-		count = [self.model.sectionModels count];
+		count = [self.model countSections];
 	}
 	
 	return count;
@@ -650,14 +651,14 @@ typedef id RAVSectionFooterViewModel;
 
 - (RAVSectionHeaderViewModel)rav_getHeaderSectionViewModelForSection:(NSInteger)section
 {
-	RAVTableControllerSectionModel* sectionModel = [self.model sectionModelForSectionIndex:section];
+	id<RAVTableControllerSectionModelP> sectionModel = [self.model getSectionModelForSection:section];
 	return sectionModel.headerViewModel;
 }
 
 
 - (RAVSectionFooterViewModel)rav_getFooterSectionViewModelForSection:(NSInteger)section
 {
-	RAVTableControllerSectionModel* sectionModel = [self.model sectionModelForSectionIndex:section];
+	id<RAVTableControllerSectionModelP> sectionModel = [self.model getSectionModelForSection:section];
 	return sectionModel.footerViewModel;
 }
 
