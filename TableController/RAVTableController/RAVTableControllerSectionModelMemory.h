@@ -1,5 +1,5 @@
 //
-//  RAVTableControllerSectionModel.h
+//  RAVTableControllerSectionModelMemory.h
 //  TableController
 //
 //  Created by Andrew Romanov on 23.04.14.
@@ -10,7 +10,7 @@
 #import "RAVTableControllerSectionModelP.h"
 
 
-@interface RAVTableControllerSectionModel : NSObject <NSCopying, RAVTableControllerSectionModelP>
+@interface RAVTableControllerSectionModelMemory : NSObject <NSCopying, RAVTableControllerSectionModelP>
 
 @property (nonatomic, strong) id headerViewModel;
 @property (nonatomic, strong) id footerViewModel;

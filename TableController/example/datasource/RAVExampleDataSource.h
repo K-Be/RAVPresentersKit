@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RAVTableControllerListModel.h"
+#import "RAVTableControllerListModelMemory.h"
 #import "RAVEditDelegateP.h"
 
 
@@ -17,7 +17,7 @@
 @property (nonatomic, weak) id<RAVExampleDataSourceDelegate> delegate;
 
 - (void)reloadModel;
-- (RAVTableControllerListModel*)getListModel;
+- (RAVTableControllerListModelMemory *)getListModel;
 
 @end
 

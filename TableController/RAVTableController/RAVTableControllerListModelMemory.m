@@ -1,14 +1,14 @@
 //
-//  RAVTableControllerListModel.m
+//  RAVTableControllerListModelMemory.m
 //  TableController
 //
 //  Created by Andrew Romanov on 23.04.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "RAVTableControllerListModel.h"
+#import "RAVTableControllerListModelMemory.h"
 
-@implementation RAVTableControllerListModel
+@implementation RAVTableControllerListModelMemory
 
 - (id)init
 {
@@ -29,13 +29,13 @@
 
 - (id<RAVTableControllerSectionModelP>)getSectionModelForSection:(NSInteger)section
 {
-	return [self.sectionModels objectAtIndex:section];
+	return [self.sectionModels objectAtIndex:(NSUInteger)section];
 }
 
 
 - (id)getModelForIndexPath:(NSIndexPath*)indexPath
 {
-	RAVTableControllerSectionModel* sectionModel = [self sectionModelForSectionIndex:indexPath.section];
+	RAVTableControllerSectionModelMemory * sectionModel = [self sectionModelForSectionIndex:indexPath.section];
 	id model = [sectionModel modelForRow:indexPath.row];
 	return model;
 }
@@ -43,18 +43,18 @@
 
 - (void)moveModelAtIndexPath:(NSIndexPath*)indexPath toIndexPath:(NSIndexPath*)destinationIndexPath
 {
-	RAVTableControllerSectionModel* sectionModel = [self sectionModelForSectionIndex:indexPath.section];
+	RAVTableControllerSectionModelMemory * sectionModel = [self sectionModelForSectionIndex:indexPath.section];
 	id model = [sectionModel modelForRow:indexPath.row];
 	[sectionModel removeModelAtIndex:indexPath.row];
 		
-	RAVTableControllerSectionModel* destinationSectionModel = [self sectionModelForSectionIndex:destinationIndexPath.section];
+	RAVTableControllerSectionModelMemory * destinationSectionModel = [self sectionModelForSectionIndex:destinationIndexPath.section];
 	[destinationSectionModel insertModel:model atIndex:destinationIndexPath.row];
 }
 
 
 - (id)removeModelAtIndexPath:(NSIndexPath*)indexPath
 {
-	RAVTableControllerSectionModel* sectionModel = [self sectionModelForSectionIndex:indexPath.section];
+	RAVTableControllerSectionModelMemory * sectionModel = [self sectionModelForSectionIndex:indexPath.section];
 	id model = [sectionModel modelForRow:indexPath.row];
 	[sectionModel removeModelAtIndex:indexPath.row];
 	return model;
@@ -63,14 +63,14 @@
 
 - (void)insertCellModel:(id)model toIndexPath:(NSIndexPath*)indexPath
 {
-	RAVTableControllerSectionModel* sourceSectionModel = [self sectionModelForSectionIndex:indexPath.section];
+	RAVTableControllerSectionModelMemory * sourceSectionModel = [self sectionModelForSectionIndex:indexPath.section];
 	[sourceSectionModel insertModel:model atIndex:indexPath.row];
 }
 
 
-- (RAVTableControllerSectionModel*)sectionModelForSectionIndex:(NSInteger)index
+- (RAVTableControllerSectionModelMemory *)sectionModelForSectionIndex:(NSInteger)index
 {
-	RAVTableControllerSectionModel* sectionModel = [self.sectionModels objectAtIndex:index];
+	RAVTableControllerSectionModelMemory * sectionModel = [self.sectionModels objectAtIndex:(NSUInteger)index];
 	return sectionModel;
 }
 
@@ -79,12 +79,12 @@
 {
 	__block NSInteger modelIndexInSection = NSNotFound;
 	NSInteger sectionIndex = [self.sectionModels indexOfObjectPassingTest:^BOOL(id obj, NSUInteger sectionIdx, BOOL *sectionsStop) {
-		RAVTableControllerSectionModel* sectionModel = obj;
+		RAVTableControllerSectionModelMemory * sectionModel = obj;
 		__block BOOL needsStop = NO;
 		
-		NSInteger neededModelIndex = [sectionModel.models indexOfObjectPassingTest:^BOOL(id obj, NSUInteger modelIdx, BOOL *stop) {
+		NSInteger neededModelIndex = [sectionModel.models indexOfObjectPassingTest:^BOOL(id cellModel, NSUInteger modelIdx, BOOL *stop) {
 			BOOL needsStopByUser = NO;
-			BOOL goodModel = predicate(obj, [NSIndexPath indexPathForRow:modelIdx inSection:sectionIdx], &needsStopByUser);
+			BOOL goodModel = predicate(cellModel, [NSIndexPath indexPathForRow:modelIdx inSection:sectionIdx], &needsStopByUser);
 			if (needsStopByUser)
 			{
 				needsStop = YES;

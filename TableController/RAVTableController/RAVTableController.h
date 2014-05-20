@@ -34,6 +34,6 @@ typedef RAVSectionHeaderViewPresenter RAVSectionHeaderViewPresenterType;
 
 - (void)registerCellPresenter:(RavCellPresenterType*)cellPresenter;
 - (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenter*)sectionHeaderPresenter;
-- (void)registerSectionFooterPreseter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter;
+- (void)registerSectionFooterPresenter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter;
 
 @end

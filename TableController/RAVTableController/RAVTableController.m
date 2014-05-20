@@ -8,8 +8,7 @@
 
 #import "RAVTableController.h"
 #import "RAVTableController_Subclassing.h"
-#import <UIKit/UIGestureRecognizerSubclass.h>
-#import "RAVTableControllerListModel.h"
+#import "RAVTableControllerListModelMemory.h"
 
 
 typedef id RAVCellModel;
@@ -59,7 +58,7 @@ typedef id RAVSectionFooterViewModel;
 		self.sectionHeadersPresenters = [[NSMutableArray alloc] init];
 		self.sectionFooterPresenters = [[NSMutableArray alloc] init];
 		
-		_model = [[RAVTableControllerListModel alloc] init];
+		_model = [[RAVTableControllerListModelMemory alloc] init];
 	}
 	
 	return self;
@@ -108,7 +107,7 @@ typedef id RAVSectionFooterViewModel;
 }
 
 
-- (void)registerSectionFooterPreseter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter
+- (void)registerSectionFooterPresenter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter
 {
 	[self.sectionFooterPresenters addObject:sectionFooterPresenter];
 	sectionFooterPresenter.tableView = self.tableView;
@@ -632,15 +631,15 @@ typedef id RAVSectionFooterViewModel;
 	
 	if (model)
 	{
-		NSInteger presenterIndex = [self.cellsPresenters indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-			id<RAVPresenterP> presenter = obj;
-			BOOL requiredObject = [presenter canPresent:model];
+		NSInteger presenterIndex = [presentersList indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
+			id<RAVPresenterP> presenterCandidate = obj;
+			BOOL requiredObject = [presenterCandidate canPresent:model];
 			return requiredObject;
 		}];
 		
 		if (presenterIndex != NSNotFound)
 		{
-			presenter = [self.cellsPresenters objectAtIndex:presenterIndex];
+			presenter = [self.cellsPresenters objectAtIndex:(NSUInteger)presenterIndex];
 		}
 		NSAssert(presenter != nil, @"can't find presenter for model: %@", model);
 	}

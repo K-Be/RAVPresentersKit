@@ -12,7 +12,7 @@
 
 @interface RAVExampleDataSource ()
 
-@property (nonatomic, strong) RAVTableControllerListModel* list;
+@property (nonatomic, strong) RAVTableControllerListModelMemory * list;
 @property (nonatomic, strong) RAVDataLoader* dataLoader;
 
 @end
@@ -20,8 +20,8 @@
 
 @interface RAVExampleDataSource (Private)
 
-- (RAVTableControllerSectionModel*)loadPersonSection;
-- (RAVTableControllerSectionModel*)loadPetsSection;
+- (RAVTableControllerSectionModelMemory *)loadPersonSection;
+- (RAVTableControllerSectionModelMemory *)loadPetsSection;
 
 @end
 
@@ -41,13 +41,13 @@
 
 - (void)reloadModel
 {
-	self.list = [[RAVTableControllerListModel alloc] init];
+	self.list = [[RAVTableControllerListModelMemory alloc] init];
 	[self.list.sectionModels addObject:[self loadPersonSection]];
 	[self.list.sectionModels addObject:[self loadPetsSection]];
 }
 
 
-- (RAVTableControllerListModel*)getListModel
+- (RAVTableControllerListModelMemory *)getListModel
 {
 	if (!_list)
 	{
@@ -93,19 +93,19 @@
 #pragma mark -
 @implementation RAVExampleDataSource (Private)
 
-- (RAVTableControllerSectionModel*)loadPersonSection
+- (RAVTableControllerSectionModelMemory *)loadPersonSection
 {
 	NSArray* persons = [self.dataLoader loadHumans];
-	RAVTableControllerSectionModel* sectionModel = [[RAVTableControllerSectionModel alloc] init];
+	RAVTableControllerSectionModelMemory * sectionModel = [[RAVTableControllerSectionModelMemory alloc] init];
 	[sectionModel.models addObjectsFromArray:persons];
 	return sectionModel;
 }
 
 
-- (RAVTableControllerSectionModel*)loadPetsSection
+- (RAVTableControllerSectionModelMemory *)loadPetsSection
 {
 	NSArray* pets = [self.dataLoader loadPets];
-	RAVTableControllerSectionModel* sectionModel = [[RAVTableControllerSectionModel alloc] init];
+	RAVTableControllerSectionModelMemory * sectionModel = [[RAVTableControllerSectionModelMemory alloc] init];
 	[sectionModel.models addObjectsFromArray:pets];
 	return sectionModel;
 }

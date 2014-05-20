@@ -1,5 +1,5 @@
 //
-//  RAVTableControllerListModel.h
+//  RAVTableControllerListModelMemory.h
 //  TableController
 //
 //  Created by Andrew Romanov on 23.04.14.
@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RAVTableControllerSectionModel.h"
+#import "RAVTableControllerSectionModelMemory.h"
 #import "RAVTableControllerListModelP.h"
 
 
-@interface RAVTableControllerListModel : NSObject <RAVTableControllerListModelP>
+@interface RAVTableControllerListModelMemory : NSObject <RAVTableControllerListModelP>
 
-@property (nonatomic, strong, readonly) NSMutableArray* sectionModels; //list of RAVTableControllerSectionModel;
+@property (nonatomic, strong, readonly) NSMutableArray* sectionModels; //list of RAVTableControllerSectionModelMemory;
 
 - (NSInteger)countSections;
 - (id<RAVTableControllerSectionModelP>)getSectionModelForSection:(NSInteger)section;
@@ -24,7 +24,7 @@
 - (id)removeModelAtIndexPath:(NSIndexPath*)indexPath;//return removed model
 - (void)insertCellModel:(id)model toIndexPath:(NSIndexPath*)indexPath;
 
-- (RAVTableControllerSectionModel*)sectionModelForSectionIndex:(NSInteger)index;
+- (RAVTableControllerSectionModelMemory *)sectionModelForSectionIndex:(NSInteger)index;
 
 - (NSIndexPath*)indexPathForCellModelPassingTest:(BOOL (^)(id obj, NSIndexPath* modelIndexPath, BOOL *stop))predicate;
 

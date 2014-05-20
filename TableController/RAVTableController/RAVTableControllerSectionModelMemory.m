@@ -1,14 +1,14 @@
 //
-//  RAVTableControllerSectionModel.m
+//  RAVTableControllerSectionModelMemory.m
 //  TableController
 //
 //  Created by Andrew Romanov on 23.04.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "RAVTableControllerSectionModel.h"
+#import "RAVTableControllerSectionModelMemory.h"
 
-@implementation RAVTableControllerSectionModel
+@implementation RAVTableControllerSectionModelMemory
 
 - (id)init
 {
@@ -40,26 +40,26 @@
 
 - (id)modelForRow:(NSInteger)rowIndex;
 {
-	id model = [self.models objectAtIndex:rowIndex];
+	id model = [self.models objectAtIndex:(NSUInteger)rowIndex];
 	return model;
 }
 
 
 - (void)removeModelAtIndex:(NSInteger)index
 {
-	[self.models removeObjectAtIndex:index];
+	[self.models removeObjectAtIndex:(NSUInteger)index];
 }
 
 
 - (void)insertModel:(id)model atIndex:(NSInteger)index
 {
-	[self.models insertObject:model atIndex:index];
+	[self.models insertObject:model atIndex:(NSUInteger)index];
 }
 
 
 - (void)exchangeModelAtIndex:(NSInteger)firstModelIndex withModelatIndex:(NSInteger)secondModelIndex
 {
-	[self.models exchangeObjectAtIndex:firstModelIndex withObjectAtIndex:secondModelIndex];
+	[self.models exchangeObjectAtIndex:(NSUInteger)firstModelIndex withObjectAtIndex:(NSUInteger)secondModelIndex];
 }
 
 @end
