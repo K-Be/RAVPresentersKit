@@ -639,7 +639,7 @@ typedef id RAVSectionFooterViewModel;
 		
 		if (presenterIndex != NSNotFound)
 		{
-			presenter = [self.cellsPresenters objectAtIndex:(NSUInteger)presenterIndex];
+			presenter = [presentersList objectAtIndex:(NSUInteger)presenterIndex];
 		}
 		NSAssert(presenter != nil, @"can't find presenter for model: %@", model);
 	}
