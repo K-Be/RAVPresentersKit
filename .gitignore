@@ -1,2 +1,10 @@
 
 *.xcsettings
+
+.idea/.name
+
+.idea/workspace.xml
+
+TableController.xcodeproj/project.xcworkspace/xcshareddata/TableController.xccheckout
+
+TableController.xcodeproj/xcuserdata/andrewromanov.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
