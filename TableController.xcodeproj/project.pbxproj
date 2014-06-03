@@ -71,6 +71,7 @@
 		1383DE0F190A5C7500FEBAC0 /* RAVPetPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPetPresenter.m; sourceTree = "<group>"; };
 		1383DE11190A5D9F00FEBAC0 /* RAVExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVExampleDataSource.h; sourceTree = "<group>"; };
 		1383DE12190A5D9F00FEBAC0 /* RAVExampleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVExampleDataSource.m; sourceTree = "<group>"; };
+		13893B96193DD9B1008DB3A1 /* RAVSectionModelPresenterP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionModelPresenterP.h; sourceTree = "<group>"; };
 		138F70EF1909155600F3338D /* EasyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyMapping.h; sourceTree = "<group>"; };
 		138F70F01909155600F3338D /* EKFieldMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKFieldMapping.h; sourceTree = "<group>"; };
 		138F70F11909155600F3338D /* EKFieldMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKFieldMapping.m; sourceTree = "<group>"; };
@@ -143,7 +144,6 @@
 		13B460EB1907A3BC008E953C /* RAVSectionIndexesDelegateP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionIndexesDelegateP.h; sourceTree = "<group>"; };
 		13B460EE1907B0F1008E953C /* RAVTableController_Subclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableController_Subclassing.h; sourceTree = "<group>"; };
 		13B460F11907BC29008E953C /* RAVCellActionsDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVCellActionsDelegateP.h; sourceTree = "<group>"; };
-		13B460F21907C6B5008E953C /* RAVSectionViewDelegateP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVSectionViewDelegateP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +353,7 @@
 		13B460CD19077C22008E953C /* RAVTableController */ = {
 			isa = PBXGroup;
 			children = (
+				13893B96193DD9B1008DB3A1 /* RAVSectionModelPresenterP.h */,
 				13B460CE19077C4E008E953C /* RAVTableController.h */,
 				13B460CF19077C4E008E953C /* RAVTableController.m */,
 				13415A64192B0EDE000DF7EC /* RAVTableControllerListModelP.h */,
@@ -363,7 +364,6 @@
 				13B460EB1907A3BC008E953C /* RAVSectionIndexesDelegateP.h */,
 				13B460DE19077D32008E953C /* RAVPresenterP.h */,
 				13B460F11907BC29008E953C /* RAVCellActionsDelegateP.h */,
-				13B460F21907C6B5008E953C /* RAVSectionViewDelegateP.h */,
 				13B460D419077C79008E953C /* RAVCellPresenter.h */,
 				13B460D519077C79008E953C /* RAVCellPresenter.m */,
 				13B460D719077C91008E953C /* RAVSectionHeaderViewPresenter.h */,

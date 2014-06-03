@@ -10,7 +10,7 @@
 
 
 @class RAVTableController;
-@protocol RAVSectionViewDelegateP <NSObject>
+@protocol RAVSectionModelPresenterP <NSObject>
 
 @optional
 - (CGFloat)ravTableController:(RAVTableController*)sender sectionViewHeightForModel:(id)sectionViewModel;

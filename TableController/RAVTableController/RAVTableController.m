@@ -93,7 +93,7 @@ typedef id RAVSectionFooterViewModel;
 }
 
 
-- (void)registerCellPresenter:(RAVCellPresenter*)cellPresenter
+- (void)registerCellPresenter:(RavCellPresenterType*)cellPresenter
 {
 	[self.cellsPresenters addObject:cellPresenter];
 	cellPresenter.tableView = self.tableView;
@@ -129,7 +129,7 @@ typedef id RAVSectionFooterViewModel;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	RAVCellModel dataModel = [self rav_getCellModelForIndexPath:indexPath];
-	RAVCellPresenter* cellPresenter = [self rav_cellPresenterForDataModel:dataModel];
+	RavCellPresenterType* cellPresenter = [self rav_cellPresenterForDataModel:dataModel];
 	UITableViewCell* cell = [cellPresenter cellForModel:dataModel];
 	if (!cell)
 	{
@@ -263,7 +263,7 @@ typedef id RAVSectionFooterViewModel;
 {
 	CGFloat height = self.tableView.sectionHeaderHeight;
 	RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
-	RAVSectionHeaderViewPresenter* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
+	RAVSectionHeaderViewPresenterType* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
 	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
 	{
 		height = [presenter ravTableController:self sectionViewHeightForModel:model];
@@ -277,7 +277,7 @@ typedef id RAVSectionFooterViewModel;
 {
 	CGFloat height = self.tableView.sectionFooterHeight;
 	RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
-	RAVSectionFooterViewPresenter* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
+	RAVSectionFooterViewPresenterType* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
 	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
 	{
 		height = [presenter ravTableController:self sectionViewHeightForModel:model];
@@ -310,7 +310,7 @@ typedef id RAVSectionFooterViewModel;
 {
 	RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
 	UIView* view = nil;
-	RAVSectionFooterViewPresenter* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
+	RAVSectionFooterViewPresenterType* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
 	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
 	{
 		view = [presenter ravTableController:self sectionViewForModel:model];
@@ -340,7 +340,7 @@ typedef id RAVSectionFooterViewModel;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
-	RAVCellPresenter* presenter = [self rav_cellPresenterForDataModel:model];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:model];
 	if ([presenter respondsToSelector:@selector(ravTableController:didSelectModel:needsDeselect:animated:)])
 	{
 		BOOL shouldDeselect = NO;

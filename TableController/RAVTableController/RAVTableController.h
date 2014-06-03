@@ -17,8 +17,8 @@
 
 
 typedef RAVCellPresenter RavCellPresenterType;
-typedef RAVSectionFooterViewPresenter RAVSectionFooterViewPresenterType;
-typedef RAVSectionHeaderViewPresenter RAVSectionHeaderViewPresenterType;
+typedef NSObject<RAVPresenterP, RAVSectionModelPresenterP> RAVSectionFooterViewPresenterType;
+typedef NSObject<RAVPresenterP, RAVSectionModelPresenterP> RAVSectionHeaderViewPresenterType;
 
 
 @interface RAVTableController : NSObject <UITableViewDelegate, UITableViewDataSource>
@@ -33,7 +33,7 @@ typedef RAVSectionHeaderViewPresenter RAVSectionHeaderViewPresenterType;
 - (void)reloadData;
 
 - (void)registerCellPresenter:(RavCellPresenterType*)cellPresenter;
-- (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenter*)sectionHeaderPresenter;
+- (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenterType*)sectionHeaderPresenter;
 - (void)registerSectionFooterPresenter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter;
 
 @end
