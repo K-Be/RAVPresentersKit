@@ -61,6 +61,36 @@
 }
 
 
+- (void)removeModelsAtIndexPaths:(NSArray*)indexPaths
+{
+	if ([indexPaths count] > 1)
+	{
+		NSArray* sortedIndexes = [indexPaths sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+			NSComparisonResult nativeResult = [(NSIndexPath*)obj1 compare:obj2];
+			NSComparisonResult result = nativeResult;
+			if (nativeResult == NSOrderedAscending)
+			{
+				result = NSOrderedDescending;
+			}
+			else if (nativeResult == NSOrderedDescending)
+			{
+				result = NSOrderedAscending;
+			}
+			
+			return result;
+		}];
+		
+		[sortedIndexes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+			[self removeModelsAtIndexPaths:obj];
+		}];
+	}
+	else if ([indexPaths count] == 1)
+	{
+		[self removeModelAtIndexPath:[indexPaths firstObject]];
+	}
+}
+
+
 - (void)insertCellModel:(id)model toIndexPath:(NSIndexPath*)indexPath
 {
 	RAVTableControllerSectionModelMemory * sourceSectionModel = [self sectionModelForSectionIndex:indexPath.section];

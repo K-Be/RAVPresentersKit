@@ -22,6 +22,7 @@
 
 - (void)moveModelAtIndexPath:(NSIndexPath*)indexPath toIndexPath:(NSIndexPath*)destinationIndexPath;
 - (id)removeModelAtIndexPath:(NSIndexPath*)indexPath;//return removed model
+- (void)removeModelsAtIndexPaths:(NSArray*)indexPaths;
 - (void)insertCellModel:(id)model toIndexPath:(NSIndexPath*)indexPath;
 
 - (RAVTableControllerSectionModelMemory *)sectionModelForSectionIndex:(NSInteger)index;

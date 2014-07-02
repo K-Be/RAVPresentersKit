@@ -275,6 +275,13 @@
 			path = pet;
 			sourceTree = "<group>";
 		};
+		13A697821963BACF00407D57 /* support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
 		13B4608C19077B60008E953C = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +342,7 @@
 		13B460BD19077B60008E953C /* TableControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				13A697821963BACF00407D57 /* support */,
 				13B460C319077B60008E953C /* TableControllerTests.m */,
 				13B460BE19077B60008E953C /* Supporting Files */,
 			);

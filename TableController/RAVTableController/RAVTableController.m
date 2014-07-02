@@ -117,8 +117,16 @@ typedef id RAVSectionFooterViewModel;
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	id<RAVTableControllerSectionModelP> sectionModel = [self.model getSectionModelForSection:section];
-	NSInteger count = [sectionModel numberObjects];
+	NSInteger count = 0;
+	if ([self.model countSections] > 0)
+	{
+		id<RAVTableControllerSectionModelP> sectionModel = [self.model getSectionModelForSection:section];
+		count = [sectionModel numberObjects];
+	}
+	else
+	{
+		count = 0;
+	}
 	return count;
 }
 
@@ -262,11 +270,14 @@ typedef id RAVSectionFooterViewModel;
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
 	CGFloat height = self.tableView.sectionHeaderHeight;
-	RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
-	RAVSectionHeaderViewPresenterType* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
-	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
+	if ([self.model countSections] > 0)
 	{
-		height = [presenter ravTableController:self sectionViewHeightForModel:model];
+		RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
+		RAVSectionHeaderViewPresenterType* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
+		if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
+		{
+			height = [presenter ravTableController:self sectionViewHeightForModel:model];
+		}
 	}
 	
 	return height;
@@ -276,11 +287,14 @@ typedef id RAVSectionFooterViewModel;
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
 	CGFloat height = self.tableView.sectionFooterHeight;
-	RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
-	RAVSectionFooterViewPresenterType* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
-	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
+	if ([self.model countSections] > 0)
 	{
-		height = [presenter ravTableController:self sectionViewHeightForModel:model];
+		RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
+		RAVSectionFooterViewPresenterType* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
+		if ([presenter respondsToSelector:@selector(ravTableController:sectionViewHeightForModel:)])
+		{
+			height = [presenter ravTableController:self sectionViewHeightForModel:model];
+		}
 	}
 	
 	return height;
@@ -290,12 +304,20 @@ typedef id RAVSectionFooterViewModel;
 // Section header & footer information. Views are preferred over title should you decide to provide both
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-	RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
 	UIView* view = nil;
-	RAVSectionHeaderViewPresenterType* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
-	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
+	
+	if ([self.model countSections] > 0)
 	{
-		view = [presenter ravTableController:self sectionViewForModel:model];
+		RAVSectionHeaderViewModel model = [self rav_getHeaderSectionViewModelForSection:section];
+		RAVSectionHeaderViewPresenterType* presenter = [self rav_sectionHeaderPresenterForSectionDataModel:model];
+		if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
+		{
+			view = [presenter ravTableController:self sectionViewForModel:model];
+		}
+	}
+	else
+	{
+		
 	}
 	if (!view)
 	{
@@ -308,12 +330,19 @@ typedef id RAVSectionFooterViewModel;
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-	RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
 	UIView* view = nil;
-	RAVSectionFooterViewPresenterType* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
-	if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
+	
+	if ([self.model countSections] > 0)
 	{
-		view = [presenter ravTableController:self sectionViewForModel:model];
+		RAVSectionFooterViewModel model = [self rav_getFooterSectionViewModelForSection:section];
+		RAVSectionFooterViewPresenterType* presenter = [self rav_sectionFooterPresenterForSectionDataModel:model];
+		if ([presenter respondsToSelector:@selector(ravTableController:sectionViewForModel:)])
+		{
+			view = [presenter ravTableController:self sectionViewForModel:model];
+		}
+	}
+	else
+	{
 	}
 	if (!view)
 	{
