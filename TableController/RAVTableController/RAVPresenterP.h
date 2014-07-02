@@ -10,8 +10,6 @@
 
 @protocol RAVPresenterP <NSObject>
 
-@property (nonatomic, weak) UITableView* tableView;
-
 - (BOOL)canPresent:(id)model;
 
 @end

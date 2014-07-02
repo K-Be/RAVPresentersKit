@@ -13,6 +13,7 @@
 
 @interface RAVCellPresenter : NSObject <RAVPresenterP, RAVCellActionsDelegateP>
 
+@property (nonatomic, weak) UITableView* tableView;
 
 @end
 

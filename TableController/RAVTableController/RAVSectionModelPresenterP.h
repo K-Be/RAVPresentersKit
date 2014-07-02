@@ -12,6 +12,8 @@
 @class RAVTableController;
 @protocol RAVSectionModelPresenterP <NSObject>
 
+@property (nonatomic, weak) UITableView* tableView;
+
 @optional
 - (CGFloat)ravTableController:(RAVTableController*)sender sectionViewHeightForModel:(id)sectionViewModel;
 - (UIView*)ravTableController:(RAVTableController*)sender sectionViewForModel:(id)sectionViewModel;

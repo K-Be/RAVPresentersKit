@@ -13,6 +13,6 @@
 
 @interface RAVSectionFooterViewPresenter : NSObject <RAVPresenterP, RAVSectionModelPresenterP>
 
-
+@property (nonatomic, weak) UITableView* tableView;
 
 @end
