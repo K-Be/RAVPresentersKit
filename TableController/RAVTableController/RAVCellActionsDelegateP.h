@@ -10,7 +10,7 @@
 
 
 @class RAVTableController;
-@protocol RAVCellActionsDelegateP <NSObject, UITableViewDelegate>
+@protocol RAVCellActionsDelegateP <NSObject>
 @required
 
 - (CGFloat)ravTableController:(RAVTableController*)sender rowHeightForModel:(id)model;
