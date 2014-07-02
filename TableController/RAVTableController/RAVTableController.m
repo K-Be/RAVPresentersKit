@@ -9,6 +9,7 @@
 #import "RAVTableController.h"
 #import "RAVTableController_Subclassing.h"
 #import "RAVTableControllerListModelMemory.h"
+#import "RAVPresentersStore.h"
 
 
 typedef id RAVCellModel;
@@ -18,9 +19,9 @@ typedef id RAVSectionFooterViewModel;
 
 @interface RAVTableController ()
 
-@property (nonatomic, strong) NSMutableArray* cellsPresenters;
-@property (nonatomic, strong) NSMutableArray* sectionHeadersPresenters;
-@property (nonatomic, strong) NSMutableArray* sectionFooterPresenters;
+@property (nonatomic, strong) RAVPresentersStore* cellsPresenters;
+@property (nonatomic, strong) RAVPresentersStore* sectionHeadersPresenters;
+@property (nonatomic, strong) RAVPresentersStore* sectionFooterPresenters;
 
 @end
 
@@ -36,7 +37,7 @@ typedef id RAVSectionFooterViewModel;
 
 @interface RAVTableController (rav_private)
 
-- (id<RAVPresenterP>)rav_findPresenterForModel:(id)model inList:(NSArray*)presentersList;
+- (id<RAVPresenterP>)rav_findPresenterForModel:(id)model inStore:(RAVPresentersStore*)presentersStore;
 - (RAVSectionHeaderViewModel)rav_getHeaderSectionViewModelForSection:(NSInteger)section;
 - (RAVSectionFooterViewModel)rav_getFooterSectionViewModelForSection:(NSInteger)section;
 - (RAVCellModel)rav_getCellModelForIndexPath:(NSIndexPath*)indexPath;
@@ -54,9 +55,9 @@ typedef id RAVSectionFooterViewModel;
 {
 	if (self = [super init])
 	{
-		self.cellsPresenters = [[NSMutableArray alloc] init];
-		self.sectionHeadersPresenters = [[NSMutableArray alloc] init];
-		self.sectionFooterPresenters = [[NSMutableArray alloc] init];
+		self.cellsPresenters = [[RAVPresentersStore alloc] init];
+		self.sectionHeadersPresenters = [[RAVPresentersStore alloc] init];
+		self.sectionFooterPresenters = [[RAVPresentersStore alloc] init];
 		
 		_model = [[RAVTableControllerListModelMemory alloc] init];
 	}
@@ -95,21 +96,21 @@ typedef id RAVSectionFooterViewModel;
 
 - (void)registerCellPresenter:(RavCellPresenterType*)cellPresenter
 {
-	[self.cellsPresenters addObject:cellPresenter];
+	[self.cellsPresenters registerPresenter:cellPresenter];
 	cellPresenter.tableView = self.tableView;
 }
 
 
 - (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenterType*)sectionHeaderPresenter
 {
-	[self.sectionHeadersPresenters addObject:sectionHeaderPresenter];
+	[self.sectionHeadersPresenters registerPresenter:sectionHeaderPresenter];
 	sectionHeaderPresenter.tableView = self.tableView;
 }
 
 
 - (void)registerSectionFooterPresenter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter
 {
-	[self.sectionFooterPresenters addObject:sectionFooterPresenter];
+	[self.sectionFooterPresenters registerPresenter:sectionFooterPresenter];
 	sectionFooterPresenter.tableView = self.tableView;
 }
 
@@ -630,21 +631,21 @@ typedef id RAVSectionFooterViewModel;
 
 - (RavCellPresenterType*)rav_cellPresenterForDataModel:(RAVCellModel)dataModel
 {
-	RavCellPresenterType* presenter = (RavCellPresenterType*)[self rav_findPresenterForModel:dataModel inList:self.cellsPresenters];
+	RavCellPresenterType* presenter = (RavCellPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.cellsPresenters];
 	return presenter;
 }
 
 
 - (RAVSectionFooterViewPresenterType*)rav_sectionFooterPresenterForSectionDataModel:(RAVSectionFooterViewModel)dataModel
 {
-	RAVSectionFooterViewPresenterType* presenter = (RAVSectionFooterViewPresenterType*)[self rav_findPresenterForModel:dataModel inList:self.sectionFooterPresenters];
+	RAVSectionFooterViewPresenterType* presenter = (RAVSectionFooterViewPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.sectionFooterPresenters];
 	return presenter;
 }
 
 
 - (RAVSectionHeaderViewPresenterType*)rav_sectionHeaderPresenterForSectionDataModel:(RAVSectionHeaderViewModel)dataModel
 {
-	RAVSectionHeaderViewPresenterType* presenter = (RAVSectionHeaderViewPresenterType*)[self rav_findPresenterForModel:dataModel inList:self.sectionHeadersPresenters];
+	RAVSectionHeaderViewPresenterType* presenter = (RAVSectionHeaderViewPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.sectionHeadersPresenters];
 	return presenter;
 }
 
@@ -654,25 +655,9 @@ typedef id RAVSectionFooterViewModel;
 #pragma mark -
 @implementation RAVTableController (rav_private)
 
-- (id<RAVPresenterP>)rav_findPresenterForModel:(id)model inList:(NSArray*)presentersList
+- (id<RAVPresenterP>)rav_findPresenterForModel:(id)model inStore:(RAVPresentersStore*)presentersStore
 {
-	id<RAVPresenterP> presenter = nil;
-	
-	if (model)
-	{
-		NSInteger presenterIndex = [presentersList indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-			id<RAVPresenterP> presenterCandidate = obj;
-			BOOL requiredObject = [presenterCandidate canPresent:model];
-			return requiredObject;
-		}];
-		
-		if (presenterIndex != NSNotFound)
-		{
-			presenter = [presentersList objectAtIndex:(NSUInteger)presenterIndex];
-		}
-		NSAssert(presenter != nil, @"can't find presenter for model: %@", model);
-	}
-	
+	id<RAVPresenterP> presenter = [presentersStore presenterForModel:model];
 	return presenter;
 }
 
