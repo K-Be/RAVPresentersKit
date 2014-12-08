@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134419C91A35CCF700706E35 /* RAVTableController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 134419C81A35CCF700706E35 /* RAVTableController.podspec */; };
 		1383DE0B190A5B8100FEBAC0 /* RAVPetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */; };
 		1383DE0D190A5BBD00FEBAC0 /* RAVPetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */; };
 		1383DE10190A5C7500FEBAC0 /* RAVPetPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE0F190A5C7500FEBAC0 /* RAVPetPresenter.m */; };
@@ -82,6 +83,7 @@
 /* Begin PBXFileReference section */
 		13415A64192B0EDE000DF7EC /* RAVTableControllerListModelP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelP.h; sourceTree = "<group>"; };
 		13415A65192B0F2E000DF7EC /* RAVTableControllerSectionModelP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelP.h; sourceTree = "<group>"; };
+		134419C81A35CCF700706E35 /* RAVTableController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RAVTableController.podspec; sourceTree = "<group>"; };
 		137E931E19B87505006A8965 /* libRavTableController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRavTableController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E932819B87505006A8965 /* RavTableControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavTableControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E932B19B87505006A8965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 		13B4608C19077B60008E953C = {
 			isa = PBXGroup;
 			children = (
+				134419C81A35CCF700706E35 /* RAVTableController.podspec */,
 				13B4609E19077B60008E953C /* TableController */,
 				13B460BD19077B60008E953C /* TableControllerTests */,
 				137E931F19B87505006A8965 /* RavTableController */,
@@ -599,6 +602,7 @@
 				13B460B119077B60008E953C /* Images.xcassets in Resources */,
 				138F7108190915C300F3338D /* Persons.plist in Resources */,
 				13B460A319077B60008E953C /* InfoPlist.strings in Resources */,
+				134419C91A35CCF700706E35 /* RAVTableController.podspec in Resources */,
 				138F710A1909167600F3338D /* Pets.plist in Resources */,
 				138F711F19091E2500F3338D /* RAVPersonCell.xib in Resources */,
 				1383DE0D190A5BBD00FEBAC0 /* RAVPetCell.xib in Resources */,
@@ -931,6 +935,7 @@
 				137E932D19B87505006A8965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		137E933119B87505006A8965 /* Build configuration list for PBXNativeTarget "RavTableControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -939,6 +944,7 @@
 				137E932F19B87505006A8965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13B4609019077B60008E953C /* Build configuration list for PBXProject "TableController" */ = {
 			isa = XCConfigurationList;
