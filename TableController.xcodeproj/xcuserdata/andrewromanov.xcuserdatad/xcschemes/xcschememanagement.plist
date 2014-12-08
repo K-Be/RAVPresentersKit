@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>RavTableController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RavTableControllerTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>TableController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>137E931D19B87505006A8965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>137E932719B87505006A8965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>13B4609419077B60008E953C</key>
 		<dict>
 			<key>primary</key>

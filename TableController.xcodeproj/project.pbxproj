@@ -67,9 +67,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		137E931C19B87505006A8965 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13415A64192B0EDE000DF7EC /* RAVTableControllerListModelP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelP.h; sourceTree = "<group>"; };
 		13415A65192B0F2E000DF7EC /* RAVTableControllerSectionModelP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelP.h; sourceTree = "<group>"; };
+		137E931E19B87505006A8965 /* libRavTableController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRavTableController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		137E932819B87505006A8965 /* RavTableControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavTableControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		137E932B19B87505006A8965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1383DE09190A5B8100FEBAC0 /* RAVPetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPetCell.h; sourceTree = "<group>"; };
 		1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPetCell.m; sourceTree = "<group>"; };
 		1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RAVPetCell.xib; sourceTree = "<group>"; };
@@ -164,6 +179,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		137E931B19B87505006A8965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137E932519B87505006A8965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B4609219077B60008E953C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +216,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		137E931F19B87505006A8965 /* RavTableController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RavTableController;
+			sourceTree = "<group>";
+		};
+		137E932919B87505006A8965 /* RavTableControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				137E932A19B87505006A8965 /* Supporting Files */,
+			);
+			path = RavTableControllerTests;
+			sourceTree = "<group>";
+		};
+		137E932A19B87505006A8965 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				137E932B19B87505006A8965 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		138F70EC190914A100F3338D /* example */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +364,8 @@
 			children = (
 				13B4609E19077B60008E953C /* TableController */,
 				13B460BD19077B60008E953C /* TableControllerTests */,
+				137E931F19B87505006A8965 /* RavTableController */,
+				137E932919B87505006A8965 /* RavTableControllerTests */,
 				13B4609719077B60008E953C /* Frameworks */,
 				13B4609619077B60008E953C /* Products */,
 			);
@@ -322,6 +376,8 @@
 			children = (
 				13B4609519077B60008E953C /* TableController.app */,
 				13B460B619077B60008E953C /* TableControllerTests.xctest */,
+				137E931E19B87505006A8965 /* libRavTableController.a */,
+				137E932819B87505006A8965 /* RavTableControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +473,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		137E931D19B87505006A8965 /* RavTableController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137E933019B87505006A8965 /* Build configuration list for PBXNativeTarget "RavTableController" */;
+			buildPhases = (
+				137E931A19B87505006A8965 /* Sources */,
+				137E931B19B87505006A8965 /* Frameworks */,
+				137E931C19B87505006A8965 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RavTableController;
+			productName = RavTableController;
+			productReference = 137E931E19B87505006A8965 /* libRavTableController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		137E932719B87505006A8965 /* RavTableControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137E933119B87505006A8965 /* Build configuration list for PBXNativeTarget "RavTableControllerTests" */;
+			buildPhases = (
+				137E932419B87505006A8965 /* Sources */,
+				137E932519B87505006A8965 /* Frameworks */,
+				137E932619B87505006A8965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RavTableControllerTests;
+			productName = RavTableControllerTests;
+			productReference = 137E932819B87505006A8965 /* RavTableControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		13B4609419077B60008E953C /* TableController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B460C719077B60008E953C /* Build configuration list for PBXNativeTarget "TableController" */;
@@ -462,6 +552,12 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Andrew Romanov";
 				TargetAttributes = {
+					137E931D19B87505006A8965 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					137E932719B87505006A8965 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					13B460B519077B60008E953C = {
 						TestTargetID = 13B4609419077B60008E953C;
 					};
@@ -482,11 +578,20 @@
 			targets = (
 				13B4609419077B60008E953C /* TableController */,
 				13B460B519077B60008E953C /* TableControllerTests */,
+				137E931D19B87505006A8965 /* RavTableController */,
+				137E932719B87505006A8965 /* RavTableControllerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		137E932619B87505006A8965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B4609319077B60008E953C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +617,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		137E931A19B87505006A8965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137E932419B87505006A8965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B4609119077B60008E953C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,6 +717,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		137E932C19B87505006A8965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		137E932D19B87505006A8965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		137E932E19B87505006A8965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RavTableControllerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		137E932F19B87505006A8965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RavTableControllerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		13B460C519077B60008E953C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,6 +924,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		137E933019B87505006A8965 /* Build configuration list for PBXNativeTarget "RavTableController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137E932C19B87505006A8965 /* Debug */,
+				137E932D19B87505006A8965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		137E933119B87505006A8965 /* Build configuration list for PBXNativeTarget "RavTableControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137E932E19B87505006A8965 /* Debug */,
+				137E932F19B87505006A8965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		13B4609019077B60008E953C /* Build configuration list for PBXProject "TableController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
