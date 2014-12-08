@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RAVTableController"
-  s.version      = "0.3"
+  s.version      = "0.3.1"
   s.summary      = "The easiest way to build table view with models"
   s.homepage     = "https://bitbucket.org/k_be/ravtablecontroller"
 
