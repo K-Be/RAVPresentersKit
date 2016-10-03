@@ -7,11 +7,12 @@
 //
 
 #import "RAVPresentersStore.h"
+#import "NSArray+RAVSupport.h"
 
 
 @interface RAVPresentersStore ()
 
-@property (nonatomic, strong) NSMutableArray* rav_presenters;
+@property (nonatomic, strong) NSMutableArray<id<RAVPresenterP>>* rav_presenters;
 
 @end
 
@@ -41,16 +42,10 @@
 	
 	if (model)
 	{
-		NSInteger presenterIndex = [self.rav_presenters indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop) {
-			id<RAVPresenterP> presenterCandidate = obj;
+		presenter = [self.rav_presenters rav_findObjectPassingTest:^BOOL(id<RAVPresenterP> presenterCandidate, NSUInteger idx, BOOL *stop) {
 			BOOL requiredObject = [presenterCandidate canPresent:model];
 			return requiredObject;
 		}];
-		
-		if (presenterIndex != NSNotFound)
-		{
-			presenter = [self.rav_presenters objectAtIndex:(NSUInteger)presenterIndex];
-		}
 		NSAssert(presenter != nil, @"can't find presenter for model: %@", model);
 	}
 	
