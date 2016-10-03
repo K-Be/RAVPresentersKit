@@ -1,5 +1,5 @@
 //
-//  FACollectionViewFlowHorizontalLayout.h
+//  RAVCollectionViewFlowHorizontalLayout.h
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 29.10.14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FACollectionViewFlowHorizontalLayout : UICollectionViewFlowLayout
+@interface RAVCollectionViewFlowHorizontalLayout : UICollectionViewFlowLayout
 
 @end

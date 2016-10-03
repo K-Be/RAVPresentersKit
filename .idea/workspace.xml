@@ -2,55 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26e89fef-980c-40e1-b4ca-61c98a5b8471" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/CollectionViewPresenters/FACollectionViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/CollectionViewPresenters/FACollectionViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/CollectionViewPresenters/FACollectionViewPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/CollectionViewPresenters/FACollectionViewPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/FACollectionViewFlowHorizontalLayout.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/FACollectionViewFlowHorizontalLayout.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/FAHorCollectionView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/FAHorCollectionView.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/FAHorizontalView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/FAHorizontalView.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/controller/FAHorizontalViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/controller/FAHorizontalViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/controller/FAHorizontalViewPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/HorizontalViewPresenters/controller/FAHorizontalViewPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVPresentersKit.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/singleModelPresenter/RAVSectionHeaderFooterViewPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/singleModelPresenter/RAVSectionHeaderFooterViewPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/singleModelPresenter/RAVSingleModelCellPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/singleModelPresenter/RAVSingleModelCellPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/singleModelPresenter/RAVSingleModelHeaderFooterViewPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/singleModelPresenter/RAVSingleModelHeaderFooterViewPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/RAVManyModelCellsPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/RAVManyModelCellsPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/RAVUniversalDataViewP.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPBlockBinding.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPBlockBinding.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPCallbacksStore.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPCallbacksStore.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPCellModelBinding.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPCellModelBinding.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPDelegatesStore.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPDelegatesStore.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPPresentersStore.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/RAVUPPresentersStore.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/_RAVDelegatesPresenter.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/universalPresenter/private/_RAVDelegatesPresenter.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/utils/RAVTableControllerListModelMemory+FAAppCategory.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/utils/RAVTableControllerListModelMemory+FAAppCategory.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/utils/RAVTableControllerSectionModelMemory+FAAppCategory.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/utils/RAVTableControllerSectionModelMemory+FAAppCategory.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/FACollectionViewController.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewController.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/FACollectionViewController.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewController.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/FACollectionViewPresenter.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewPresenter.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/FACollectionViewPresenter.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewPresenter.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/FACollectionViewFlowHorizontalLayout.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVCollectionViewFlowHorizontalLayout.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/FACollectionViewFlowHorizontalLayout.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVCollectionViewFlowHorizontalLayout.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/FAHorCollectionView.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorCollectionView.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/FAHorCollectionView.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorCollectionView.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/FAHorizontalView.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorizontalView.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/FAHorizontalView.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorizontalView.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/FAHorizontalViewController.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewController.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/FAHorizontalViewController.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewController.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/FAHorizontalViewPresenter.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewPresenter.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/FAHorizontalViewPresenter.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewPresenter.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+FAAppCategory.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+FAAppCategory.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.m" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+FAAppCategory.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+FAAppCategory.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TableController.iml" afterPath="$PROJECT_DIR$/.idea/TableController.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/TableController.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVCellActionsDelegateP.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVCellActionsDelegateP.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableController.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableController.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableControllerListModelMemory.h" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableControllerListModelMemory.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableControllerListModelMemory.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKIT/TableView/RAVTableControllerListModelMemory.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableController.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/RAVManyModelCellsPresenter.m" afterPath="$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/RAVManyModelCellsPresenter.m" />
     </list>
     <ignored path="ravtablecontroller.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +35,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -69,8 +42,127 @@
   <component name="FavoritesManager">
     <favorites_list name="TableController" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RAVTableControllerSectionModelMemory.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerSectionModelMemory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerSectionModelMemory.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerSectionModelMemory.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerSectionModelP.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerSectionModelP.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerListModelMemory+RAVAppCategory.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerSectionModelMemory+RAVAppCategory.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerSectionModelMemory+RAVAppCategory.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerListModelMemory+RAVAppCategory.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerListModelMemory.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerListModelMemory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerListModelP.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerListModelP.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RAVTableControllerListModelMemory.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerListModelMemory.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2716">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorizontalView.m" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorizontalView.h" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewController.m" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/RAVManyModelCellsPresenter.m" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableController.m" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+FAAppCategory.h" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.h" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+FAAppCategory.h" />
+        <option value="$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.h" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -79,7 +171,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="992" />
@@ -94,6 +185,240 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableView" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableView" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="universalPresenter" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableView" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="singleModelPresenter" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HorizontalViewPresenters" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HorizontalViewPresenters" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TableController" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RAVPresentersKit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CollectionViewPresenters" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Cidr.FilesView" />
+    </panes>
+  </component>
   <component name="RunManager" selected="Application.RavTableController">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TableController" TARGET_NAME="TableController" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TableController" RUN_TARGET_NAME="TableController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
@@ -102,8 +427,38 @@
       </EXTENSION>
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TableController" TARGET_NAME="TableController" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TableController" TARGET_NAME="TableControllerTests" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TableController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TableController" TARGET_NAME="TableController" CONFIG_NAME="Debug" SCHEME_NAME="TableController" RUN_TARGET_PROJECT_NAME="TableController" RUN_TARGET_NAME="TableController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
       <method />
     </configuration>
     <configuration default="false" name="RavTableController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TableController" TARGET_NAME="RavTableController" CONFIG_NAME="Debug" SCHEME_NAME="RavTableController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -117,21 +472,17 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TableController" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TableController" TARGET_NAME="TableController" CONFIG_NAME="Debug" SCHEME_NAME="TableController" RUN_TARGET_PROJECT_NAME="TableController" RUN_TARGET_NAME="TableController" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-      <envs />
-      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
-        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
-      </EXTENSION>
-      <method />
-    </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.RavTableController" />
-      <item index="1" class="java.lang.String" itemvalue="XCTest/Kiwi.RavTableControllerTests" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TableController" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TableController" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RavTableController" />
+      <item index="2" class="java.lang.String" itemvalue="XCTest/Kiwi.RavTableControllerTests" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -140,32 +491,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1475470050720</updated>
+      <workItem from="1475480727130" duration="506000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="506000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="23" width="1920" height="992" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="992" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31016323" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18421052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6221461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -173,5 +537,418 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorCollectionView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/Core/NSArray+RAVSupport.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/controller/RAVHorizontalViewPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1576">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/CollectionViewPresenters/RAVCollectionViewPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/Core/RAVPresentersStore.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/Core/RAVPresentersStore.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVCollectionViewFlowHorizontalLayout.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVCollectionViewFlowHorizontalLayout.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorCollectionView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorCollectionView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorizontalView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/HorizontalViewPresenters/RAVHorizontalView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="334" column="64" selection-start-line="334" selection-start-column="64" selection-end-line="334" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/singleModelPresenter/RAVSectionHeaderFooterViewPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/singleModelPresenter/RAVSectionHeaderFooterViewPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/singleModelPresenter/RAVSingleModelHeaderFooterViewPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/singleModelPresenter/RAVSingleModelHeaderFooterViewPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/singleModelPresenter/RAVSingleModelCellPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/singleModelPresenter/RAVSingleModelCellPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1501">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/RAVManyModelCellsPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/RAVManyModelCellsPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/RAVUniversalDataViewP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/private/_RAVDelegatesPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/private/_RAVDelegatesPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/private/RAVUPBlockBinding.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/universalPresenter/private/RAVUPBlockBinding.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVCellPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVCellPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVEditDelegateP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVPresentersKit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#198#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVSectionFooterViewPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVSectionFooterViewPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVSectionHeaderViewPresenter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVSectionHeaderViewPresenter.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="726" column="48" selection-start-line="726" selection-start-column="48" selection-end-line="726" selection-end-column="48" />
+          <folding>
+            <element signature="e#158#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableController_Subclassing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerListModelMemory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerListModelP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerListModelMemory.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2716">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerSectionModelMemory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerSectionModelMemory.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/TableView/RAVTableControllerSectionModelP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerListModelMemory+RAVAppCategory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TableController/RAVPresentersKit/utils/RAVTableControllerSectionModelMemory+RAVAppCategory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

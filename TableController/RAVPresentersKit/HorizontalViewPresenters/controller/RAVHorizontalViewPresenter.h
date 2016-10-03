@@ -1,5 +1,5 @@
 //
-//  FAHorizontalViewPresenter.h
+//  RAVHorizontalViewPresenter.h
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 28.10.14.
@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "RAVPresenterP.h"
-#import "FAHorizontalView.h"
+#import "RAVHorizontalView.h"
 
 
-@interface FAHorizontalViewPresenter : NSObject <RAVPresenterP>
+@interface RAVHorizontalViewPresenter : NSObject <RAVPresenterP>
 
-@property (nonatomic, weak) FAHorizontalView* horizontalView;
+@property (nonatomic, weak) RAVHorizontalView* horizontalView;
 
 - (BOOL)canPresent:(id)model;
 - (UICollectionViewCell*)collectionCellForModel:(id)model atCollumn:(NSUInteger)collumn;
@@ -23,7 +23,7 @@
 @end
 
 
-@interface FAHorizontalViewPresenter (Override)
+@interface RAVHorizontalViewPresenter (Override)
 
 - (void)_registerCells;
 

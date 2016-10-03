@@ -1,17 +1,17 @@
 //
-//  FAHorizontalViewPresenter.m
+//  RAVHorizontalViewPresenter.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 28.10.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "FAHorizontalViewPresenter.h"
+#import "RAVHorizontalViewPresenter.h"
 
-@implementation FAHorizontalViewPresenter
+@implementation RAVHorizontalViewPresenter
 
 
-- (void)setHorizontalView:(FAHorizontalView *)horizontalView
+- (void)setHorizontalView:(RAVHorizontalView *)horizontalView
 {
 	_horizontalView = horizontalView;
 	
@@ -47,7 +47,7 @@
 
 
 #pragma mark -
-@implementation FAHorizontalViewPresenter (Override)
+@implementation RAVHorizontalViewPresenter (Override)
 
 - (void)_registerCells
 {

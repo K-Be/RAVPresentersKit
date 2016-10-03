@@ -16,21 +16,21 @@
 
 @interface RAVManyModelCellsPresenter ()
 
-@property (nonatomic, weak) id<RAVManyModelCellsPresenterDelegate> universalDelegate;
-@property (nonatomic, strong) RAVUPDelegatesStore* delegatesStore;
-@property (nonatomic, strong) RAVUPCallbacksStore* selectionCallbacksStore;
+@property (nonatomic, weak) id<RAVManyModelCellsPresenterDelegate> rav_universalDelegate;
+@property (nonatomic, strong) RAVUPDelegatesStore* rav_delegatesStore;
+@property (nonatomic, strong) RAVUPCallbacksStore* rav_selectionCallbacksStore;
 
-@property (nonatomic, strong) RAVUPPresentersStore* presentersStore;
+@property (nonatomic, strong) RAVUPPresentersStore* rav_presentersStore;
 
-@property (nonatomic, strong) NSMutableArray<RAVUPCellModelBinding*>* cellsBinding;
+@property (nonatomic, strong) NSMutableArray<RAVUPCellModelBinding*>* rav_cellsBinding;
 
 @end
 
 
 @interface RAVManyModelCellsPresenter (Private)
 
-- (void)_registerPresenterForBinding:(RAVUPCellModelBinding*)binding;
-- (RAVSingleModelCellPresenter *)_createPresenterForBinding:(RAVUPCellModelBinding*)binding;
+- (void)rav_registerPresenterForBinding:(RAVUPCellModelBinding*)binding;
+- (RAVSingleModelCellPresenter *)rav_createPresenterForBinding:(RAVUPCellModelBinding*)binding;
 
 @end
 
@@ -42,10 +42,10 @@
 	if (self = [super init])
 	{
 		_cellHeight = 40.0;
-		_delegatesStore = [[RAVUPDelegatesStore alloc] init];
-		_presentersStore = [[RAVUPPresentersStore alloc] init];
-		_selectionCallbacksStore = [[RAVUPCallbacksStore alloc] init];
-		_cellsBinding = [[NSMutableArray alloc] init];
+		_rav_delegatesStore = [[RAVUPDelegatesStore alloc] init];
+		_rav_presentersStore = [[RAVUPPresentersStore alloc] init];
+		_rav_selectionCallbacksStore = [[RAVUPCallbacksStore alloc] init];
+		_rav_cellsBinding = [[NSMutableArray alloc] init];
 	}
 	
 	return self;
@@ -54,37 +54,37 @@
 
 - (void)registerDelegate:(id<RAVManyModelCellsPresenterDelegate>)delegate forModelClass:(Class)modelClass
 {
-	[self.delegatesStore registerDelegate:delegate forModelClass:modelClass];
+	[self.rav_delegatesStore registerDelegate:delegate forModelClass:modelClass];
 }
 
 
 - (void)setDelegateForAllModels:(id<RAVManyModelCellsPresenterDelegate>)delegate
 {
-	self.universalDelegate = delegate;
+	self.rav_universalDelegate = delegate;
 }
 
 
 - (void)registerSelectionCallback:(RAVManyModelCellsPresenterSelectionCallback)callback forModelClass:(Class)modelClass
 {
-	[self.selectionCallbacksStore registerCallback:callback forModelClass:modelClass];
+	[self.rav_selectionCallbacksStore registerCallback:callback forModelClass:modelClass];
 }
 
 
 - (void)registerNib:(UINib*)nib withCellId:(NSString*)cellId forModelClass:(Class)modelClass
 {
 	RAVUPCellModelBinding* binding = [RAVUPCellModelBinding cellModelBindingWithCellNib:nib withCellId:cellId forModelClass:modelClass];
-	[self.cellsBinding addObject:binding];
-	
-	[self _registerPresenterForBinding:binding];
+	[self.rav_cellsBinding addObject:binding];
+
+	[self rav_registerPresenterForBinding:binding];
 }
 
 
 - (void)registerCellClass:(Class)cellClass withCellId:(NSString*)cellId forModelClass:(Class)modelClass
 {
 	RAVUPCellModelBinding* binding = [RAVUPCellModelBinding cellModelBindingWithCellClass:cellClass withCellId:cellId forModelClass:modelClass];
-	[self.cellsBinding addObject:binding];
-	
-	[self _registerPresenterForBinding:binding];
+	[self.rav_cellsBinding addObject:binding];
+
+	[self rav_registerPresenterForBinding:binding];
 }
 
 
@@ -92,7 +92,7 @@
 {
 	[super setTableView:tableView];
 	
-	[self.presentersStore enumeratePresenters:^(RAVSingleModelCellPresenter *presenter) {
+	[self.rav_presentersStore enumeratePresenters:^(RAVSingleModelCellPresenter *presenter) {
 		presenter.tableView = tableView;
 	}];
 }
@@ -103,7 +103,7 @@
 	[super registerCells];
 	
 	UITableView* tableView = self.tableView;
-	[self.presentersStore enumeratePresenters:^(RAVSingleModelCellPresenter *presenter) {
+	[self.rav_presentersStore enumeratePresenters:^(RAVSingleModelCellPresenter *presenter) {
 		presenter.tableView = tableView;
 		[presenter registerCells];
 	}];
@@ -112,7 +112,7 @@
 
 - (UITableViewCell*)cellForModel:(id)model
 {
-	RAVSingleModelCellPresenter * modelPresenter = [self.presentersStore getPresenterForModelClass:[model class]];
+	RAVSingleModelCellPresenter * modelPresenter = [self.rav_presentersStore getPresenterForModelClass:[model class]];
 	NSParameterAssert(modelPresenter != nil);
 	UITableViewCell* cell = [modelPresenter cellForModel:model];
 	
@@ -124,14 +124,14 @@
 {
 	CGFloat height = self.cellHeight;
 	
-	id<RAVManyModelCellsPresenterDelegate> delegate = [self.delegatesStore getDelegateForModelClass:model];
+	id<RAVManyModelCellsPresenterDelegate> delegate = [self.rav_delegatesStore getDelegateForModelClass:model];
 	if ([delegate respondsToSelector:@selector(ravManyModelCellsPresenter:heightForModel:)])
 	{
 		height = [delegate ravManyModelCellsPresenter:self heightForModel:model];
 	}
-	else if ([self.universalDelegate respondsToSelector:@selector(ravManyModelCellsPresenter:heightForModel:)])
+	else if ([self.rav_universalDelegate respondsToSelector:@selector(ravManyModelCellsPresenter:heightForModel:)])
 	{
-		height = [self.universalDelegate ravManyModelCellsPresenter:self heightForModel:model];
+		height = [self.rav_universalDelegate ravManyModelCellsPresenter:self heightForModel:model];
 	}
 
 	return height;
@@ -144,21 +144,21 @@
 	*needsDeselect = YES;
 	*animated = YES;
 	
-	id<RAVManyModelCellsPresenterDelegate> delegate = [self.delegatesStore getDelegateForModelClass:[model class]];
+	id<RAVManyModelCellsPresenterDelegate> delegate = [self.rav_delegatesStore getDelegateForModelClass:[model class]];
 	if (delegate)
 	{
 		[delegate ravManyModelCellsPresenter:self selectedModel:model];
 	}
 	
-	RAVManyModelCellsPresenterSelectionCallback callback = [self.selectionCallbacksStore getCallbackForModelClass:[model class]];
+	RAVManyModelCellsPresenterSelectionCallback callback = [self.rav_selectionCallbacksStore getCallbackForModelClass:[model class]];
 	if (callback)
 	{
 		callback(self, model);
 	}
 	
-	if (self.universalDelegate)
+	if (self.rav_universalDelegate)
 	{
-		[self.universalDelegate ravManyModelCellsPresenter:self selectedModel:model];
+		[self.rav_universalDelegate ravManyModelCellsPresenter:self selectedModel:model];
 	}
 }
 
@@ -168,14 +168,14 @@
 #pragma mark -
 @implementation RAVManyModelCellsPresenter (Private)
 
-- (void)_registerPresenterForBinding:(RAVUPCellModelBinding*)binding
+- (void)rav_registerPresenterForBinding:(RAVUPCellModelBinding*)binding
 {
-	RAVSingleModelCellPresenter * modelPresenter = [self _createPresenterForBinding:binding];
-	[self.presentersStore registerPresenter:modelPresenter];
+	RAVSingleModelCellPresenter * modelPresenter = [self rav_createPresenterForBinding:binding];
+	[self.rav_presentersStore registerPresenter:modelPresenter];
 }
 
 
-- (RAVSingleModelCellPresenter *)_createPresenterForBinding:(RAVUPCellModelBinding*)binding
+- (RAVSingleModelCellPresenter *)rav_createPresenterForBinding:(RAVUPCellModelBinding*)binding
 {
 	RAVSingleModelCellPresenter * presenter = [[RAVSingleModelCellPresenter alloc] init];
 	if (binding.cellClass)

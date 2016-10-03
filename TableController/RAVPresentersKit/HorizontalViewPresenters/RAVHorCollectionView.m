@@ -1,28 +1,28 @@
 //
-//  FAHorCollectionView.m
+//  RAVHorCollectionView.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 10.11.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "FAHorCollectionView.h"
+#import "RAVHorCollectionView.h"
 
 
-@interface FAHorCollectionView (FA_Pri)
+@interface RAVHorCollectionView (RAV_Private)
 
-- (void)fa_commonInitialization;
+- (void)rav_commonInitialization;
 
 @end
 
 
-@implementation FAHorCollectionView
+@implementation RAVHorCollectionView
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
 	if (self = [super initWithCoder:aDecoder])
 	{
-		[self fa_commonInitialization];
+		[self rav_commonInitialization];
 	}
 	
 	return self;
@@ -33,7 +33,7 @@
 {
 	if (self = [super initWithFrame:frame])
 	{
-		[self fa_commonInitialization];
+		[self rav_commonInitialization];
 	}
 	
 	return self;
@@ -44,7 +44,7 @@
 {
 	if (self = [super initWithFrame:frame collectionViewLayout:layout])
 	{
-		[self fa_commonInitialization];
+		[self rav_commonInitialization];
 	}
 	
 	return self;
@@ -55,7 +55,7 @@
 {
 	if (self = [super init])
 	{
-		[self fa_commonInitialization];
+		[self rav_commonInitialization];
 	}
 	
 	return self;
@@ -71,7 +71,7 @@
 
 
 #pragma mark -
-@implementation FAHorCollectionView (FA_Pri)
+@implementation RAVHorCollectionView (FA_Pri)
 
 - (void)fa_commonInitialization
 {

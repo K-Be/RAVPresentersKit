@@ -1,5 +1,5 @@
 //
-//  FAHorCollectionView.h
+//  RAVHorCollectionView.h
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 10.11.14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FAHorCollectionView : UICollectionView
+@interface RAVHorCollectionView : UICollectionView
 
 @end

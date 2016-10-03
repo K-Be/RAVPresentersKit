@@ -49,15 +49,15 @@
 		13B460BA19077B60008E953C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609C19077B60008E953C /* UIKit.framework */; };
 		13B460C219077B60008E953C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B460C019077B60008E953C /* InfoPlist.strings */; };
 		13B460C419077B60008E953C /* TableControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460C319077B60008E953C /* TableControllerTests.m */; };
-		4936B2F51DA238270060B35A /* FACollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AD1DA238270060B35A /* FACollectionViewController.m */; };
-		4936B2F61DA238270060B35A /* FACollectionViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AF1DA238270060B35A /* FACollectionViewPresenter.m */; };
+		4936B2F51DA238270060B35A /* RAVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AD1DA238270060B35A /* RAVCollectionViewController.m */; };
+		4936B2F61DA238270060B35A /* RAVCollectionViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AF1DA238270060B35A /* RAVCollectionViewPresenter.m */; };
 		4936B2F71DA238270060B35A /* NSArray+RAVSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B21DA238270060B35A /* NSArray+RAVSupport.m */; };
 		4936B2F81DA238270060B35A /* RAVPresentersStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B51DA238270060B35A /* RAVPresentersStore.m */; };
-		4936B2F91DA238270060B35A /* FAHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B91DA238270060B35A /* FAHorizontalViewController.m */; };
-		4936B2FA1DA238270060B35A /* FAHorizontalViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BB1DA238270060B35A /* FAHorizontalViewPresenter.m */; };
-		4936B2FB1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BD1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.m */; };
-		4936B2FC1DA238270060B35A /* FAHorCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BF1DA238270060B35A /* FAHorCollectionView.m */; };
-		4936B2FD1DA238270060B35A /* FAHorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C11DA238270060B35A /* FAHorizontalView.m */; };
+		4936B2F91DA238270060B35A /* RAVHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B91DA238270060B35A /* RAVHorizontalViewController.m */; };
+		4936B2FA1DA238270060B35A /* RAVHorizontalViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BB1DA238270060B35A /* RAVHorizontalViewPresenter.m */; };
+		4936B2FB1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BD1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m */; };
+		4936B2FC1DA238270060B35A /* RAVHorCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BF1DA238270060B35A /* RAVHorCollectionView.m */; };
+		4936B2FD1DA238270060B35A /* RAVHorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C11DA238270060B35A /* RAVHorizontalView.m */; };
 		4936B2FE1DA238270060B35A /* RAVCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C51DA238270060B35A /* RAVCellPresenter.m */; };
 		4936B2FF1DA238270060B35A /* RAVSectionFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CA1DA238270060B35A /* RAVSectionFooterViewPresenter.m */; };
 		4936B3001DA238270060B35A /* RAVSectionHeaderViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CC1DA238270060B35A /* RAVSectionHeaderViewPresenter.m */; };
@@ -74,8 +74,8 @@
 		4936B30B1DA238270060B35A /* RAVUPDelegatesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EA1DA238270060B35A /* RAVUPDelegatesStore.m */; };
 		4936B30C1DA238270060B35A /* RAVUPPresentersStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EC1DA238270060B35A /* RAVUPPresentersStore.m */; };
 		4936B30D1DA238270060B35A /* RAVManyModelCellsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EE1DA238270060B35A /* RAVManyModelCellsPresenter.m */; };
-		4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.m */; };
-		4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.m */; };
+		4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */; };
+		4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,25 +175,25 @@
 		13B460BF19077B60008E953C /* TableControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableControllerTests-Info.plist"; sourceTree = "<group>"; };
 		13B460C119077B60008E953C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		13B460C319077B60008E953C /* TableControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableControllerTests.m; sourceTree = "<group>"; };
-		4936B2AC1DA238270060B35A /* FACollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FACollectionViewController.h; sourceTree = "<group>"; };
-		4936B2AD1DA238270060B35A /* FACollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FACollectionViewController.m; sourceTree = "<group>"; };
-		4936B2AE1DA238270060B35A /* FACollectionViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FACollectionViewPresenter.h; sourceTree = "<group>"; };
-		4936B2AF1DA238270060B35A /* FACollectionViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FACollectionViewPresenter.m; sourceTree = "<group>"; };
+		4936B2AC1DA238270060B35A /* RAVCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCollectionViewController.h; sourceTree = "<group>"; };
+		4936B2AD1DA238270060B35A /* RAVCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVCollectionViewController.m; sourceTree = "<group>"; };
+		4936B2AE1DA238270060B35A /* RAVCollectionViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCollectionViewPresenter.h; sourceTree = "<group>"; };
+		4936B2AF1DA238270060B35A /* RAVCollectionViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVCollectionViewPresenter.m; sourceTree = "<group>"; };
 		4936B2B11DA238270060B35A /* NSArray+RAVSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RAVSupport.h"; sourceTree = "<group>"; };
 		4936B2B21DA238270060B35A /* NSArray+RAVSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RAVSupport.m"; sourceTree = "<group>"; };
 		4936B2B31DA238270060B35A /* RAVPresenterP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPresenterP.h; sourceTree = "<group>"; };
 		4936B2B41DA238270060B35A /* RAVPresentersStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVPresentersStore.h; sourceTree = "<group>"; };
 		4936B2B51DA238270060B35A /* RAVPresentersStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVPresentersStore.m; sourceTree = "<group>"; };
-		4936B2B81DA238270060B35A /* FAHorizontalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAHorizontalViewController.h; sourceTree = "<group>"; };
-		4936B2B91DA238270060B35A /* FAHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAHorizontalViewController.m; sourceTree = "<group>"; };
-		4936B2BA1DA238270060B35A /* FAHorizontalViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAHorizontalViewPresenter.h; sourceTree = "<group>"; };
-		4936B2BB1DA238270060B35A /* FAHorizontalViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAHorizontalViewPresenter.m; sourceTree = "<group>"; };
-		4936B2BC1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FACollectionViewFlowHorizontalLayout.h; sourceTree = "<group>"; };
-		4936B2BD1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FACollectionViewFlowHorizontalLayout.m; sourceTree = "<group>"; };
-		4936B2BE1DA238270060B35A /* FAHorCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAHorCollectionView.h; sourceTree = "<group>"; };
-		4936B2BF1DA238270060B35A /* FAHorCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAHorCollectionView.m; sourceTree = "<group>"; };
-		4936B2C01DA238270060B35A /* FAHorizontalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAHorizontalView.h; sourceTree = "<group>"; };
-		4936B2C11DA238270060B35A /* FAHorizontalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAHorizontalView.m; sourceTree = "<group>"; };
+		4936B2B81DA238270060B35A /* RAVHorizontalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RAVHorizontalViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4936B2B91DA238270060B35A /* RAVHorizontalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RAVHorizontalViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4936B2BA1DA238270060B35A /* RAVHorizontalViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RAVHorizontalViewPresenter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4936B2BB1DA238270060B35A /* RAVHorizontalViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RAVHorizontalViewPresenter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4936B2BC1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCollectionViewFlowHorizontalLayout.h; sourceTree = "<group>"; };
+		4936B2BD1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVCollectionViewFlowHorizontalLayout.m; sourceTree = "<group>"; };
+		4936B2BE1DA238270060B35A /* RAVHorCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVHorCollectionView.h; sourceTree = "<group>"; };
+		4936B2BF1DA238270060B35A /* RAVHorCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVHorCollectionView.m; sourceTree = "<group>"; };
+		4936B2C01DA238270060B35A /* RAVHorizontalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RAVHorizontalView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4936B2C11DA238270060B35A /* RAVHorizontalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RAVHorizontalView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4936B2C31DA238270060B35A /* RAVCellActionsDelegateP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCellActionsDelegateP.h; sourceTree = "<group>"; };
 		4936B2C41DA238270060B35A /* RAVCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVCellPresenter.h; sourceTree = "<group>"; };
 		4936B2C51DA238270060B35A /* RAVCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVCellPresenter.m; sourceTree = "<group>"; };
@@ -236,10 +236,10 @@
 		4936B2ED1DA238270060B35A /* RAVManyModelCellsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVManyModelCellsPresenter.h; sourceTree = "<group>"; };
 		4936B2EE1DA238270060B35A /* RAVManyModelCellsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVManyModelCellsPresenter.m; sourceTree = "<group>"; };
 		4936B2EF1DA238270060B35A /* RAVUniversalDataViewP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVUniversalDataViewP.h; sourceTree = "<group>"; };
-		4936B2F11DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAVTableControllerListModelMemory+FAAppCategory.h"; sourceTree = "<group>"; };
-		4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAVTableControllerListModelMemory+FAAppCategory.m"; sourceTree = "<group>"; };
-		4936B2F31DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAVTableControllerSectionModelMemory+FAAppCategory.h"; sourceTree = "<group>"; };
-		4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAVTableControllerSectionModelMemory+FAAppCategory.m"; sourceTree = "<group>"; };
+		4936B2F11DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAVTableControllerListModelMemory+RAVAppCategory.h"; sourceTree = "<group>"; };
+		4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAVTableControllerListModelMemory+RAVAppCategory.m"; sourceTree = "<group>"; };
+		4936B2F31DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAVTableControllerSectionModelMemory+RAVAppCategory.h"; sourceTree = "<group>"; };
+		4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAVTableControllerSectionModelMemory+RAVAppCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -512,10 +512,10 @@
 		4936B2AB1DA238270060B35A /* CollectionViewPresenters */ = {
 			isa = PBXGroup;
 			children = (
-				4936B2AC1DA238270060B35A /* FACollectionViewController.h */,
-				4936B2AD1DA238270060B35A /* FACollectionViewController.m */,
-				4936B2AE1DA238270060B35A /* FACollectionViewPresenter.h */,
-				4936B2AF1DA238270060B35A /* FACollectionViewPresenter.m */,
+				4936B2AC1DA238270060B35A /* RAVCollectionViewController.h */,
+				4936B2AD1DA238270060B35A /* RAVCollectionViewController.m */,
+				4936B2AE1DA238270060B35A /* RAVCollectionViewPresenter.h */,
+				4936B2AF1DA238270060B35A /* RAVCollectionViewPresenter.m */,
 			);
 			path = CollectionViewPresenters;
 			sourceTree = "<group>";
@@ -536,12 +536,12 @@
 			isa = PBXGroup;
 			children = (
 				4936B2B71DA238270060B35A /* controller */,
-				4936B2BC1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.h */,
-				4936B2BD1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.m */,
-				4936B2BE1DA238270060B35A /* FAHorCollectionView.h */,
-				4936B2BF1DA238270060B35A /* FAHorCollectionView.m */,
-				4936B2C01DA238270060B35A /* FAHorizontalView.h */,
-				4936B2C11DA238270060B35A /* FAHorizontalView.m */,
+				4936B2BC1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.h */,
+				4936B2BD1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m */,
+				4936B2BE1DA238270060B35A /* RAVHorCollectionView.h */,
+				4936B2BF1DA238270060B35A /* RAVHorCollectionView.m */,
+				4936B2C01DA238270060B35A /* RAVHorizontalView.h */,
+				4936B2C11DA238270060B35A /* RAVHorizontalView.m */,
 			);
 			path = HorizontalViewPresenters;
 			sourceTree = "<group>";
@@ -549,10 +549,10 @@
 		4936B2B71DA238270060B35A /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				4936B2B81DA238270060B35A /* FAHorizontalViewController.h */,
-				4936B2B91DA238270060B35A /* FAHorizontalViewController.m */,
-				4936B2BA1DA238270060B35A /* FAHorizontalViewPresenter.h */,
-				4936B2BB1DA238270060B35A /* FAHorizontalViewPresenter.m */,
+				4936B2B81DA238270060B35A /* RAVHorizontalViewController.h */,
+				4936B2B91DA238270060B35A /* RAVHorizontalViewController.m */,
+				4936B2BA1DA238270060B35A /* RAVHorizontalViewPresenter.h */,
+				4936B2BB1DA238270060B35A /* RAVHorizontalViewPresenter.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -633,10 +633,10 @@
 		4936B2F01DA238270060B35A /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				4936B2F11DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.h */,
-				4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.m */,
-				4936B2F31DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.h */,
-				4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.m */,
+				4936B2F11DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.h */,
+				4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */,
+				4936B2F31DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.h */,
+				4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -811,11 +811,11 @@
 				4936B3071DA238270060B35A /* _RAVDelegatesPresenter.m in Sources */,
 				138F711E19091E2500F3338D /* RAVPersonCell.m in Sources */,
 				138F710D1909172000F3338D /* RAVPetModel.m in Sources */,
-				4936B2FD1DA238270060B35A /* FAHorizontalView.m in Sources */,
-				4936B2F91DA238270060B35A /* FAHorizontalViewController.m in Sources */,
+				4936B2FD1DA238270060B35A /* RAVHorizontalView.m in Sources */,
+				4936B2F91DA238270060B35A /* RAVHorizontalViewController.m in Sources */,
 				1383DE10190A5C7500FEBAC0 /* RAVPetPresenter.m in Sources */,
 				138F712219091E5E00F3338D /* RAVCellBase.m in Sources */,
-				4936B2FC1DA238270060B35A /* FAHorCollectionView.m in Sources */,
+				4936B2FC1DA238270060B35A /* RAVHorCollectionView.m in Sources */,
 				4936B30B1DA238270060B35A /* RAVUPDelegatesStore.m in Sources */,
 				138F70FF1909155600F3338D /* EKFieldMapping.m in Sources */,
 				138F71031909155600F3338D /* EKPropertyHelper.m in Sources */,
@@ -823,16 +823,16 @@
 				138F71001909155600F3338D /* EKManagedObjectMapping.m in Sources */,
 				4936B2F71DA238270060B35A /* NSArray+RAVSupport.m in Sources */,
 				1383DE0B190A5B8100FEBAC0 /* RAVPetCell.m in Sources */,
-				4936B2FB1DA238270060B35A /* FACollectionViewFlowHorizontalLayout.m in Sources */,
-				4936B2F61DA238270060B35A /* FACollectionViewPresenter.m in Sources */,
+				4936B2FB1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m in Sources */,
+				4936B2F61DA238270060B35A /* RAVCollectionViewPresenter.m in Sources */,
 				13B460AF19077B60008E953C /* RAVViewController.m in Sources */,
-				4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+FAAppCategory.m in Sources */,
-				4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+FAAppCategory.m in Sources */,
+				4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */,
+				4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */,
 				4936B3051DA238270060B35A /* RAVSingleModelCellPresenter.m in Sources */,
 				4936B3081DA238270060B35A /* RAVUPBlockBinding.m in Sources */,
 				4936B3041DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m in Sources */,
 				13B460A919077B60008E953C /* RAVAppDelegate.m in Sources */,
-				4936B2F51DA238270060B35A /* FACollectionViewController.m in Sources */,
+				4936B2F51DA238270060B35A /* RAVCollectionViewController.m in Sources */,
 				138F712519091EBB00F3338D /* NSObject+Runtime.m in Sources */,
 				4936B30D1DA238270060B35A /* RAVManyModelCellsPresenter.m in Sources */,
 				4936B30C1DA238270060B35A /* RAVUPPresentersStore.m in Sources */,
@@ -848,7 +848,7 @@
 				4936B30A1DA238270060B35A /* RAVUPCellModelBinding.m in Sources */,
 				1383DE13190A5D9F00FEBAC0 /* RAVExampleDataSource.m in Sources */,
 				4936B2FF1DA238270060B35A /* RAVSectionFooterViewPresenter.m in Sources */,
-				4936B2FA1DA238270060B35A /* FAHorizontalViewPresenter.m in Sources */,
+				4936B2FA1DA238270060B35A /* RAVHorizontalViewPresenter.m in Sources */,
 				4936B3021DA238270060B35A /* RAVTableControllerListModelMemory.m in Sources */,
 				138F71021909155600F3338D /* EKObjectMapping.m in Sources */,
 				4936B3011DA238270060B35A /* RAVTableController.m in Sources */,

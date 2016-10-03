@@ -1,37 +1,37 @@
 //
-//  FACollectionViewController.m
+//  RAVCollectionViewController.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 30.10.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "FACollectionViewController.h"
+#import "RAVCollectionViewController.h"
 #import "RAVPresentersStore.h"
 
 
-@interface FACollectionViewController ()
+@interface RAVCollectionViewController ()
 
-@property (nonatomic, strong) RAVPresentersStore* presenters;
-
-@end
-
-
-@interface FACollectionViewController (Private)
-
-- (id)_modelForIndexPath:(NSIndexPath*)indexPath;
+@property (nonatomic, strong) RAVPresentersStore* rav_presenters;
 
 @end
 
 
-@implementation FACollectionViewController
+@interface RAVCollectionViewController (Private)
+
+- (id)rav_modelForIndexPath:(NSIndexPath*)indexPath;
+
+@end
+
+
+@implementation RAVCollectionViewController
 
 
 - (id)init
 {
 	if (self = [super init])
 	{
-		_presenters = [[RAVPresentersStore alloc] init];
+		_rav_presenters = [[RAVPresentersStore alloc] init];
 	}
 	
 	return self;
@@ -59,16 +59,16 @@
 	_collectionView.dataSource = self;
 	_flowLayout = flowLayout;
 	
-	[self.presenters makeObjectsPerformSelector:@selector(setCollectionView:) withObject:_collectionView];
-	[self.presenters makeObjectsPerformSelector:@selector(setLayout:) withObject:_flowLayout];
+	[self.rav_presenters makeObjectsPerformSelector:@selector(setCollectionView:) withObject:_collectionView];
+	[self.rav_presenters makeObjectsPerformSelector:@selector(setLayout:) withObject:_flowLayout];
 	
 	[_collectionView reloadData];
 }
 
 
-- (void)registerPresenter:(FACollectionViewPresenter*)presenter
+- (void)registerPresenter:(RAVCollectionViewPresenter*)presenter
 {
-	[self.presenters registerPresenter:presenter];
+	[self.rav_presenters registerPresenter:presenter];
 }
 
 
@@ -88,8 +88,8 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-	id model = [self _modelForIndexPath:indexPath];
-	FACollectionViewPresenter* presenter = [self.presenters presenterForModel:model];
+	id model = [self rav_modelForIndexPath:indexPath];
+	RAVCollectionViewPresenter* presenter = [self.rav_presenters presenterForModel:model];
 	UICollectionViewCell* cell = [presenter cellForModel:model atIndexPath:indexPath];
 	
 	return cell;
@@ -102,8 +102,8 @@
 	BOOL deselect = NO;
 	BOOL animated = NO;
 	
-	id model = [self _modelForIndexPath:indexPath];
-	FACollectionViewPresenter* presenter = [self.presenters presenterForModel:model];
+	id model = [self rav_modelForIndexPath:indexPath];
+	RAVCollectionViewPresenter* presenter = [self.rav_presenters presenterForModel:model];
 	[presenter selectedModel:model deselect:&deselect animated:&animated];
 	if (deselect)
 	{
@@ -115,8 +115,8 @@
 #pragma mark UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-	id model = [self _modelForIndexPath:indexPath];
-	FACollectionViewPresenter* presenter = [self.presenters presenterForModel:model];
+	id model = [self rav_modelForIndexPath:indexPath];
+	RAVCollectionViewPresenter* presenter = [self.rav_presenters presenterForModel:model];
 	CGSize size = [presenter sizeForModel:model forIndexPath:indexPath];
 	
 	return size;
@@ -136,9 +136,9 @@
 
 
 #pragma mark -
-@implementation FACollectionViewController (Private)
+@implementation RAVCollectionViewController (Private)
 
-- (id)_modelForIndexPath:(NSIndexPath*)indexPath
+- (id)rav_modelForIndexPath:(NSIndexPath*)indexPath
 {
 	id model = [self.model getModelForIndexPath:indexPath];
 	return model;

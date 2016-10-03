@@ -1,5 +1,5 @@
 //
-//  FACollectionViewController.h
+//  RAVCollectionViewController.h
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 30.10.14.
@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FACollectionViewPresenter.h"
+#import "RAVCollectionViewPresenter.h"
 #import "RAVTableControllerListModelP.h"
 
 
-@interface FACollectionViewController : NSObject <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface RAVCollectionViewController : NSObject <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong, readonly) UICollectionView* collectionView;
 @property (nonatomic, strong, readonly) UICollectionViewFlowLayout* flowLayout;
@@ -19,6 +19,6 @@
 @property (nonatomic, strong) id<RAVTableControllerListModelP> model;
 
 - (void)setCollectionView:(UICollectionView *)collectionView flowLayout:(UICollectionViewFlowLayout*)flowLayout;
-- (void)registerPresenter:(FACollectionViewPresenter*)presenter;
+- (void)registerPresenter:(RAVCollectionViewPresenter*)presenter;
 
 @end

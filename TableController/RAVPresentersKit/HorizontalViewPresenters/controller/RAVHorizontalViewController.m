@@ -1,30 +1,30 @@
 //
-//  FAHorizontalViewController.m
+//  RAVHorizontalViewController.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 28.10.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "FAHorizontalViewController.h"
+#import "RAVHorizontalViewController.h"
 #import "RAVPresentersStore.h"
 
 
-@interface FAHorizontalViewController ()
+@interface RAVHorizontalViewController ()
 
 @property (nonatomic, strong) RAVPresentersStore* cellsPresenters;
 
 @end
 
 
-@interface FAHorizontalViewController (Private)
+@interface RAVHorizontalViewController (Private)
 
 - (id)_modelForIndex:(NSUInteger)index;
 
 @end
 
 
-@implementation FAHorizontalViewController
+@implementation RAVHorizontalViewController
 
 
 - (id)init
@@ -38,7 +38,7 @@
 }
 
 
-- (void)setHorizontalView:(FAHorizontalView *)horizontalView
+- (void)setHorizontalView:(RAVHorizontalView *)horizontalView
 {
 	_horizontalView = horizontalView;
 	
@@ -59,13 +59,13 @@
 }
 
 
-- (void)registerPresenter:(FAHorizontalViewPresenter*)presenter
+- (void)registerPresenter:(RAVHorizontalViewPresenter*)presenter
 {
 	[_cellsPresenters registerPresenter:presenter];
 }
 
 
-- (void)scrollToModel:(id)model scrollPosition:(FAHorizontalViewScrollPosition)scrollPosition animated:(BOOL)animated
+- (void)scrollToModel:(id)model scrollPosition:(RAVHorizontalViewScrollPosition)scrollPosition animated:(BOOL)animated
 {
 	NSInteger index = [self.models indexOfObjectIdenticalTo:model];
 	if (index != NSNotFound)
@@ -76,7 +76,7 @@
 }
 
 
-- (void)scrollToVisibleModel:(id)model scrollPosition:(FAHorizontalViewScrollPosition)scrollPosition animated:(BOOL)animated
+- (void)scrollToVisibleModel:(id)model scrollPosition:(RAVHorizontalViewScrollPosition)scrollPosition animated:(BOOL)animated
 {
 	NSInteger index = [self.models indexOfObjectIdenticalTo:model];
 	if (index != NSNotFound)
@@ -88,36 +88,36 @@
 
 
 #pragma mark FAHorizontalViewDataSource
-- (NSUInteger)faHorizontalViewCountCollumns:(FAHorizontalView*)sender
+- (NSUInteger)ravHorizontalViewCountCollumns:(RAVHorizontalView*)sender
 {
 	return [self.models count];
 }
 
 
-- (UICollectionViewCell*)faHorizontalView:(FAHorizontalView*)sender viewForCollumn:(NSUInteger)collumnIndex
+- (UICollectionViewCell*)ravHorizontalView:(RAVHorizontalView *)sender viewForCollumn:(NSUInteger)collumnIndex
 {
 	id model = [self _modelForIndex:collumnIndex];
-	FAHorizontalViewPresenter* presenter = [self.cellsPresenters presenterForModel:model];
+	RAVHorizontalViewPresenter* presenter = [self.cellsPresenters presenterForModel:model];
 	UICollectionViewCell* cell = [presenter collectionCellForModel:model atCollumn:collumnIndex];
 	
 	return cell;
 }
 
 
-- (CGFloat)faHorizontalView:(FAHorizontalView*)sender widthForCollumn:(NSUInteger)collumnIndex
+- (CGFloat)ravHorizontalView:(RAVHorizontalView *)sender widthForCollumn:(NSUInteger)collumnIndex
 {
 	id model = [self _modelForIndex:collumnIndex];
-	FAHorizontalViewPresenter* presenter = [self.cellsPresenters presenterForModel:model];
+	RAVHorizontalViewPresenter* presenter = [self.cellsPresenters presenterForModel:model];
 	CGFloat width = [presenter widthForModel:model];
 	return width;
 }
 
 
 #pragma mark FAHorizontalViewDelegate
-- (void)faHorizontalView:(FAHorizontalView*)sender selectedCollumn:(NSUInteger)collumnIndex
+- (void)ravHorizontalView:(RAVHorizontalView *)sender selectedCollumn:(NSUInteger)collumnIndex
 {
 	id model = [self _modelForIndex:collumnIndex];
-	FAHorizontalViewPresenter* presenter = [self.cellsPresenters presenterForModel:model];
+	RAVHorizontalViewPresenter* presenter = [self.cellsPresenters presenterForModel:model];
 	
 	BOOL needsDeselect = NO;
 	BOOL animated = NO;
@@ -139,7 +139,7 @@
 
 
 #pragma mark -
-@implementation FAHorizontalViewController (Private)
+@implementation RAVHorizontalViewController (Private)
 
 - (id)_modelForIndex:(NSUInteger)index
 {

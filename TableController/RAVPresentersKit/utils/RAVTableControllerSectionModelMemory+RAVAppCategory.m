@@ -1,16 +1,16 @@
 //
-//  RAVTableControllerSectionModelMemory+FAAppCategory.m
+//  RAVTableControllerSectionModelMemory+RAVAppCategory.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 01.07.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "RAVTableControllerSectionModelMemory+FAAppCategory.h"
+#import "RAVTableControllerSectionModelMemory+RAVAppCategory.h"
 
-@implementation RAVTableControllerSectionModelMemory (FAAppCategory)
+@implementation RAVTableControllerSectionModelMemory (RAVAppCategory)
 
-+ (instancetype)fa_sectionModelWithOneCellModel:(id)cellModel
++ (instancetype)rav_sectionModelWithOneCellModel:(id)cellModel
 {
 	RAVTableControllerSectionModelMemory* sectionModel = [[RAVTableControllerSectionModelMemory alloc] init];
 	if (cellModel)
@@ -22,7 +22,7 @@
 }
 
 
-+ (instancetype)fa_sectionModelWithCellsModels:(NSArray*)cellsModels
++ (instancetype)rav_sectionModelWithCellsModels:(NSArray*)cellsModels
 {
 	RAVTableControllerSectionModelMemory* sectionModel = [[RAVTableControllerSectionModelMemory alloc] init];
 	if (cellsModels)

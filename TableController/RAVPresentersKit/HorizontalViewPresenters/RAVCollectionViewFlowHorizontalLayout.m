@@ -1,22 +1,22 @@
 //
-//  FACollectionViewFlowHorizontalLayout.m
+//  RAVCollectionViewFlowHorizontalLayout.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 29.10.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "FACollectionViewFlowHorizontalLayout.h"
+#import "RAVCollectionViewFlowHorizontalLayout.h"
 
 
-@interface FACollectionViewFlowHorizontalLayout (Private)
+@interface RAVCollectionViewFlowHorizontalLayout (Private)
 
 - (UIEdgeInsets)rav_getSectionInsetForSectionAtIndex:(NSInteger)sectionIndex;
 
 @end
 
 
-@implementation FACollectionViewFlowHorizontalLayout
+@implementation RAVCollectionViewFlowHorizontalLayout
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
@@ -83,7 +83,7 @@
 
 
 #pragma mark -
-@implementation FACollectionViewFlowHorizontalLayout (Private)
+@implementation RAVCollectionViewFlowHorizontalLayout (Private)
 
 - (UIEdgeInsets)rav_getSectionInsetForSectionAtIndex:(NSInteger)sectionIndex
 {

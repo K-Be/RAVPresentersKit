@@ -1,5 +1,5 @@
 //
-//  FACollectionViewPresenter.h
+//  RAVCollectionViewPresenter.h
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 30.10.14.
@@ -10,7 +10,7 @@
 #import "RAVPresenterP.h"
 
 
-@interface FACollectionViewPresenter : NSObject <RAVPresenterP>
+@interface RAVCollectionViewPresenter : NSObject <RAVPresenterP>
 
 @property (nonatomic, weak) UICollectionView* collectionView;
 @property (nonatomic, weak) UICollectionViewFlowLayout* layout;
@@ -22,7 +22,7 @@
 @end
 
 
-@interface FACollectionViewPresenter (Override)
+@interface RAVCollectionViewPresenter (Override)
 
 - (void)_registerViews;
 

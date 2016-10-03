@@ -1,14 +1,14 @@
 //
-//  FACollectionViewPresenter.m
+//  RAVCollectionViewPresenter.m
 //  RAVPresentersKit
 //
 //  Created by Andrew Romanov on 30.10.14.
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
-#import "FACollectionViewPresenter.h"
+#import "RAVCollectionViewPresenter.h"
 
-@implementation FACollectionViewPresenter
+@implementation RAVCollectionViewPresenter
 
 
 - (void)setCollectionView:(UICollectionView *)collectionView
@@ -46,7 +46,7 @@
 @end
 
 
-@implementation FACollectionViewPresenter (Override)
+@implementation RAVCollectionViewPresenter (Override)
 
 - (void)_registerViews
 {

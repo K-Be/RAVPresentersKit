@@ -19,9 +19,9 @@ typedef id RAVSectionFooterViewModel;
 
 @interface RAVTableController ()
 
-@property (nonatomic, strong) RAVPresentersStore* cellsPresenters;
-@property (nonatomic, strong) RAVPresentersStore* sectionHeadersPresenters;
-@property (nonatomic, strong) RAVPresentersStore* sectionFooterPresenters;
+@property (nonatomic, strong) RAVPresentersStore* rav_cellsPresenters;
+@property (nonatomic, strong) RAVPresentersStore* rav_sectionHeadersPresenters;
+@property (nonatomic, strong) RAVPresentersStore* rav_sectionFooterPresenters;
 
 @end
 
@@ -55,9 +55,9 @@ typedef id RAVSectionFooterViewModel;
 {
 	if (self = [super init])
 	{
-		self.cellsPresenters = [[RAVPresentersStore alloc] init];
-		self.sectionHeadersPresenters = [[RAVPresentersStore alloc] init];
-		self.sectionFooterPresenters = [[RAVPresentersStore alloc] init];
+		self.rav_cellsPresenters = [[RAVPresentersStore alloc] init];
+		self.rav_sectionHeadersPresenters = [[RAVPresentersStore alloc] init];
+		self.rav_sectionFooterPresenters = [[RAVPresentersStore alloc] init];
 		
 		_model = [[RAVTableControllerListModelMemory alloc] init];
 	}
@@ -96,21 +96,21 @@ typedef id RAVSectionFooterViewModel;
 
 - (void)registerCellPresenter:(RavCellPresenterType*)cellPresenter
 {
-	[self.cellsPresenters registerPresenter:cellPresenter];
+	[self.rav_cellsPresenters registerPresenter:cellPresenter];
 	cellPresenter.tableView = self.tableView;
 }
 
 
 - (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenterType*)sectionHeaderPresenter
 {
-	[self.sectionHeadersPresenters registerPresenter:sectionHeaderPresenter];
+	[self.rav_sectionHeadersPresenters registerPresenter:sectionHeaderPresenter];
 	sectionHeaderPresenter.tableView = self.tableView;
 }
 
 
 - (void)registerSectionFooterPresenter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter
 {
-	[self.sectionFooterPresenters registerPresenter:sectionFooterPresenter];
+	[self.rav_sectionFooterPresenters registerPresenter:sectionFooterPresenter];
 	sectionFooterPresenter.tableView = self.tableView;
 }
 
@@ -668,21 +668,21 @@ typedef id RAVSectionFooterViewModel;
 
 - (RavCellPresenterType*)rav_cellPresenterForDataModel:(RAVCellModel)dataModel
 {
-	RavCellPresenterType* presenter = (RavCellPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.cellsPresenters];
+	RavCellPresenterType* presenter = (RavCellPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.rav_cellsPresenters];
 	return presenter;
 }
 
 
 - (RAVSectionFooterViewPresenterType*)rav_sectionFooterPresenterForSectionDataModel:(RAVSectionFooterViewModel)dataModel
 {
-	RAVSectionFooterViewPresenterType* presenter = (RAVSectionFooterViewPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.sectionFooterPresenters];
+	RAVSectionFooterViewPresenterType* presenter = (RAVSectionFooterViewPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.rav_sectionFooterPresenters];
 	return presenter;
 }
 
 
 - (RAVSectionHeaderViewPresenterType*)rav_sectionHeaderPresenterForSectionDataModel:(RAVSectionHeaderViewModel)dataModel
 {
-	RAVSectionHeaderViewPresenterType* presenter = (RAVSectionHeaderViewPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.sectionHeadersPresenters];
+	RAVSectionHeaderViewPresenterType* presenter = (RAVSectionHeaderViewPresenterType*)[self rav_findPresenterForModel:dataModel inStore:self.rav_sectionHeadersPresenters];
 	return presenter;
 }
 
@@ -745,9 +745,9 @@ typedef id RAVSectionFooterViewModel;
 
 - (void)rav_updateTableRefOnChildren
 {
-	[self.cellsPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
-	[self.sectionFooterPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
-	[self.sectionHeadersPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.rav_cellsPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.rav_sectionFooterPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
+	[self.rav_sectionHeadersPresenters makeObjectsPerformSelector:@selector(setTableView:) withObject:self.tableView];
 }
 
 @end
