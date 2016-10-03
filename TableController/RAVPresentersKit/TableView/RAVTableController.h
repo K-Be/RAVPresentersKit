@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RAVCellPresenter.h"
-#import "RAVSectionHeaderViewPresenter.h"
-#import "RAVSectionFooterViewPresenter.h"
+#import "RAVSectionModelPresenterP.h"
 #import "RAVScrollViewDelegateP.h"
 #import "RAVEditDelegateP.h"
 #import "RAVSectionIndexesDelegateP.h"

@@ -98,6 +98,30 @@
 }
 
 
+- (void)exchangeModelAtIndexPath:(NSIndexPath*)indexPath withModelAtIndexPath:(NSIndexPath*)otherIndexPath
+{
+	if (indexPath.section == otherIndexPath.section)
+	{
+		RAVTableControllerSectionModelMemory * sourceSectionModel = [self sectionModelForSectionIndex:indexPath.section];
+		[sourceSectionModel exchangeModelAtIndex:indexPath.row withModelatIndex:otherIndexPath.row];
+	}
+	else
+	{
+		RAVTableControllerSectionModelMemory* firstSection = [self sectionModelForSectionIndex:indexPath.section];
+		id modelFromFirstSection = [firstSection modelForRow:indexPath.row];
+		
+		RAVTableControllerSectionModelMemory* secondSection = [self sectionModelForSectionIndex:otherIndexPath.section];
+		id modelFromSecondSection = [secondSection modelForRow:otherIndexPath.row];
+		
+		[secondSection removeModelAtIndex:otherIndexPath.row];
+		[secondSection insertModel:modelFromFirstSection atIndex:otherIndexPath.row];
+		
+		[firstSection removeModelAtIndex:indexPath.row];
+		[firstSection insertModel:modelFromSecondSection atIndex:indexPath.row];
+	}
+}
+
+
 - (RAVTableControllerSectionModelMemory *)sectionModelForSectionIndex:(NSInteger)index
 {
 	RAVTableControllerSectionModelMemory * sectionModel = [self.sectionModels objectAtIndex:(NSUInteger)index];

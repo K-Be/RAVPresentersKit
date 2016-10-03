@@ -19,7 +19,13 @@
 @optional
 - (void)ravTableController:(RAVTableController*)sender didSelectModel:(id)model needsDeselect:(inout BOOL*)needsDeselect animated:(inout BOOL*)animated;
 - (void)ravTableController:(RAVTableController*)sender willDisplayModel:(id)model withIndexPath:(NSIndexPath*)indexPath;
+- (void)ravTableController:(RAVTableController *)sender willDisplayCell:(UITableViewCell*)cell forIndexPath:(NSIndexPath *)indexPath;
 - (void)ravTableController:(RAVTableController*)sender accessoryButtonPressedForModel:(id)model;
+
+//Highlighting
+- (BOOL)ravTableController:(RAVTableController*)sender shouldHighlightRowWithModel:(id)model;
+- (void)ravTableController:(RAVTableController*)sender didHighlightRowWithModel:(id)model;
+- (void)ravTableController:(RAVTableController*)sender didUnhighlightRowWithModel:(id)model;
 
 //Copy/Paste
 - (BOOL)ravTableController:(RAVTableController*)sender shouldShowMenuForModel:(id)model NS_AVAILABLE_IOS(5_0);

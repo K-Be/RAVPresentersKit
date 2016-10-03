@@ -249,6 +249,10 @@ typedef id RAVSectionFooterViewModel;
 	{
 		[presenter ravTableController:self willDisplayModel:cellModel withIndexPath:indexPath];
 	}
+	if ([presenter respondsToSelector:@selector(ravTableController:willDisplayCell:forIndexPath:)])
+	{
+		[presenter ravTableController:self willDisplayCell:cell forIndexPath:indexPath];
+	}
 }
 
 
@@ -484,9 +488,42 @@ typedef id RAVSectionFooterViewModel;
 	{
 		[presenter ravTableController:self performAction:action forModel:model withActionSender:sender];
 	}
-	else
+}
+
+
+//Highlighting
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RAVCellPresenter* presenter = [self rav_cellPresenterForDataModel:model];
+	BOOL should = YES;
+	if ([presenter respondsToSelector:@selector(ravTableController:shouldHighlightRowWithModel:)])
 	{
-		NSAssert(NO, @"presenter %@, should implement method %@", [presenter description], NSStringFromSelector(@selector(ravTableController:performAction:forModel:withActionSender:)));
+		should = [presenter ravTableController:self shouldHighlightRowWithModel:model];
+	}
+	
+	return should;
+}
+
+
+- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RAVCellPresenter* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:didHighlightRowWithModel:)])
+	{
+		[presenter ravTableController:self didHighlightRowWithModel:model];
+	}
+}
+
+
+- (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	RAVCellModel model = [self rav_getCellModelForIndexPath:indexPath];
+	RAVCellPresenter* presenter = [self rav_cellPresenterForDataModel:model];
+	if ([presenter respondsToSelector:@selector(ravTableController:didUnhighlightRowWithModel:)])
+	{
+		[presenter ravTableController:self didUnhighlightRowWithModel:model];
 	}
 }
 
