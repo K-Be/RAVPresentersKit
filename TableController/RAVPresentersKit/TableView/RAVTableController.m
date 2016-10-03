@@ -139,7 +139,12 @@ typedef id RAVSectionFooterViewModel;
 {
 	RAVCellModel dataModel = [self rav_getCellModelForIndexPath:indexPath];
 	RavCellPresenterType* cellPresenter = [self rav_cellPresenterForDataModel:dataModel];
-	UITableViewCell* cell = [cellPresenter cellForModel:dataModel];
+	UITableViewCell* cell = [cellPresenter cellForModel:dataModel atIndexPath:indexPath];
+	if (!cell)
+	{
+		cell = [cellPresenter cellForModel:dataModel];
+	}
+
 	if (!cell)
 	{
 		NSAssert(NO, @"can't create cell for model %@ , presenter: %@", dataModel, cellPresenter);

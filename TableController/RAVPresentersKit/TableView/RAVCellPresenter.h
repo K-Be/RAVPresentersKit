@@ -22,6 +22,7 @@
 
 - (void)registerCells;
 - (UITableViewCell*)cellForModel:(id)model;
+- (UITableViewCell*)cellForModel:(id)model atIndexPath:(NSIndexPath*)indexPath;
 
 @end
 

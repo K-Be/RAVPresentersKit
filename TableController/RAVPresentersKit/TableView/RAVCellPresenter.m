@@ -51,4 +51,10 @@
 	return nil;
 }
 
+
+- (UITableViewCell*)cellForModel:(id)model atIndexPath:(NSIndexPath*)indexPath
+{
+	return  nil;
+}
+
 @end

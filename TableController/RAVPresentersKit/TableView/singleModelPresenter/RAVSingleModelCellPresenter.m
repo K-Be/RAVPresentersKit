@@ -91,6 +91,18 @@
 }
 
 
+- (UITableViewCell*)cellForModel:(id)model atIndexPath:(NSIndexPath*)indexPath
+{
+	UITableViewCell<RAVUniversalDataViewP>* cell = [self.tableView dequeueReusableCellWithIdentifier:self.cellId forIndexPath:indexPath];
+#ifdef DEBUG
+	NSParameterAssert([cell conformsToProtocol:@protocol(RAVUniversalDataViewP)]);
+#endif
+	cell.model = model;
+	return cell;
+
+}
+
+
 - (CGFloat)ravTableController:(RAVTableController*)sender rowHeightForModel:(id)model
 {
 	return self.rowHeight;

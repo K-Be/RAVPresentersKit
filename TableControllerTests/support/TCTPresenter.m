@@ -19,10 +19,10 @@
 }
 
 
-- (UITableViewCell*)cellForModel:(id)model
+- (UITableViewCell *)cellForModel:(id)model atIndexPath:(NSIndexPath *)indexPath
 {
 	NSString* cellId = @"CellId";
-	UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:cellId];
+	UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
 	if (!cell)
 	{
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
