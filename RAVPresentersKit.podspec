@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "Andrew Romanov" => "scalli-k-be@ya.ru" }
 
-  s.source       = { :git => "https://k_be@bitbucket.org/k_be/ravtablecontroller.git", :branch => "master"#:tag => s.version.to_s }
+  s.source       = { :git => "https://k_be@bitbucket.org/k_be/ravtablecontroller.git", :tag => s.version.to_s }
 
   s.requires_arc = true
 
