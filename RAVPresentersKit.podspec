@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 	end
 
   s.subspec 'TableController' do |op|
-    op.source_files = 'TableController/RAVPresentersKit/TableView/*.{h,m}', 'TableController/RAVPresentersKit/TableView/singleModelPresenter/*.{h,m}', 'TableController/RAVPresentersKit/TableView/universalPresenter/*.{h,m}'
+    op.source_files = 'TableController/RAVPresentersKit/TableView/*.{h,m}', 'TableController/RAVPresentersKit/TableView/singleModelPresenter/*.{h,m}', 'TableController/RAVPresentersKit/TableView/universalPresenter/*.{h,m}', 'TableController/RAVPresentersKit/TableView/universalPresenter/private/*.{h,m}'
     op.dependency 'RAVPresentersKit/Core'
     op.ios.framework = 'UIKit'
   end
