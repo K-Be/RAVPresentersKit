@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		134419C91A35CCF700706E35 /* RAVTableController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 134419C81A35CCF700706E35 /* RAVTableController.podspec */; };
 		1383DE0B190A5B8100FEBAC0 /* RAVPetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE0A190A5B8100FEBAC0 /* RAVPetCell.m */; };
 		1383DE0D190A5BBD00FEBAC0 /* RAVPetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1383DE0C190A5BBD00FEBAC0 /* RAVPetCell.xib */; };
 		1383DE10190A5C7500FEBAC0 /* RAVPetPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1383DE0F190A5C7500FEBAC0 /* RAVPetPresenter.m */; };
@@ -62,8 +61,6 @@
 		4936B2FF1DA238270060B35A /* RAVSectionFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CA1DA238270060B35A /* RAVSectionFooterViewPresenter.m */; };
 		4936B3001DA238270060B35A /* RAVSectionHeaderViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CC1DA238270060B35A /* RAVSectionHeaderViewPresenter.m */; };
 		4936B3011DA238270060B35A /* RAVTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2D01DA238270060B35A /* RAVTableController.m */; };
-		4936B3021DA238270060B35A /* RAVTableControllerListModelMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2D31DA238270060B35A /* RAVTableControllerListModelMemory.m */; };
-		4936B3031DA238270060B35A /* RAVTableControllerSectionModelMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2D61DA238270060B35A /* RAVTableControllerSectionModelMemory.m */; };
 		4936B3041DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DA1DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m */; };
 		4936B3051DA238270060B35A /* RAVSingleModelCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DC1DA238270060B35A /* RAVSingleModelCellPresenter.m */; };
 		4936B3061DA238270060B35A /* RAVSingleModelHeaderFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DE1DA238270060B35A /* RAVSingleModelHeaderFooterViewPresenter.m */; };
@@ -76,6 +73,8 @@
 		4936B30D1DA238270060B35A /* RAVManyModelCellsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EE1DA238270060B35A /* RAVManyModelCellsPresenter.m */; };
 		4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */; };
 		4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */; };
+		497DE60F1DC0A49800324FC4 /* RAVTableControllerListModelMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 497DE6081DC0A49000324FC4 /* RAVTableControllerListModelMemory.m */; };
+		497DE6101DC0A49800324FC4 /* RAVTableControllerSectionModelMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 497DE60B1DC0A49000324FC4 /* RAVTableControllerSectionModelMemory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +100,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134419C81A35CCF700706E35 /* RAVTableController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RAVTableController.podspec; sourceTree = "<group>"; };
 		137E931E19B87505006A8965 /* libRavTableController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRavTableController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E932819B87505006A8965 /* RavTableControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavTableControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E932B19B87505006A8965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -209,12 +207,6 @@
 		4936B2CF1DA238270060B35A /* RAVTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableController.h; sourceTree = "<group>"; };
 		4936B2D01DA238270060B35A /* RAVTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableController.m; sourceTree = "<group>"; };
 		4936B2D11DA238270060B35A /* RAVTableController_Subclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableController_Subclassing.h; sourceTree = "<group>"; };
-		4936B2D21DA238270060B35A /* RAVTableControllerListModelMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelMemory.h; sourceTree = "<group>"; };
-		4936B2D31DA238270060B35A /* RAVTableControllerListModelMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableControllerListModelMemory.m; sourceTree = "<group>"; };
-		4936B2D41DA238270060B35A /* RAVTableControllerListModelP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelP.h; sourceTree = "<group>"; };
-		4936B2D51DA238270060B35A /* RAVTableControllerSectionModelMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelMemory.h; sourceTree = "<group>"; };
-		4936B2D61DA238270060B35A /* RAVTableControllerSectionModelMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableControllerSectionModelMemory.m; sourceTree = "<group>"; };
-		4936B2D71DA238270060B35A /* RAVTableControllerSectionModelP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelP.h; sourceTree = "<group>"; };
 		4936B2D91DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSectionHeaderFooterViewPresenter.h; sourceTree = "<group>"; };
 		4936B2DA1DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVSectionHeaderFooterViewPresenter.m; sourceTree = "<group>"; };
 		4936B2DB1DA238270060B35A /* RAVSingleModelCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVSingleModelCellPresenter.h; sourceTree = "<group>"; };
@@ -240,6 +232,13 @@
 		4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAVTableControllerListModelMemory+RAVAppCategory.m"; sourceTree = "<group>"; };
 		4936B2F31DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAVTableControllerSectionModelMemory+RAVAppCategory.h"; sourceTree = "<group>"; };
 		4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAVTableControllerSectionModelMemory+RAVAppCategory.m"; sourceTree = "<group>"; };
+		497DE6071DC0A49000324FC4 /* RAVTableControllerListModelMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelMemory.h; sourceTree = "<group>"; };
+		497DE6081DC0A49000324FC4 /* RAVTableControllerListModelMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableControllerListModelMemory.m; sourceTree = "<group>"; };
+		497DE6091DC0A49000324FC4 /* RAVTableControllerListModelP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerListModelP.h; sourceTree = "<group>"; };
+		497DE60A1DC0A49000324FC4 /* RAVTableControllerSectionModelMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelMemory.h; sourceTree = "<group>"; };
+		497DE60B1DC0A49000324FC4 /* RAVTableControllerSectionModelMemory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAVTableControllerSectionModelMemory.m; sourceTree = "<group>"; };
+		497DE60C1DC0A49000324FC4 /* RAVTableControllerSectionModelP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAVTableControllerSectionModelP.h; sourceTree = "<group>"; };
+		497DE6111DC0AA3E00324FC4 /* RAVPresentersKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = RAVPresentersKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,7 +418,7 @@
 		13B4608C19077B60008E953C = {
 			isa = PBXGroup;
 			children = (
-				134419C81A35CCF700706E35 /* RAVTableController.podspec */,
+				497DE6111DC0AA3E00324FC4 /* RAVPresentersKit.podspec */,
 				13B4609E19077B60008E953C /* TableController */,
 				13B460BD19077B60008E953C /* TableControllerTests */,
 				137E932919B87505006A8965 /* RavTableControllerTests */,
@@ -523,6 +522,7 @@
 		4936B2B01DA238270060B35A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				497DE6061DC0A49000324FC4 /* models */,
 				4936B2B11DA238270060B35A /* NSArray+RAVSupport.h */,
 				4936B2B21DA238270060B35A /* NSArray+RAVSupport.m */,
 				4936B2B31DA238270060B35A /* RAVPresenterP.h */,
@@ -575,12 +575,6 @@
 				4936B2CF1DA238270060B35A /* RAVTableController.h */,
 				4936B2D01DA238270060B35A /* RAVTableController.m */,
 				4936B2D11DA238270060B35A /* RAVTableController_Subclassing.h */,
-				4936B2D21DA238270060B35A /* RAVTableControllerListModelMemory.h */,
-				4936B2D31DA238270060B35A /* RAVTableControllerListModelMemory.m */,
-				4936B2D41DA238270060B35A /* RAVTableControllerListModelP.h */,
-				4936B2D51DA238270060B35A /* RAVTableControllerSectionModelMemory.h */,
-				4936B2D61DA238270060B35A /* RAVTableControllerSectionModelMemory.m */,
-				4936B2D71DA238270060B35A /* RAVTableControllerSectionModelP.h */,
 				4936B2D81DA238270060B35A /* singleModelPresenter */,
 				4936B2DF1DA238270060B35A /* universalPresenter */,
 			);
@@ -639,6 +633,19 @@
 				4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		497DE6061DC0A49000324FC4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				497DE6071DC0A49000324FC4 /* RAVTableControllerListModelMemory.h */,
+				497DE6081DC0A49000324FC4 /* RAVTableControllerListModelMemory.m */,
+				497DE6091DC0A49000324FC4 /* RAVTableControllerListModelP.h */,
+				497DE60A1DC0A49000324FC4 /* RAVTableControllerSectionModelMemory.h */,
+				497DE60B1DC0A49000324FC4 /* RAVTableControllerSectionModelMemory.m */,
+				497DE60C1DC0A49000324FC4 /* RAVTableControllerSectionModelP.h */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -770,7 +777,6 @@
 				13B460B119077B60008E953C /* Images.xcassets in Resources */,
 				138F7108190915C300F3338D /* Persons.plist in Resources */,
 				13B460A319077B60008E953C /* InfoPlist.strings in Resources */,
-				134419C91A35CCF700706E35 /* RAVTableController.podspec in Resources */,
 				138F710A1909167600F3338D /* Pets.plist in Resources */,
 				138F711F19091E2500F3338D /* RAVPersonCell.xib in Resources */,
 				1383DE0D190A5BBD00FEBAC0 /* RAVPetCell.xib in Resources */,
@@ -793,6 +799,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497DE60F1DC0A49800324FC4 /* RAVTableControllerListModelMemory.m in Sources */,
+				497DE6101DC0A49800324FC4 /* RAVTableControllerSectionModelMemory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,13 +851,11 @@
 				4936B2F81DA238270060B35A /* RAVPresentersStore.m in Sources */,
 				138F7114190917BD00F3338D /* RAVDataLoader.m in Sources */,
 				138F71051909155600F3338D /* EKTransformer.m in Sources */,
-				4936B3031DA238270060B35A /* RAVTableControllerSectionModelMemory.m in Sources */,
 				138F71101909174400F3338D /* RAVPersonModel.m in Sources */,
 				4936B30A1DA238270060B35A /* RAVUPCellModelBinding.m in Sources */,
 				1383DE13190A5D9F00FEBAC0 /* RAVExampleDataSource.m in Sources */,
 				4936B2FF1DA238270060B35A /* RAVSectionFooterViewPresenter.m in Sources */,
 				4936B2FA1DA238270060B35A /* RAVHorizontalViewPresenter.m in Sources */,
-				4936B3021DA238270060B35A /* RAVTableControllerListModelMemory.m in Sources */,
 				138F71021909155600F3338D /* EKObjectMapping.m in Sources */,
 				4936B3011DA238270060B35A /* RAVTableController.m in Sources */,
 				4936B2FE1DA238270060B35A /* RAVCellPresenter.m in Sources */,
