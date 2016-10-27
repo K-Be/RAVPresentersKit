@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RAVPresentersKit"
-  s.version      = "0.4.0"
+  s.version      = "0.4.1"
   s.summary      = "The easiest way to build lists view with models"
   s.homepage     = "https://bitbucket.org/k_be/ravtablecontroller"
 
@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 
 	s.subspec 'Core' do |op|
 		op.source_files = 'TableController/RAVPresentersKit/Core/*.{h,m}', 'TableController/RAVPresentersKit/Core/models/*.{h,m}', 'TableController/RAVPresentersKit/utils/*.{h,m}'
-		op.ios.framework = 'Foundation'
+		op.ios.framework = 'Foundation', 'UIKit'
 	end
 
   s.subspec 'TableController' do |op|
     op.source_files = 'TableController/RAVPresentersKit/TableView/*.{h,m}', 'TableController/RAVPresentersKit/TableView/singleModelPresenter/*.{h,m}', 'TableController/RAVPresentersKit/TableView/universalPresenter/*.{h,m}', 'TableController/RAVPresentersKit/TableView/universalPresenter/private/*.{h,m}'
     op.dependency 'RAVPresentersKit/Core'
-    op.ios.framework = 'UIKit'
+    op.ios.framework = 'UIKit', 'Foundation'
   end
 
   s.subspec 'HorizontalViewPresenters' do |op|
     op.source_files = 'TableController/RAVPresentersKit/HorizontalViewPresenters/*.{h,m}', 'TableController/RAVPresentersKit/HorizontalViewPresenters/controller/*.{h,m}'
     op.dependency 'RAVPresentersKit/Core'
-    op.ios.framework = 'UIKit'
+    op.ios.framework = 'UIKit', 'Foundation'
   end
 
   s.subspec 'CollectionViewPresenters' do |op|
     op.source_files = 'TableController/RAVPresentersKit/CollectionViewPresenters/*.{h,m}'
     op.dependency 'RAVPresentersKit/Core'
-    op.ios.framework = 'UIKit'
+    op.ios.framework = 'UIKit', 'Foundation'
   end
 
 end
