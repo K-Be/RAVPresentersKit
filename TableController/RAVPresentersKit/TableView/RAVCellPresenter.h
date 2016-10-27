@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "RAVPresenterP.h"
 #import "RAVCellActionsDelegateP.h"
 

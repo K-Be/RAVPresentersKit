@@ -48,33 +48,36 @@
 		13B460BA19077B60008E953C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609C19077B60008E953C /* UIKit.framework */; };
 		13B460C219077B60008E953C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13B460C019077B60008E953C /* InfoPlist.strings */; };
 		13B460C419077B60008E953C /* TableControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B460C319077B60008E953C /* TableControllerTests.m */; };
-		4936B2F51DA238270060B35A /* RAVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AD1DA238270060B35A /* RAVCollectionViewController.m */; };
-		4936B2F61DA238270060B35A /* RAVCollectionViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AF1DA238270060B35A /* RAVCollectionViewPresenter.m */; };
-		4936B2F71DA238270060B35A /* NSArray+RAVSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B21DA238270060B35A /* NSArray+RAVSupport.m */; };
-		4936B2F81DA238270060B35A /* RAVPresentersStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B51DA238270060B35A /* RAVPresentersStore.m */; };
 		4936B2F91DA238270060B35A /* RAVHorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B91DA238270060B35A /* RAVHorizontalViewController.m */; };
 		4936B2FA1DA238270060B35A /* RAVHorizontalViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BB1DA238270060B35A /* RAVHorizontalViewPresenter.m */; };
-		4936B2FB1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BD1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m */; };
-		4936B2FC1DA238270060B35A /* RAVHorCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BF1DA238270060B35A /* RAVHorCollectionView.m */; };
-		4936B2FD1DA238270060B35A /* RAVHorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C11DA238270060B35A /* RAVHorizontalView.m */; };
-		4936B2FE1DA238270060B35A /* RAVCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C51DA238270060B35A /* RAVCellPresenter.m */; };
-		4936B2FF1DA238270060B35A /* RAVSectionFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CA1DA238270060B35A /* RAVSectionFooterViewPresenter.m */; };
-		4936B3001DA238270060B35A /* RAVSectionHeaderViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CC1DA238270060B35A /* RAVSectionHeaderViewPresenter.m */; };
-		4936B3011DA238270060B35A /* RAVTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2D01DA238270060B35A /* RAVTableController.m */; };
-		4936B3041DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DA1DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m */; };
-		4936B3051DA238270060B35A /* RAVSingleModelCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DC1DA238270060B35A /* RAVSingleModelCellPresenter.m */; };
-		4936B3061DA238270060B35A /* RAVSingleModelHeaderFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DE1DA238270060B35A /* RAVSingleModelHeaderFooterViewPresenter.m */; };
-		4936B3071DA238270060B35A /* _RAVDelegatesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E21DA238270060B35A /* _RAVDelegatesPresenter.m */; };
-		4936B3081DA238270060B35A /* RAVUPBlockBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E41DA238270060B35A /* RAVUPBlockBinding.m */; };
-		4936B3091DA238270060B35A /* RAVUPCallbacksStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E61DA238270060B35A /* RAVUPCallbacksStore.m */; };
-		4936B30A1DA238270060B35A /* RAVUPCellModelBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E81DA238270060B35A /* RAVUPCellModelBinding.m */; };
-		4936B30B1DA238270060B35A /* RAVUPDelegatesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EA1DA238270060B35A /* RAVUPDelegatesStore.m */; };
-		4936B30C1DA238270060B35A /* RAVUPPresentersStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EC1DA238270060B35A /* RAVUPPresentersStore.m */; };
-		4936B30D1DA238270060B35A /* RAVManyModelCellsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EE1DA238270060B35A /* RAVManyModelCellsPresenter.m */; };
-		4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */; };
-		4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */; };
 		497DE60F1DC0A49800324FC4 /* RAVTableControllerListModelMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 497DE6081DC0A49000324FC4 /* RAVTableControllerListModelMemory.m */; };
 		497DE6101DC0A49800324FC4 /* RAVTableControllerSectionModelMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 497DE60B1DC0A49000324FC4 /* RAVTableControllerSectionModelMemory.m */; };
+		498A7EAE1DC1BD7000FDB4A4 /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F21DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m */; };
+		498A7EAF1DC1BD7000FDB4A4 /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2F41DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m */; };
+		498A7EB51DC1BDF300FDB4A4 /* RAVCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AD1DA238270060B35A /* RAVCollectionViewController.m */; };
+		498A7EB61DC1BDF300FDB4A4 /* RAVCollectionViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2AF1DA238270060B35A /* RAVCollectionViewPresenter.m */; };
+		498A7EB71DC1BDF300FDB4A4 /* NSArray+RAVSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B21DA238270060B35A /* NSArray+RAVSupport.m */; };
+		498A7EB81DC1BDF300FDB4A4 /* RAVPresentersStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2B51DA238270060B35A /* RAVPresentersStore.m */; };
+		498A7EB91DC1BDF300FDB4A4 /* RAVCollectionViewFlowHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BD1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m */; };
+		498A7EBA1DC1BDF300FDB4A4 /* RAVHorCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2BF1DA238270060B35A /* RAVHorCollectionView.m */; };
+		498A7EBB1DC1BDF300FDB4A4 /* RAVHorizontalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C11DA238270060B35A /* RAVHorizontalView.m */; };
+		498A7EBC1DC1BDF300FDB4A4 /* RAVCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2C51DA238270060B35A /* RAVCellPresenter.m */; };
+		498A7EBD1DC1BDF300FDB4A4 /* RAVSectionFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CA1DA238270060B35A /* RAVSectionFooterViewPresenter.m */; };
+		498A7EBE1DC1BDF300FDB4A4 /* RAVSectionHeaderViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2CC1DA238270060B35A /* RAVSectionHeaderViewPresenter.m */; };
+		498A7EBF1DC1BDF300FDB4A4 /* RAVTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2D01DA238270060B35A /* RAVTableController.m */; };
+		498A7EC01DC1BDF300FDB4A4 /* RAVSectionHeaderFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DA1DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m */; };
+		498A7EC11DC1BDF300FDB4A4 /* RAVSingleModelCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DC1DA238270060B35A /* RAVSingleModelCellPresenter.m */; };
+		498A7EC21DC1BDF300FDB4A4 /* RAVSingleModelHeaderFooterViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2DE1DA238270060B35A /* RAVSingleModelHeaderFooterViewPresenter.m */; };
+		498A7EC31DC1BDF300FDB4A4 /* _RAVDelegatesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E21DA238270060B35A /* _RAVDelegatesPresenter.m */; };
+		498A7EC41DC1BDF300FDB4A4 /* RAVUPBlockBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E41DA238270060B35A /* RAVUPBlockBinding.m */; };
+		498A7EC51DC1BDF300FDB4A4 /* RAVUPCallbacksStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E61DA238270060B35A /* RAVUPCallbacksStore.m */; };
+		498A7EC61DC1BDF300FDB4A4 /* RAVUPCellModelBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2E81DA238270060B35A /* RAVUPCellModelBinding.m */; };
+		498A7EC71DC1BDF300FDB4A4 /* RAVUPDelegatesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EA1DA238270060B35A /* RAVUPDelegatesStore.m */; };
+		498A7EC81DC1BDF300FDB4A4 /* RAVUPPresentersStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EC1DA238270060B35A /* RAVUPPresentersStore.m */; };
+		498A7EC91DC1BDF300FDB4A4 /* RAVManyModelCellsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936B2EE1DA238270060B35A /* RAVManyModelCellsPresenter.m */; };
+		498A7ECA1DC1BE0500FDB4A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609819077B60008E953C /* Foundation.framework */; };
+		498A7ECB1DC1BE2800FDB4A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4609C19077B60008E953C /* UIKit.framework */; };
+		498A7ECD1DC1BE5B00FDB4A4 /* libRavTableController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 137E931E19B87505006A8965 /* libRavTableController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B4609419077B60008E953C;
 			remoteInfo = TableController;
+		};
+		498A7EB01DC1BD9C00FDB4A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13B4608D19077B60008E953C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137E931D19B87505006A8965;
+			remoteInfo = RavTableController;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -246,6 +256,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498A7ECB1DC1BE2800FDB4A4 /* UIKit.framework in Frameworks */,
+				498A7ECA1DC1BE0500FDB4A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +274,7 @@
 			files = (
 				13B4609B19077B60008E953C /* CoreGraphics.framework in Frameworks */,
 				13B4609D19077B60008E953C /* UIKit.framework in Frameworks */,
+				498A7ECD1DC1BE5B00FDB4A4 /* libRavTableController.a in Frameworks */,
 				13B4609919077B60008E953C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +709,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				498A7EB11DC1BD9C00FDB4A4 /* PBXTargetDependency */,
 			);
 			name = TableController;
 			productName = TableController;
@@ -799,8 +813,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498A7EB81DC1BDF300FDB4A4 /* RAVPresentersStore.m in Sources */,
+				498A7EC91DC1BDF300FDB4A4 /* RAVManyModelCellsPresenter.m in Sources */,
 				497DE60F1DC0A49800324FC4 /* RAVTableControllerListModelMemory.m in Sources */,
+				498A7EC41DC1BDF300FDB4A4 /* RAVUPBlockBinding.m in Sources */,
+				498A7EBA1DC1BDF300FDB4A4 /* RAVHorCollectionView.m in Sources */,
+				498A7EC61DC1BDF300FDB4A4 /* RAVUPCellModelBinding.m in Sources */,
 				497DE6101DC0A49800324FC4 /* RAVTableControllerSectionModelMemory.m in Sources */,
+				498A7EBD1DC1BDF300FDB4A4 /* RAVSectionFooterViewPresenter.m in Sources */,
+				498A7EC81DC1BDF300FDB4A4 /* RAVUPPresentersStore.m in Sources */,
+				498A7EBF1DC1BDF300FDB4A4 /* RAVTableController.m in Sources */,
+				498A7EC11DC1BDF300FDB4A4 /* RAVSingleModelCellPresenter.m in Sources */,
+				498A7EAE1DC1BD7000FDB4A4 /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */,
+				498A7EBE1DC1BDF300FDB4A4 /* RAVSectionHeaderViewPresenter.m in Sources */,
+				498A7EC71DC1BDF300FDB4A4 /* RAVUPDelegatesStore.m in Sources */,
+				498A7EB91DC1BDF300FDB4A4 /* RAVCollectionViewFlowHorizontalLayout.m in Sources */,
+				498A7EC51DC1BDF300FDB4A4 /* RAVUPCallbacksStore.m in Sources */,
+				498A7EC01DC1BDF300FDB4A4 /* RAVSectionHeaderFooterViewPresenter.m in Sources */,
+				498A7EB51DC1BDF300FDB4A4 /* RAVCollectionViewController.m in Sources */,
+				498A7EBB1DC1BDF300FDB4A4 /* RAVHorizontalView.m in Sources */,
+				498A7EB71DC1BDF300FDB4A4 /* NSArray+RAVSupport.m in Sources */,
+				498A7EAF1DC1BD7000FDB4A4 /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */,
+				498A7EC21DC1BDF300FDB4A4 /* RAVSingleModelHeaderFooterViewPresenter.m in Sources */,
+				498A7EBC1DC1BDF300FDB4A4 /* RAVCellPresenter.m in Sources */,
+				498A7EC31DC1BDF300FDB4A4 /* _RAVDelegatesPresenter.m in Sources */,
+				498A7EB61DC1BDF300FDB4A4 /* RAVCollectionViewPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,49 +853,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				138F71041909155600F3338D /* EKSerializer.m in Sources */,
-				4936B3071DA238270060B35A /* _RAVDelegatesPresenter.m in Sources */,
 				138F711E19091E2500F3338D /* RAVPersonCell.m in Sources */,
 				138F710D1909172000F3338D /* RAVPetModel.m in Sources */,
-				4936B2FD1DA238270060B35A /* RAVHorizontalView.m in Sources */,
 				4936B2F91DA238270060B35A /* RAVHorizontalViewController.m in Sources */,
 				1383DE10190A5C7500FEBAC0 /* RAVPetPresenter.m in Sources */,
 				138F712219091E5E00F3338D /* RAVCellBase.m in Sources */,
-				4936B2FC1DA238270060B35A /* RAVHorCollectionView.m in Sources */,
-				4936B30B1DA238270060B35A /* RAVUPDelegatesStore.m in Sources */,
 				138F70FF1909155600F3338D /* EKFieldMapping.m in Sources */,
 				138F71031909155600F3338D /* EKPropertyHelper.m in Sources */,
-				4936B3091DA238270060B35A /* RAVUPCallbacksStore.m in Sources */,
 				138F71001909155600F3338D /* EKManagedObjectMapping.m in Sources */,
-				4936B2F71DA238270060B35A /* NSArray+RAVSupport.m in Sources */,
 				1383DE0B190A5B8100FEBAC0 /* RAVPetCell.m in Sources */,
-				4936B2FB1DA238270060B35A /* RAVCollectionViewFlowHorizontalLayout.m in Sources */,
-				4936B2F61DA238270060B35A /* RAVCollectionViewPresenter.m in Sources */,
 				13B460AF19077B60008E953C /* RAVViewController.m in Sources */,
-				4936B30E1DA238270060B35A /* RAVTableControllerListModelMemory+RAVAppCategory.m in Sources */,
-				4936B30F1DA238270060B35A /* RAVTableControllerSectionModelMemory+RAVAppCategory.m in Sources */,
-				4936B3051DA238270060B35A /* RAVSingleModelCellPresenter.m in Sources */,
-				4936B3081DA238270060B35A /* RAVUPBlockBinding.m in Sources */,
-				4936B3041DA238270060B35A /* RAVSectionHeaderFooterViewPresenter.m in Sources */,
 				13B460A919077B60008E953C /* RAVAppDelegate.m in Sources */,
-				4936B2F51DA238270060B35A /* RAVCollectionViewController.m in Sources */,
 				138F712519091EBB00F3338D /* NSObject+Runtime.m in Sources */,
-				4936B30D1DA238270060B35A /* RAVManyModelCellsPresenter.m in Sources */,
-				4936B30C1DA238270060B35A /* RAVUPPresentersStore.m in Sources */,
-				4936B3061DA238270060B35A /* RAVSingleModelHeaderFooterViewPresenter.m in Sources */,
 				138F71281909235C00F3338D /* RAVPersonPresenter.m in Sources */,
 				138F71011909155600F3338D /* EKMapper.m in Sources */,
-				4936B3001DA238270060B35A /* RAVSectionHeaderViewPresenter.m in Sources */,
-				4936B2F81DA238270060B35A /* RAVPresentersStore.m in Sources */,
 				138F7114190917BD00F3338D /* RAVDataLoader.m in Sources */,
 				138F71051909155600F3338D /* EKTransformer.m in Sources */,
 				138F71101909174400F3338D /* RAVPersonModel.m in Sources */,
-				4936B30A1DA238270060B35A /* RAVUPCellModelBinding.m in Sources */,
 				1383DE13190A5D9F00FEBAC0 /* RAVExampleDataSource.m in Sources */,
-				4936B2FF1DA238270060B35A /* RAVSectionFooterViewPresenter.m in Sources */,
 				4936B2FA1DA238270060B35A /* RAVHorizontalViewPresenter.m in Sources */,
 				138F71021909155600F3338D /* EKObjectMapping.m in Sources */,
-				4936B3011DA238270060B35A /* RAVTableController.m in Sources */,
-				4936B2FE1DA238270060B35A /* RAVCellPresenter.m in Sources */,
 				13B460A519077B60008E953C /* main.m in Sources */,
 				138F7117190917DD00F3338D /* RAVMappingFactory.m in Sources */,
 			);
@@ -884,6 +898,11 @@
 			isa = PBXTargetDependency;
 			target = 13B4609419077B60008E953C /* TableController */;
 			targetProxy = 13B460BB19077B60008E953C /* PBXContainerItemProxy */;
+		};
+		498A7EB11DC1BD9C00FDB4A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137E931D19B87505006A8965 /* RavTableController */;
+			targetProxy = 498A7EB01DC1BD9C00FDB4A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Andrew Romanov. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 typedef NS_OPTIONS(NSUInteger, RAVHorizontalViewScrollPosition) {
 	RAVHorizontalViewScrollPositionNone                 = 0,
 	
