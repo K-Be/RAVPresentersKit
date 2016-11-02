@@ -10,6 +10,7 @@
 
 @protocol RAVUniversalDataViewP <NSObject>
 
-@property (nonatomic, strong) id model;
+- (void)setModel:(id)model;
+- (id)model;
 
 @end
