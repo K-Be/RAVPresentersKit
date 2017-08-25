@@ -3,13 +3,13 @@ Pod::Spec.new do |s|
   s.name         = "RAVPresentersKit"
   s.version      = "0.4.1"
   s.summary      = "The easiest way to build lists view with models"
-  s.homepage     = "https://bitbucket.org/k_be/ravtablecontroller"
+  s.homepage     = "https://github.com/K-Be/RAVPresentersKit.git"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   s.author       = { "Andrew Romanov" => "scalli-k-be@ya.ru" }
 
-  s.source       = { :git => "https://k_be@bitbucket.org/k_be/ravtablecontroller.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/K-Be/RAVPresentersKit.git", :tag => s.version.to_s }
 
   s.requires_arc = true
 
