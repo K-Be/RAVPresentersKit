@@ -12,7 +12,7 @@
 
 @implementation RAVTableControllerListModelMemory (RAVAppCategory)
 
-+ (instancetype)rav_tableModelWithOneCellModel:(id)model
++ (instancetype)rav_tableModelWithCellModel:(id)model
 {
 	RAVTableControllerSectionModelMemory* sectionModel = [RAVTableControllerSectionModelMemory rav_sectionModelWithOneCellModel:model];
 	RAVTableControllerListModelMemory* listModel = [self rav_tableModelWithSectionModel:sectionModel];

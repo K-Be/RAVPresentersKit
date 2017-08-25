@@ -10,7 +10,7 @@
 
 @interface RAVTableControllerListModelMemory (RAVAppCategory)
 
-+ (instancetype)rav_tableModelWithOneCellModel:(id)model;
++ (instancetype)rav_tableModelWithCellModel:(id)model;
 + (instancetype)rav_tableModelWithSectionCellsModels:(NSArray*)cellsModels;
 + (instancetype)rav_tableModelWithSectionModel:(RAVTableControllerSectionModelMemory*)oneSectionModel;
 + (instancetype)rav_tableModelWithSections:(NSArray*)sectionsModels;
