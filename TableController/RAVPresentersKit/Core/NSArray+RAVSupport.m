@@ -12,12 +12,12 @@
 
 - (id)rav_findObjectPassingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate
 {
-	id object = [self rav_findobjectWithOptions:kNilOptions passingTest:predicate];
+	id object = [self rav_findObjectWithOptions:kNilOptions passingTest:predicate];
 	return object;
 }
 
 
-- (id)rav_findobjectWithOptions:(NSEnumerationOptions)opt passingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate
+- (id)rav_findObjectWithOptions:(NSEnumerationOptions)opt passingTest:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))predicate
 {
 	id object = nil;
 	if (predicate)

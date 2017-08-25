@@ -11,6 +11,6 @@
 @interface NSArray <ObjectType> (RAVSupport)
 
 - (ObjectType)rav_findObjectPassingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop))predicate;
-- (ObjectType)rav_findobjectWithOptions:(NSEnumerationOptions)opt passingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop))predicate;
+- (ObjectType)rav_findObjectWithOptions:(NSEnumerationOptions)opt passingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop))predicate;
 
 @end
