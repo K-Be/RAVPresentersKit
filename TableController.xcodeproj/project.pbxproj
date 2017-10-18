@@ -514,8 +514,8 @@
 			children = (
 				4936B2AB1DA238270060B35A /* CollectionViewPresenters */,
 				4936B2B01DA238270060B35A /* Core */,
-				4936B2B61DA238270060B35A /* HorizontalViewPresenters */,
-				4936B2C21DA238270060B35A /* TableView */,
+				4936B2B61DA238270060B35A /* HorizontalView */,
+				4936B2C21DA238270060B35A /* TableViewController */,
 				4936B2F01DA238270060B35A /* utils */,
 			);
 			path = RAVPresentersKit;
@@ -545,7 +545,7 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		4936B2B61DA238270060B35A /* HorizontalViewPresenters */ = {
+		4936B2B61DA238270060B35A /* HorizontalView */ = {
 			isa = PBXGroup;
 			children = (
 				4936B2B71DA238270060B35A /* controller */,
@@ -556,7 +556,7 @@
 				4936B2C01DA238270060B35A /* RAVHorizontalView.h */,
 				4936B2C11DA238270060B35A /* RAVHorizontalView.m */,
 			);
-			path = HorizontalViewPresenters;
+			path = HorizontalView;
 			sourceTree = "<group>";
 		};
 		4936B2B71DA238270060B35A /* controller */ = {
@@ -570,7 +570,7 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		4936B2C21DA238270060B35A /* TableView */ = {
+		4936B2C21DA238270060B35A /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				4936B2C31DA238270060B35A /* RAVCellActionsDelegateP.h */,
@@ -591,7 +591,7 @@
 				4936B2D81DA238270060B35A /* singleModelPresenter */,
 				4936B2DF1DA238270060B35A /* universalPresenter */,
 			);
-			path = TableView;
+			path = TableViewController;
 			sourceTree = "<group>";
 		};
 		4936B2D81DA238270060B35A /* singleModelPresenter */ = {
