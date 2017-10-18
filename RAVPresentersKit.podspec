@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RAVPresentersKit"
-  s.version      = "0.4.2"
+  s.version      = "0.4.3"
   s.summary      = "The easiest way to build lists view with models"
   s.homepage     = "https://github.com/K-Be/RAVPresentersKit.git"
 
