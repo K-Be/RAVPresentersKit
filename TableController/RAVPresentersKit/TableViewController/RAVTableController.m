@@ -261,6 +261,19 @@ typedef id RAVSectionFooterViewModel;
 }
 
 
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath
+{
+	RAVCellModel cellModel = [self rav_getCellModelForIndexPath:indexPath];
+	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:cellModel];
+	if ([presenter respondsToSelector:@selector(ravTableController:didEndDisplayCell:withModel:froIndexPath:)])
+	{
+		[presenter ravTableController:self
+								didEndDisplayCell:cell
+												withModel:cellModel
+										 froIndexPath:indexPath];
+	}
+}
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

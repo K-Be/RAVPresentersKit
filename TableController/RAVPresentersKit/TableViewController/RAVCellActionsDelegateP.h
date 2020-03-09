@@ -20,6 +20,7 @@
 - (void)ravTableController:(RAVTableController*)sender didSelectModel:(id)model needsDeselect:(inout BOOL*)needsDeselect animated:(inout BOOL*)animated;
 - (void)ravTableController:(RAVTableController*)sender willDisplayModel:(id)model withIndexPath:(NSIndexPath*)indexPath;
 - (void)ravTableController:(RAVTableController *)sender willDisplayCell:(UITableViewCell*)cell forIndexPath:(NSIndexPath *)indexPath;
+- (void)ravTableController:(RAVTableController *)sender didEndDisplayCell:(UITableViewCell*)cell withModel:(id)model froIndexPath:(NSIndexPath*)indexPath;
 - (void)ravTableController:(RAVTableController*)sender accessoryButtonPressedForModel:(id)model;
 
 //Highlighting
