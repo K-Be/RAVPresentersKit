@@ -115,6 +115,12 @@ typedef id RAVSectionFooterViewModel;
 }
 
 
+- (void)setModelInAnimationBlock:(id<RAVTableControllerListModelP>)model
+{
+	_model = model;
+}
+
+
 #pragma mark UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

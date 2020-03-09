@@ -35,4 +35,6 @@ typedef NSObject<RAVPresenterP, RAVSectionModelPresenterP> RAVSectionHeaderViewP
 - (void)registerSectionHeaderPresenter:(RAVSectionHeaderViewPresenterType*)sectionHeaderPresenter;
 - (void)registerSectionFooterPresenter:(RAVSectionFooterViewPresenterType*)sectionFooterPresenter;
 
+- (void)setModelInAnimationBlock:(id<RAVTableControllerListModelP>)model;
+
 @end
