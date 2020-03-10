@@ -269,14 +269,21 @@ typedef id RAVSectionFooterViewModel;
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath
 {
-	RAVCellModel cellModel = [self rav_getCellModelForIndexPath:indexPath];
-	RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:cellModel];
-	if ([presenter respondsToSelector:@selector(ravTableController:didEndDisplayCell:withModel:froIndexPath:)])
+	if (indexPath.section < self.model.countSections)
 	{
-		[presenter ravTableController:self
-								didEndDisplayCell:cell
-												withModel:cellModel
-										 froIndexPath:indexPath];
+		id<RAVTableControllerSectionModelP> section = [self.model getSectionModelForSection:indexPath.section];
+		if (indexPath.row < section.numberObjects)
+		{
+			RAVCellModel cellModel = [self rav_getCellModelForIndexPath:indexPath];
+			RavCellPresenterType* presenter = [self rav_cellPresenterForDataModel:cellModel];
+			if ([presenter respondsToSelector:@selector(ravTableController:didEndDisplayCell:withModel:froIndexPath:)])
+			{
+				[presenter ravTableController:self
+										didEndDisplayCell:cell
+														withModel:cellModel
+												 froIndexPath:indexPath];
+			}
+		}
 	}
 }
 
